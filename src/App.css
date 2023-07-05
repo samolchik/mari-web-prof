@@ -3,11 +3,11 @@ body {
 }
 
 .page-container {
-    background-image: url('./assets/background2.png');
+    background-image: url('./assets/app.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
 
 
 }
