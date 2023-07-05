@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(7, 29, 3, 0.98);
+    background-color: rgba(13, 18, 13, 0.81);
     flex-direction: column;
 }
 
@@ -24,19 +24,63 @@
     justify-content: center;
     margin: 20px;
     position: relative;
+
 }
+
+
 
 .skill-img {
     width:150px;
     height: 150px;
     background-color: rgba(42, 50, 42, 0.76);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(59, 173, 9, 0.74);
 
+}
+
+.header-skills {
+    color: white;
+    font-weight: lighter;
+    font-family: Arial;
+    position: relative;
+    margin: 25px;
+}
+
+
+.skills-load {
+    font-family: Arial;
+    font-size: 30px;
+    color: rgba(128, 203, 7, 0.89);
+
+
+}
+
+.header-skills::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(171, 234, 47, 0.9);
+    box-shadow: 0 0 5px rgba(171, 234, 47, 0.9); /* Add shadow effect */
+    animation: underline 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 .skill:hover .skill-img {
     transform: scale(1.05);
-    box-shadow: 0 0 8px rgb(76, 235, 7);
+
 }
 
 .skill p {
@@ -44,6 +88,7 @@
     font-weight: bold;
     text-align: center;
     color: white;
+    font-family: Arial;
 }
 
 @media screen and (min-width: 768px) {

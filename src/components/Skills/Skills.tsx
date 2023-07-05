@@ -1,5 +1,7 @@
 import React from 'react';
 import './Skills.css';
+
+import {useEffect, useState} from "react";
 import skillLogo1 from '../../assets/js.png';
 import skillLogo2 from '../../assets/ts.png';
 import skillLogo3 from '../../assets/react.png';
@@ -10,7 +12,17 @@ import skillLogo7 from '../../assets/mongo.png';
 import skillLogo8 from '../../assets/git.png';
 import skillLogo9 from '../../assets/css.png';
 import skillLogo10 from '../../assets/html5.png';
+import headerIcon from '../../assets/header_icon.png'
 const Skills: React.FC = () => {
+    const [showPercentage, setShowPercentage] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowPercentage(true);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
     const skillsData = [
         { name: 'JavaScript', logo: skillLogo1 },
         { name: 'TypeScript', logo: skillLogo2 },
@@ -22,12 +34,15 @@ const Skills: React.FC = () => {
         { name: 'Git', logo: skillLogo8 },
         { name: 'CSS', logo: skillLogo9 },
         { name: 'HTML5', logo: skillLogo10 },
-        // Add other skills and their logos
+
     ];
 
     return (
         <div id="skills" className="skills-section">
-                 <h1 className="header-skills">MY SKILLS</h1>
+
+                <h1 className="header-skills">&lt;SKILLS/&gt;</h1>
+                <div className="skills-load">{showPercentage ? <p>100%</p> : null}</div>
+
                 <div className="skills-container">
                 {skillsData.map((skill, index) => (
                     <div className="skill" key={index}>
