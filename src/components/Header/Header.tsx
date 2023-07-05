@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import logo from '../../assets/logo1.png';
+import logo from '../../assets/logo2.png';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);

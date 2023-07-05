@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(13, 18, 13, 0.81);
+    background-color: rgba(25, 26, 25, 0.9);
     flex-direction: column;
 }
 
@@ -10,9 +10,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*max-width: 1000px;*/
-    /*width: 100%;*/
     margin: 100px;
+    box-shadow: 0px 0px 7px rgba(218, 226, 219, 0.56);
+    padding: 20px;
+    background: linear-gradient(
+            to bottom,
+            rgba(17, 17, 18, 0.93),
+            rgba(22, 22, 24, 0.85),
+            rgba(35, 39, 35, 0.76)
+    );
 
 }
 
@@ -22,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
     position: relative;
 
 }
@@ -30,12 +36,12 @@
 
 
 .skill-img {
-    width:150px;
-    height: 150px;
-    background-color: rgba(42, 50, 42, 0.76);
+    width:100px;
+    height: 100px;
+    /*background-color: rgba(45, 47, 45, 0.76);*/
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(59, 173, 9, 0.74);
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 0px 3px rgba(218, 226, 219, 0.56);*/
 
 }
 
@@ -50,8 +56,8 @@
 
 .skills-load {
     font-family: Arial;
-    font-size: 30px;
-    color: rgba(128, 203, 7, 0.89);
+    font-size: 20px;
+    color: white;
 
 
 }
@@ -63,8 +69,8 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: rgba(171, 234, 47, 0.9);
-    box-shadow: 0 0 5px rgba(171, 234, 47, 0.9); /* Add shadow effect */
+    background-color: #5ecd1a;
+    /*box-shadow: 0 0 5px rgba(171, 234, 47, 0.9); !* Add shadow effect *!*/
     animation: underline 3s linear;
     animation-fill-mode: forwards;
 }
@@ -78,17 +84,21 @@
     }
 }
 
-.skill:hover .skill-img {
-    transform: scale(1.05);
 
-}
+
+
+/*.skill:hover .skill-img {*/
+/*    transform: scale(1.05);*/
+
+/*}*/
 
 .skill p {
     margin-top: 10px;
-    font-weight: bold;
     text-align: center;
     color: white;
     font-family: Arial;
+    font-size: 18px;
+
 }
 
 @media screen and (min-width: 768px) {

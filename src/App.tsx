@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Contact from "./components/Contsct/Contact";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
         <Header />
         <About />
         <Skills />
+          <Contact/>
         <Footer />
       </div>
   );
