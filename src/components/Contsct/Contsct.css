@@ -4,7 +4,8 @@
     justify-content: center;
 
     flex-direction: column;
-    height: 70vh;
+    height: 100vh;
+
 }
 
 .contact-header {
@@ -13,6 +14,7 @@
     margin-bottom: 20px;
     font-family: Arial;
     font-weight: lighter;
+    margin: 100px;
 }
 
 .contact-form {
@@ -43,12 +45,13 @@ label {
     width: 70vh;
     padding: 10px;
     border: none;
+    margin-bottom: 20px;
     border-radius: 5px;
     background: linear-gradient(
             to bottom,
-            rgba(14, 15, 14, 0.96),
-            rgba(24, 26, 24, 0.96),
-            rgba(35, 39, 35, 0.96)
+            rgba(14, 15, 14, 0.99),
+            rgba(24, 26, 24, 0.99),
+            rgba(45, 53, 45, 0.99)
     );
     color: white;
     font-family: Arial, sans-serif;
@@ -78,10 +81,22 @@ label {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 200px;
 }
 
 .contact-button:hover {
     background-color: rgba(123, 171, 20, 0.96);
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        width: 100%;
+    }
 }
 

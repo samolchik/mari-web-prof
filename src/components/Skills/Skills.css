@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    height: 100%;
 }
 
 .skills-container {
@@ -16,9 +16,9 @@
     padding: 20px;
     background: linear-gradient(
             to bottom,
-            rgba(14, 15, 14, 0.96),
-            rgba(24, 26, 24, 0.96),
-            rgba(35, 39, 35, 0.96)
+            rgba(14, 15, 14, 0.99),
+            rgba(24, 26, 24, 0.99),
+            rgba(45, 53, 45, 0.99)
     );
 
 }
@@ -29,8 +29,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
     position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -51,7 +53,7 @@
     font-weight: lighter;
     font-family: Arial;
     position: relative;
-    margin: 25px;
+    margin: 50px;
 }
 
 
