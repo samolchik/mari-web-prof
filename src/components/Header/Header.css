@@ -7,14 +7,14 @@
     background: linear-gradient(
             to bottom,
             rgba(17, 17, 18, 0.93),
-            rgba(22, 22, 24, 0.85),
-            rgba(35, 39, 35, 0.76)
+            rgba(41, 45, 41, 0.94)
+            /*rgba(48, 52, 48, 0.93)*/
     );
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);
     display: block;
     z-index: 100; /* Add a higher z-index to make the header appear above other elements */
-    box-shadow: 0 0px 5px rgba(209, 209, 204, 0.8);
+    /*box-shadow: 0 0px 5px rgba(209, 209, 204, 0.8);*/
 }
 
 .header.hide {
@@ -69,7 +69,7 @@
 
 .nav-element a:hover::after {
     width: 100%;
-    background-color: #5ecd1a;
+    background-color: #a2e11c;
     /*box-shadow: 0 3px 6px rgba(96, 188, 8, 0.93);*/
 }
 
@@ -77,6 +77,10 @@
     color: white;
     font-size: 24px;
     margin-left: 15px;
+}
+
+.linkedin {
+    height: 40px;
 }
 
 /* Additional styles for responsiveness */

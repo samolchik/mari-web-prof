@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import logo from '../../assets/logo2.png';
+import logo from '../../assets/logo1.png';
+import linkedinLogo from '../../assets/linkedin.png';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -29,6 +30,11 @@ const Header = () => {
                 <nav className="navigation">
                     <ul>
                         <li className="nav-element">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <img  className="linkedin" src={linkedinLogo} alt="LinkedIn" />
+                            </a>
+                        </li>
+                        <li className="nav-element">
                             <a href="#about">ABOUT</a>
                         </li>
                         <li className="nav-element">
@@ -37,6 +43,7 @@ const Header = () => {
                         <li className="nav-element">
                             <a href="#contact">CONTACT</a>
                         </li>
+
                     </ul>
                 </nav>
             </div>
@@ -45,6 +52,7 @@ const Header = () => {
 };
 
 export default Header;
+
 
 
 

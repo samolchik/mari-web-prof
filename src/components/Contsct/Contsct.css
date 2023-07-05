@@ -2,11 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(25, 26, 25, 0.9);
+    background-color: rgba(31, 33, 31, 0.96);
     flex-direction: column;
-    padding: 50px;
     height: 70vh;
-
 }
 
 .contact-header {
@@ -20,10 +18,9 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the form elements horizontally */
+    align-items: center;
     width: 400px;
 }
-
 
 .contact-element {
     margin-bottom: 20px;
@@ -31,7 +28,6 @@
     flex-direction: column;
     align-items: flex-start;
 }
-
 
 label {
     color: white;
@@ -49,6 +45,14 @@ label {
     color: white;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    box-shadow: 0 0 3px rgba(229, 235, 226, 0.8);
+    transition: box-shadow 0.3s ease-in-out; /* Add a transition effect for box-shadow */
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    box-shadow: 0 0 3px rgba(162, 225, 28, 0.88); /* Change the box shadow color on focus */
+    outline: none;
 }
 
 .contact-textarea {
@@ -60,16 +64,16 @@ label {
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    background-color: #5ecd1a;
+    background-color: rgba(162, 225, 28, 0.88);
     color: white;
     font-family: Arial, sans-serif;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out; /* Add a transition effect */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .contact-button:hover {
-    background-color: rgba(76, 235, 7, 1);
-    transform: scale(1.05); /* Add a scale effect on hover */
+    background-color: rgba(123, 171, 20, 0.92);
+    transform: scale(1.05);
 }
 
