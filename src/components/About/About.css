@@ -1,0 +1,13 @@
+.about-section {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(7, 29, 3, 0.98);
+    color: white;
+    background-image: url('../../assets/about.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+
