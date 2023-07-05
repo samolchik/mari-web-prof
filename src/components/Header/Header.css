@@ -6,9 +6,9 @@
     height: 80px;
     background: linear-gradient(
             to bottom,
-            rgba(17, 17, 18, 0.93),
-            rgba(41, 45, 41, 0.94)
-            /*rgba(48, 52, 48, 0.93)*/
+            rgba(17, 17, 18, 0.96),
+            /*rgba(22, 22, 24, 0.96),*/
+            rgba(35, 39, 35, 0.96)
     );
     transition: transform 0.3s ease-in-out;
     transform: translateY(0);

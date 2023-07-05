@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(25, 26, 25, 0.96);
+
     flex-direction: column;
     height: 70vh;
 }
@@ -33,6 +33,9 @@ label {
     color: white;
     font-weight: bold;
     margin-bottom: 5px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 .contact-input,
@@ -41,17 +44,22 @@ label {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(
+            to bottom,
+            rgba(14, 15, 14, 0.96),
+            rgba(24, 26, 24, 0.96),
+            rgba(35, 39, 35, 0.96)
+    );
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     box-shadow: 0 0 3px rgba(229, 235, 226, 0.8);
     transition: box-shadow 0.3s ease-in-out; /* Add a transition effect for box-shadow */
 }
 
 .contact-input:focus,
 .contact-textarea:focus {
-    box-shadow: 0 0 3px rgba(162, 225, 28, 0.88); /* Change the box shadow color on focus */
+    box-shadow: 0 0 3px rgb(162, 225, 28); /* Change the box shadow color on focus */
     outline: none;
 }
 
@@ -64,7 +72,7 @@ label {
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
-    background-color: rgba(162, 225, 28, 0.88);
+    background-color: rgba(151, 208, 31, 0.96);
     color: white;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -73,7 +81,7 @@ label {
 }
 
 .contact-button:hover {
-    background-color: rgba(123, 171, 20, 0.92);
+    background-color: rgba(123, 171, 20, 0.96);
     transform: scale(1.05);
 }
 

@@ -4,11 +4,14 @@
     display: flex;
     align-items: center;
     /*background-color: rgba(7, 29, 3, 0.98);*/
-    background-color: rgba(25, 26, 25, 0.96);
+  
     color: white;
-    background-image: url('../../assets/background2.png');
+    /*background-image: url('../../assets/background2.png');*/
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: center;
+    background-size: cover;
+
+
 
 }
 

@@ -8,13 +8,14 @@ import Contact from "./components/Contsct/Contact";
 
 const App: React.FC = () => {
   return (
-      <div>
-        <Header />
-        <About />
-        <Skills />
-          <Contact/>
-        <Footer />
+      <div className="page-container">
+          <Header />
+          <About />
+          <Skills />
+          <Contact />
+          <Footer />
       </div>
+
   );
 };
 
