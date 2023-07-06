@@ -1,9 +1,18 @@
 body {
-    background-color: rgba(18, 20, 18, 0.96);
+    /*background-color: rgba(13, 17, 5, 0.96);*/
+    background: linear-gradient(
+            to right,
+            rgba(5, 6, 2, 0.96),
+            rgba(12, 14, 4, 0.96),
+            rgba(22, 25, 7, 0.96),
+            rgba(12, 14, 4, 0.96),
+            rgba(5, 6, 2, 0.96)
+    );
 }
 
+
 .page-container {
-    background-image: url('./assets/app.png');
+    background-image: url('./assets/app3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

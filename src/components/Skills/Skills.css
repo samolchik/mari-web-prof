@@ -15,10 +15,12 @@
     box-shadow: 0px 0px 3px white;
     padding: 20px;
     background: linear-gradient(
-            to bottom,
-            rgba(14, 15, 14, 0.99),
-            rgba(24, 26, 24, 0.99),
-            rgba(45, 53, 45, 0.99)
+            to right,
+            rgba(5, 6, 2, 0.96),
+            rgba(17, 21, 6, 0.96),
+            rgba(22, 26, 7, 0.96),
+            rgba(25, 32, 9, 0.96),
+            rgba(32, 39, 11, 0.96)
     );
 
 }
@@ -32,7 +34,7 @@
     margin: 20px;
     position: relative;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
 }
 

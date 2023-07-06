@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import logo from '../../assets/logo2.png';
+import logo from '../../assets/logo1.png';
 import linkedinLogo from '../../assets/linkedin.png';
 
 const Header = () => {
