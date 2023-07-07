@@ -62,7 +62,7 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .about-container {
         flex-direction: column;
         height: 90%;
@@ -93,8 +93,7 @@
     }
 
     .photo-container {
-        margin: 10px;
-        margin-top: 100px;
+        margin: 100px 10px 10px;
     }
 
     .about-me h1 {
@@ -102,7 +101,5 @@
         margin: 10px;
     }
 
-    .photo-container img {
-        height: 30vh;
-    }
+
 }
