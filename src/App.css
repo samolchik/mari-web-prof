@@ -2,9 +2,9 @@ body {
     background: linear-gradient(
             to right,
             rgba(5, 6, 2, 0.96),
-            rgba(12, 14, 4, 0.96),
-            rgba(22, 25, 7, 0.96),
-            rgba(12, 14, 4, 0.96),
+            rgba(27, 31, 9, 0.96),
+            rgba(33, 38, 10, 0.96),
+            rgba(27, 31, 9, 0.96),
             rgba(5, 6, 2, 0.96)
     );
 }

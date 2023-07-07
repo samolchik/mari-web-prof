@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contsct/Contact";
 
+
+
 const App: React.FC = () => {
   return (
       <div className="page-container">

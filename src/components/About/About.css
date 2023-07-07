@@ -96,7 +96,7 @@
 
     .about-container {
         height: fit-content;
-        margin-bottom: 100px;
+        margin-top: 0px;
     }
     .about-me {
         width: 100%;
@@ -104,7 +104,7 @@
     }
 
     .photo-container {
-        margin: 100px 10px 10px;
+        margin: 50px 10px 10px;
     }
 
     .about-me h1 {
@@ -113,6 +113,6 @@
     }
 
     .photo-container img {
-        height: 60vh;
+        height: 40vh;
     }
 }
