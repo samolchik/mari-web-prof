@@ -29,7 +29,6 @@
             rgba(25, 32, 9, 0.96),
             rgba(32, 39, 11, 0.96)
     );
-
 }
 
 .skill {
@@ -44,7 +43,7 @@
 .skill-img {
     width: 100px;
     height: 100px;
-    box-shadow: 0px 0px 2px white
+    box-shadow: 0px 0px 2px white;
 }
 
 .header-skills {
@@ -53,7 +52,6 @@
     margin: 50px;
     font-size: 34px;
 }
-
 
 .skills-load {
     font-size: 20px;
@@ -88,6 +86,58 @@
 
 .skill {
     flex-basis: calc(20% - 50px);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    .skills-container {
+        margin-top: 50px;
+    }
+
+    .skill {
+        flex-basis: calc(50% - 40px);
+    }
+
+    .header-skills {
+        font-size: 28px;
+    }
+
+    .skill p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .skills-container {
+        margin-top: 75px;
+    }
+
+    .skill {
+        flex-basis: calc(33.33% - 40px);
+    }
+
+    .header-skills {
+        font-size: 30px;
+    }
+
+    .skill p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skills-container {
+        margin-top: 100px;
+    }
+
+    .skill {
+        flex-basis: calc(25% - 40px);
+    }
+
+    .header-skills {
+        font-size: 32px;
+    }
 }
 
 

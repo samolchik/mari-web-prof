@@ -66,6 +66,7 @@
     .about-container {
         flex-direction: column;
         height: 90%;
+        margin-top: 100px;
     }
 
     .about-me {
@@ -73,7 +74,7 @@
     }
 
     .photo-container {
-        margin: 20px;
+        margin: 50px 20px 20px;
     }
 
     .about-me h1 {
@@ -93,6 +94,7 @@
 
     .photo-container {
         margin: 10px;
+        margin-top: 100px;
     }
 
     .about-me h1 {
