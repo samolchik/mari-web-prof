@@ -56,6 +56,7 @@
     font-size: 18px;
     position: relative;
     font-family: Arial;
+    font-weight: lighter;
 }
 
 .nav-element a::after {
@@ -71,8 +72,8 @@
 
 .nav-element a:hover::after {
     width: 100%;
-    background-color: #a2e11c;
-    /*box-shadow: 0 3px 6px rgba(96, 188, 8, 0.93);*/
+    background-color: white;
+    box-shadow: 0 0px 3px white;
 }
 
 .header h1 {

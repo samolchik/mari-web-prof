@@ -2,6 +2,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+
 
   
     color: white;
@@ -11,8 +14,27 @@
 
 }
 
+
+.about-container {
+    background: linear-gradient(
+            to right,
+            rgba(5, 6, 2, 0.96),
+            rgba(17, 21, 6, 0.96),
+            rgba(22, 26, 7, 0.96),
+            rgba(25, 32, 9, 0.96),
+            rgba(32, 39, 11, 0.96)
+    );
+
+
+    display: flex;
+    align-items: center;
+
+    height: 70%;
+    width: 90%;
+}
+
 .photo-container {
-    margin: 150px;
+    margin: 50px;
     display: flex;
     justify-content: center;
 
@@ -20,5 +42,6 @@
 
 .photo-container img {
     height: 65vh;
+
 
 }
