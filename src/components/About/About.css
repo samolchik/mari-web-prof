@@ -63,10 +63,15 @@
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
+    .about-section {
+        margin-top: 100px;
+    }
     .about-container {
         flex-direction: column;
-        height: 90%;
         margin-top: 100px;
+        height: fit-content;
+        margin-bottom: 100px;
+
     }
 
     .about-me {
@@ -83,13 +88,19 @@
     }
 
     .photo-container img {
-        height: 40vh;
+        height: 60vh;
     }
 }
 
 @media screen and (max-width: 480px) {
+
+    .about-container {
+        height: fit-content;
+        margin-bottom: 100px;
+    }
     .about-me {
         width: 100%;
+
     }
 
     .photo-container {
@@ -101,5 +112,7 @@
         margin: 10px;
     }
 
-
+    .photo-container img {
+        height: 60vh;
+    }
 }

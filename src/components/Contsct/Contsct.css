@@ -115,6 +115,10 @@ label {
     .contact-textarea {
         width: 100%;
     }
+
+    .contact-form {
+        position: center;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
