@@ -38,8 +38,8 @@ const Skills: React.FC = () => {
     ];
 
     return (
-        <div id="skills" className="skills-section">
-
+        <section id="skills" className="skills-section">
+             <div className="skills-container-main">
                 <h1 className="header-skills">&lt;SKILLS/&gt;</h1>
                 <div className="skills-load">{showPercentage ? <p>100%</p> : null}</div>
 
@@ -52,8 +52,8 @@ const Skills: React.FC = () => {
 
                 ))}
             </div>
-
-        </div>
+             </div>
+        </section>
     );
 };
 

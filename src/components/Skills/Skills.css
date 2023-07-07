@@ -3,16 +3,23 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
-}
 
+
+
+}
+.skills-container-main{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .skills-container {
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px;
-    box-shadow: 0px 0px 3px white;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px #16161c;
     padding: 20px;
     background: linear-gradient(
             to right,
@@ -26,14 +33,13 @@
 }
 
 .skill {
-    /*flex: 0 0 calc(20% - 40px);*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
 
 }
@@ -41,12 +47,10 @@
 
 
 .skill-img {
-    width:100px;
-    height: 100px;
-    /*background-color: rgba(45, 47, 45, 0.76);*/
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    /*border-radius: 5px;*/
-    /*box-shadow: 0 0px 3px rgba(218, 226, 219, 0.56);*/
+    width:120px;
+    height: 120px;
+    /*transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;*/
+    box-shadow: 0px 0px 2px white;
 
 }
 
@@ -56,6 +60,7 @@
     font-family: Arial;
     position: relative;
     margin: 50px;
+    font-size: 38px;
 }
 
 
@@ -75,7 +80,6 @@
     width: 0;
     height: 2px;
     background-color: #a2e11c;
-    /*box-shadow: 0 0 5px rgba(171, 234, 47, 0.9); !* Add shadow effect *!*/
     animation: underline 3s linear;
     animation-fill-mode: forwards;
 }
@@ -89,14 +93,6 @@
     }
 }
 
-
-
-
-/*.skill:hover .skill-img {*/
-/*    transform: scale(1.05);*/
-
-/*}*/
-
 .skill p {
     margin-top: 10px;
     text-align: center;
@@ -106,12 +102,12 @@
 
 }
 
-@media screen and (min-width: 768px) {
-    .skills-container {
-        max-width: 1200px;
-    }
+/*@media screen and (min-width: 768px) {*/
+/*    .skills-container {*/
+/*        max-width: 1200px;*/
+/*    }*/
 
     .skill {
-        flex-basis: calc(20% - 40px);
+        flex-basis: calc(20% - 50px);
     }
-}
+/*}*/
