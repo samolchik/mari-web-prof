@@ -5,6 +5,7 @@
     flex-direction: column;
     font-family: Arial;
     color: white;
+    height: 100vh;
 }
 
 .skills-container-main {
@@ -17,17 +18,16 @@
 .skills-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
     justify-content: center;
-    margin-top: 100px;
     box-shadow: 0px 0px 10px #16161c;
     padding: 20px;
     background: linear-gradient(
             to right,
-            rgba(5, 6, 2, 0.96),
-            rgba(17, 21, 6, 0.96),
-            rgba(22, 26, 7, 0.96),
-            rgba(25, 32, 9, 0.96),
-            rgba(32, 39, 11, 0.96)
+            rgba(21, 21, 21, 0.96),
+            rgba(26, 26, 26, 0.96),
+            rgba(46, 45, 45, 0.96)
+
     );
 }
 
@@ -43,7 +43,7 @@
 .skill-img {
     width: 100px;
     height: 100px;
-    box-shadow: 0px 0px 2px white;
+
 }
 
 .header-skills {
@@ -65,7 +65,7 @@
     width: 0;
     height: 2px;
     background-color: #a2e11c;
-    animation: underline 3s linear;
+    animation: underline 2s linear;
     animation-fill-mode: forwards;
 }
 

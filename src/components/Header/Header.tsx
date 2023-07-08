@@ -35,13 +35,13 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-element">
-                            <a href="#about">ABOUT</a>
+                            <a href="/">ABOUT</a>
                         </li>
                         <li className="nav-element">
-                            <a href="#skills">SKILLS</a>
+                            <a href="/skills">SKILLS</a>
                         </li>
                         <li className="nav-element">
-                            <a href="#contact">CONTACT</a>
+                            <a href="/contact">CONTACT</a>
                         </li>
 
                     </ul>
@@ -52,6 +52,10 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
 
 
 

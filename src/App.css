@@ -1,24 +1,20 @@
+
 body {
-    background: linear-gradient(
-            to right,
-            rgba(5, 6, 2, 0.96),
-            rgba(27, 31, 9, 0.96),
-            rgba(33, 38, 10, 0.96),
-            rgba(27, 31, 9, 0.96),
-            rgba(5, 6, 2, 0.96)
-    );
+    background-size: 100% 200%;
+    background: linear-gradient(to right,
+    rgba(10, 10, 10, 0.96),
+    rgba(33, 33, 33, 0.96),
+    rgba(10, 10, 10, 0.96)) no-repeat;
 }
 
-
 .page-container {
-    background-image: url('./assets/app3.png');
+    background-image: url('./assets/triangles.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +22,6 @@ body {
 
 @media (max-width: 768px) {
     .page-container {
-        background: none; /* Hide the background image on phones */
+        background: none;
     }
 }

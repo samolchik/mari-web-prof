@@ -12,14 +12,14 @@ import skillLogo7 from '../../assets/mongo.png';
 import skillLogo8 from '../../assets/git.png';
 import skillLogo9 from '../../assets/css.png';
 import skillLogo10 from '../../assets/html5.png';
-import headerIcon from '../../assets/header_icon.png'
+
 const Skills: React.FC = () => {
     const [showPercentage, setShowPercentage] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowPercentage(true);
-        }, 3000);
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -39,23 +39,24 @@ const Skills: React.FC = () => {
 
     return (
         <section id="skills" className="skills-section">
-             <div className="skills-container-main">
+            <div className="skills-container-main">
                 <h1 className="header-skills">&lt;SKILLS/&gt;</h1>
                 <div className="skills-load">{showPercentage ? <p>100%</p> : null}</div>
 
                 <div className="skills-container">
-                {skillsData.map((skill, index) => (
-                    <div className="skill" key={index}>
-                        <img className="skill-img" src={skill.logo} alt={skill.name} />
-                        <p>{skill.name}</p>
-                    </div>
+                    {skillsData.map((skill, index) => (
+                        <div className="skill" key={index}>
+                            <img className="skill-img" src={skill.logo} alt={skill.name} />
+                            <p>{skill.name}</p>
+                        </div>
 
-                ))}
+                    ))}
+                </div>
             </div>
-             </div>
         </section>
     );
 };
 
 export default Skills;
+
 
