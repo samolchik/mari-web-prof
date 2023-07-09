@@ -44,9 +44,10 @@
 
 
 .photo-container img {
-    height: 70vh;
-    align-self: flex-end;
-    margin-top: auto;
+    height: 65vh;
+    margin: 30px;
+    /*align-self: flex-end;*/
+    /*margin-top: auto;*/
 
 }
 .about-me {
