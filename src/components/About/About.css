@@ -1,11 +1,11 @@
 .about-section {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: 20px;
     font-family: Arial;
+    height: 100vh;
+
 }
 
 .about-container {
@@ -21,13 +21,16 @@
     box-shadow: 0 0  10px #16161c;
     display: flex;
     align-items: center;
-    height: 70%;
+    height: 70vh;
     width: 90%;
     padding: 0 20px;
+    min-height: 500px;
 }
 
 .button-container {
     margin-top: 50px;
+    height: 50px;
+    width: 150px;
 }
 
 @keyframes slideInRight {
@@ -43,21 +46,21 @@
     height: 70vh;
 
 }
-
+.photo-container {
+    min-height: 200px;
+}
 .about-me {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
-    /*justify-content: stretch;*/
-    height: 100%;
-    width: 50%;
+    align-items: flex-start;
+    justify-content: space-evenly;
 
 }
 
 .about-me h1 {
     font-size: 42px;
     font-weight: lighter;
-    margin-top: 150px;
+    margin-top: 70px;
     margin-bottom: 30px;
 
 }
@@ -68,7 +71,7 @@
     /*margin: 20px;*/
 }
 
-.about-me p {
+.p-div {
     font-size: 20px;
     margin-right: 20px;
     margin-top: 20px;
@@ -109,6 +112,7 @@
     .photo-container img {
         height: 60vh;
         box-shadow: 0 0 5px black;
+
     }
 }
 
