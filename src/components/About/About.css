@@ -46,7 +46,7 @@
 .photo-container img {
     height: 70vh;
     margin: 30px;
-    /*align-self: flex-end;*/
+    align-self: flex-end;
     /*margin-top: auto;*/
 
 }
