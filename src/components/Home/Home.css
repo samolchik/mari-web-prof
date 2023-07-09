@@ -91,7 +91,7 @@
 }
 
 .welcome-animation {
-    animation: slideIn 1s forwards;
+    animation: slideIn 700ms forwards;
 }
 
 .welcome-text {

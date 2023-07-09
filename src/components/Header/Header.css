@@ -66,6 +66,7 @@
 .nav-element a:hover::after {
     width: 100%;
     background-color:rgb(162, 225, 28);
+    box-shadow: 0 0 7px rgb(162, 225, 28);
 
 }
 

@@ -52,7 +52,9 @@
 }
 
 .skills-load {
-    font-size: 20px;
+    font-size: 25px;
+    color: #a2e11c;
+
 }
 
 .header-skills::before {
@@ -63,6 +65,7 @@
     width: 0;
     height: 5px;
     background-color: #a2e11c;
+    box-shadow: 0 0 7px rgb(162, 225, 28);
     animation: underline 2s linear;
     animation-fill-mode: forwards;
 }
