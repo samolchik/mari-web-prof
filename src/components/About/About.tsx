@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
-import desktopPhoto from '../../assets/photo.png';
-import mobilePhoto from '../../assets/mobile.png';
+import desktopPhoto from '../../assets/mobilephoto.png';
+import mobilePhoto from '../../assets/mobilephoto.png';
 
 const About: React.FC = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
