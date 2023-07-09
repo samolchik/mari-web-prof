@@ -21,6 +21,7 @@ const Contact = () => {
     return (
         <section id="contact">
             <div className="contact-section">
+                <div className="contact-container">
                 <h2 className="contact-header">Contact Me</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="contact-element">
@@ -61,8 +62,11 @@ const Contact = () => {
                             required
                         ></textarea>
                     </div>
-                    <button type="submit" className="contact-button">Submit</button>
+                    <div className="button-container">
+                            <button className="contact-button">CONTACT ME</button>
+                    </div>
                 </form>
+            </div>
             </div>
         </section>
     );

@@ -1,0 +1,252 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+    height: 100vh;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 500px;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-container,
+.about-me {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.photo-container {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+}
+
+.about-me {
+    animation-name: slideInRight;
+    animation-duration: 2s;
+}
+
+.button-container {
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+}
+.photo-container img {
+    height: 55vh;
+    margin-right: 50px;
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome-animation {
+    animation: slideIn 1s forwards;
+}
+
+.welcome-text {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-me h1 {
+    font-size: 42px;
+    font-weight: lighter;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.about-me h2 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-section {
+        margin-top: 50px;
+        height: fit-content;
+    }
+    .about-container {
+        flex-direction: column;
+        margin-top: 100px;
+        height: fit-content;
+        margin-bottom: 200px;
+
+    }
+
+    .about-me {
+        width: 80%;
+
+    }
+
+    .photo-container {
+        margin: 50px 20px 20px;
+    }
+
+    .about-me h1 {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .photo-container img {
+        height: 60vh;
+
+
+    }
+    .button-container {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+.about-section {
+    height:100%;
+}
+    .about-container {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 70px 15px 100px;
+    }
+
+    .photo-container {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .photo-container img {
+        height: 50vh;
+
+    }
+    .about-me {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+    .about-me h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .about-me h2 {
+        font-size: 22px;
+        margin: 10px;
+    }
+    .about-me p {
+        font-size: 16px;
+        margin: 10px;
+    }
+    .button-container {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .about-section {
+        height: 100%;
+    }
+    .about-container {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 15px 100px;
+    }
+    .about-me {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .photo-container {
+        margin: 50px 10px 10px;
+    }
+
+    .about-me h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+    .about-me h2 {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .about-me p {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .photo-container img {
+        height: 50vh;
+
+    }
+
+    .button-container {
+        margin-bottom: 25px;
+    }
+}

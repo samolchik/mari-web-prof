@@ -40,9 +40,10 @@ const Skills: React.FC = () => {
     return (
         <section id="skills" className="skills-section">
             <div className="skills-container-main">
+                <div className="header-container">
                 <h1 className="header-skills">&lt;SKILLS/&gt;</h1>
                 <div className="skills-load">{showPercentage ? <p>100%</p> : null}</div>
-
+                </div>
                 <div className="skills-container">
                     {skillsData.map((skill, index) => (
                         <div className="skill" key={index}>
