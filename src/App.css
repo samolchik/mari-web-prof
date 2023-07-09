@@ -22,6 +22,6 @@ body {
 
 @media (max-width: 768px) {
     .page-container {
-        background: none;
+        background-size: contain;
     }
 }

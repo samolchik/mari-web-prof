@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     font-family: Arial;
     color: white;
     height: 100vh;
@@ -18,10 +17,10 @@
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 30px;
     justify-content: center;
-    box-shadow: 0px 0px 10px #16161c;
-    padding: 20px;
+    box-shadow: 0 0 10px #16161c;
+    padding: 10px;
     background: linear-gradient(
             to right,
             rgba(21, 21, 21, 0.96),
@@ -49,7 +48,7 @@
 .header-skills {
     font-weight: lighter;
     position: relative;
-    margin: 50px;
+    margin-bottom: 50px;
     font-size: 34px;
 }
 
