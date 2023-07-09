@@ -49,12 +49,12 @@
 
 .photo-container {
     animation-name: slideInLeft;
-    animation-duration: 2s;
+    animation-duration: 1500ms;
 }
 
 .about-me {
     animation-name: slideInRight;
-    animation-duration: 2s;
+    animation-duration: 1500ms;
 }
 
 .button-container {
