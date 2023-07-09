@@ -86,18 +86,19 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .about-section {
         margin-top: 50px;
-        height: 100%;
+        height: fit-content;
     }
     .about-container {
         flex-direction: column;
         margin-top: 100px;
         height: fit-content;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
 
     }
 
     .about-me {
         width: 80%;
+
     }
 
     .photo-container {
@@ -113,6 +114,9 @@
         height: 60vh;
         box-shadow: 0 0 5px black;
 
+    }
+    .button-container {
+        margin-bottom: 25px;
     }
 }
 
@@ -142,6 +146,7 @@
         justify-content: center;
         flex-direction: column;
 
+
     }
     .about-me h1 {
         font-size: 30px;
@@ -154,6 +159,9 @@
     .about-me p {
         font-size: 16px;
         margin: 10px;
+    }
+    .button-container {
+        margin-bottom: 25px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -172,6 +180,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
 
     }
 
@@ -195,5 +204,9 @@
     .photo-container img {
         height: 50vh;
         box-shadow: 0 0 5px black;
+    }
+
+    .button-container {
+        margin-bottom: 25px;
     }
 }
