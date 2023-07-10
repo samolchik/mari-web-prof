@@ -45,17 +45,26 @@ const Skills: React.FC = () => {
                 <h1 className="header-skills">&lt;SKILLS/&gt;</h1>
                 <div className="skills-load">{showPercentage ? <p>100%</p> : null}</div>
                 </div>
-
+                     <div className="top-container">
                 <div className="skills-container">
-
                     {skillsData.map((skill, index) => (
                         <div className="skill" key={index}>
                             <img className="skill-img" src={skill.logo} alt={skill.name} />
                              <p>{skill.name}</p>
                          </div>
                     ))}
-
                 </div>
+                <div className="skills-container">
+
+                    {skillsData.map((skill, index) => (
+                        <div className="skill" key={index}>
+                            <img className="skill-img" src={skill.logo} alt={skill.name} />
+                            <p>{skill.name}</p>
+                        </div>
+                    ))}
+                </div>
+
+                     </div>
             </div>
         </section>
     );

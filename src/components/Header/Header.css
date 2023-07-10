@@ -67,7 +67,6 @@
     width: 100%;
     background-color:rgb(162, 225, 28);
     box-shadow: 0 0 7px rgb(162, 225, 28);
-
 }
 
 .header h1 {
@@ -99,5 +98,4 @@
     .header {
         background: transparent;
     }
-
 }

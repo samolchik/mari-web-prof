@@ -58,7 +58,8 @@
 }
 
 .button-container {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: 3px;
     height: 50px;
     width: fit-content;
 }
@@ -72,7 +73,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
 }
 
 .welcome-container {
@@ -88,7 +88,7 @@
 }
 
 .welcome-animation {
-    animation: slideIn 700ms forwards;
+    animation: slideIn 1000ms forwards;
 }
 
 .welcome-text {
@@ -109,7 +109,7 @@
 }
 
 .about-me h1 {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: lighter;
     margin-top: 70px;
     margin-bottom: 30px;
@@ -162,7 +162,7 @@
 
 @media screen and (max-width: 480px) {
     .home-container {
-        margin: 25px 0px 100px;
+        margin: 50px 0px 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -171,7 +171,6 @@
 
     .photo-container {
         margin: 50px 10px 10px;
-
     }
     .about-me{
         display: flex;
@@ -185,22 +184,18 @@
 
     .about-me h2 {
         font-size: 18px;
-
     }
 
     .about-me p {
         font-size: 16px;
         margin: 10px;
         display: flex;
-
     }
 
     .photo-container img {
         height: 50vh;
         margin: 0;
-
     }
-
     .button-container {
         width: fit-content;
         margin: 20px;
