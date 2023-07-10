@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 .contact-container{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -144,7 +144,6 @@ label {
 
     .contact-button {
         width: fit-content;
-        margin-bottom: 50px;
     }
 }
 
