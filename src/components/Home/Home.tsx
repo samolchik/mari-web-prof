@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import photo from '../../assets/mobilephoto.png';
+import photo from '../../assets/photo.png';
 
 const Home: React.FC = () => {
     const [showAbout, setShowAbout] = useState(false);
