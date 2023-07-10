@@ -33,7 +33,11 @@ const Header = () => {
                 </div>
                 <h1></h1>
                 <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
+                   <div className="burger-container">
                     <div className="burger-icon"></div>
+                    <div className="burger-icon"></div>
+                    <div className="burger-icon"></div>
+                </div>
                 </div>
                 <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul>

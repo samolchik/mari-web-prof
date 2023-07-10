@@ -16,13 +16,14 @@ const Skills: React.FC = () => {
 
     const skillsData = [
         { name: 'JavaScript', logo: skillLogo1 },
-        { name: 'TypeScript', logo: skillLogo2 },
-        { name: 'React.js', logo: skillLogo3 },
+        { name: 'MySQL', logo: skillLogo6 },
         { name: 'Redux', logo: skillLogo4 },
         { name: 'Node.js', logo: skillLogo5 },
-        { name: 'MySQL', logo: skillLogo6 },
+        { name: 'CSS', logo: skillLogo9 },
         { name: 'MongoDB', logo: skillLogo7 },
+        { name: 'TypeScript', logo: skillLogo2 },
         { name: 'Git', logo: skillLogo8 },
+        { name: 'React.js', logo: skillLogo3 },
         { name: 'CSS', logo: skillLogo9 },
         { name: 'HTML5', logo: skillLogo10 },
 

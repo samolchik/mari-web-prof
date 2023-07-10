@@ -61,7 +61,9 @@
     width: 0;
     height: 2px;
     background-color: transparent;
-    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 
 .navigation a:hover::after {
@@ -108,6 +110,13 @@
         display: block;
     }
 
+    .burger-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .mobile-menu-toggle {
         display: flex;
         align-items: center;
@@ -117,21 +126,26 @@
 
     .burger-icon {
         background-color: white;
-        width: 25px;
+        width: 30px;
         height: 3px;
         margin: 3px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-menu-toggle.open .burger-icon {
+        transform: rotate(180deg);
     }
 
     .navigation ul {
-        margin: 0;
+        margin: 10px;
         padding: 0;
         display: flex;
-        flex-direction: column; /* Display items as a vertical list */
-        align-items: flex-start; /* Align items to start */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .navigation li {
-        margin: 10px 0; /* Adjust spacing between list items */
+        margin: 10px 0;
     }
 
     .navigation a {
