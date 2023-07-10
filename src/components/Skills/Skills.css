@@ -3,13 +3,21 @@
     align-items: center;
     justify-content: center;
     font-family: Arial;
-    color: black;
-    background: rgb(242, 241, 238);
+    color: white;
     overflow: hidden;
+    background: linear-gradient(
+            to top,
+            #151414,
+            rgba(23, 29, 8, 0.94),
+            rgba(31, 43, 8, 0.87),
+            rgba(23, 29, 8, 0.94),
+            #151414
+    );
+
 }
 .skills-container-main {
 
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,21 +29,14 @@
     display: flex;
     flex-direction: row;
     width: 135vh;
-}
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 70px;
-    margin-top: 10px;
 }
 
 .skills-container {
     display: flex;
     flex-direction: row;
     animation: 30s slide infinite linear;
+
 }
 
 @keyframes slide {
@@ -55,8 +56,9 @@
 }
 
 .skill-img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+
 }
 
 .header-skills {
@@ -69,19 +71,6 @@
 .skills-load {
     font-size: 20px;
     color: #a2e11c;
-}
-
-.header-skills::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 5px;
-    background-color: #a2e11c;
-    box-shadow: 0 0 7px rgb(162, 225, 28);
-    animation: underline 2s linear;
-    animation-fill-mode: forwards;
 }
 
 @keyframes underline {
@@ -97,6 +86,7 @@
     margin-top: 10px;
     text-align: center;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .skill {
@@ -115,30 +105,37 @@
         font-size: 17px;
 
     }
-    .header-skills {
-        font-size: 28px;
-    }
-
     .skill p {
         font-size: 16px;
+    }
+
+    .skills-container {
+        animation: 15s slide infinite linear;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
-    .header-skills {
-        font-size: 30px;
+    .skill {
+        flex-basis: calc(33.33% - 40px);
+        margin: 20px;
     }
 
     .skill p {
         font-size: 16px;
     }
+    .skills-container {
+        animation: 15s slide infinite linear;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skill {
+        flex-basis: calc(33.33% - 40px);
+        margin: 20px;
+    }
 
-    .header-skills {
-        font-size: 32px;
+    .skills-container {
+        animation: 15s slide infinite linear;
     }
 }
 

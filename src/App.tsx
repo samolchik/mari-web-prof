@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Motivation1 from "./components/Motovation1/Motivation1";
 import Motivation2 from "./components/Motivation2/Motivation2";
+import Projects from "./components/Projects/Projects";
 
 
 
@@ -18,9 +19,10 @@ const App: React.FC = () => {
             <Header/>
             <Home/>
             <About/>
-            <Motivation1/>
-            <Skills/>
             <Motivation2/>
+            <Projects/>
+            <Skills/>
+            {/*<Motivation1/>*/}
             <Contact/>
             <Footer/>
         </div>

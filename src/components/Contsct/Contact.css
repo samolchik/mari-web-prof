@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 .contact-container{
     margin-bottom: 50px;
@@ -16,7 +17,7 @@
     font-size: 38px;
     font-family: Arial;
     font-weight: lighter;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .contact-form {

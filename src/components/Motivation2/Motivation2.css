@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .motivation2-section {
     height: 50vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.neon {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 3em;
+    color: rgb(162, 225, 28);
+    text-shadow: 0 0 20px rgb(162, 225, 28);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+

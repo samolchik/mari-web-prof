@@ -1,8 +1,6 @@
 import React from 'react';
 import './Skills.css';
 
-
-import {useEffect, useState} from "react";
 import skillLogo1 from '../../assets/js.png';
 import skillLogo2 from '../../assets/ts.png';
 import skillLogo3 from '../../assets/react.png';
@@ -15,20 +13,12 @@ import skillLogo9 from '../../assets/css.png';
 import skillLogo10 from '../../assets/html5.png';
 
 const Skills: React.FC = () => {
-    const [showPercentage, setShowPercentage] = useState(false);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowPercentage(true);
-        }, 2000);
-
-        return () => clearTimeout(timer);
-    }, []);
     const skillsData = [
         { name: 'JavaScript', logo: skillLogo1 },
         { name: 'TypeScript', logo: skillLogo2 },
         { name: 'React.js', logo: skillLogo3 },
-        { name: 'Redux Toolkit', logo: skillLogo4 },
+        { name: 'Redux', logo: skillLogo4 },
         { name: 'Node.js', logo: skillLogo5 },
         { name: 'MySQL', logo: skillLogo6 },
         { name: 'MongoDB', logo: skillLogo7 },
@@ -41,10 +31,6 @@ const Skills: React.FC = () => {
     return (
         <section id="skills" className="skills-section">
             <div className="skills-container-main">
-                <div className="header-container">
-                <h1 className="header-skills">&lt;SKILLS/&gt;</h1>
-                <div className="skills-load">{showPercentage ? <p>100%</p> : null}</div>
-                </div>
                      <div className="top-container">
                 <div className="skills-container">
                     {skillsData.map((skill, index) => (
