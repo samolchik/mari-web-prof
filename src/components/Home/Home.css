@@ -180,12 +180,12 @@
     }
     .about-me h1 {
         font-size: 30px;
-        margin: 10px;
+        margin: 5px;
     }
 
     .about-me h2 {
         font-size: 18px;
-        margin: 10px;
+        margin: px;
     }
 
     .about-me p {
@@ -202,7 +202,7 @@
     }
 
     .button-container {
-        margin: 25px;
         width: fit-content;
+        margin: 20px;
     }
 }
