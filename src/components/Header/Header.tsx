@@ -6,6 +6,7 @@ import linkedinLogo from '../../assets/linkedin.png';
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [isHeaderHidden, setIsHeaderHidden] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,6 +21,10 @@ const Header = () => {
         };
     }, [prevScrollPos]);
 
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <header className={`header ${isHeaderHidden ? 'hide' : ''}`}>
             <div className="header-content">
@@ -27,23 +32,25 @@ const Header = () => {
                     <img src={logo} alt="Logo" />
                 </div>
                 <h1></h1>
-                <nav className="navigation">
+                <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
+                    <div className="burger-icon"></div>
+                </div>
+                <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul>
-                        <li className="nav-element">
+                        <li>
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <img  className="linkedin" src={linkedinLogo} alt="LinkedIn" />
+                                <img className="linkedin" src={linkedinLogo} alt="LinkedIn" />
                             </a>
                         </li>
-                        <li className="nav-element">
+                        <li>
                             <a href="#home">HOME</a>
                         </li>
-                        <li className="nav-element">
+                        <li>
                             <a href="#contact">CONTACT</a>
                         </li>
-                        <li className="nav-element">
+                        <li>
                             <a href="#projects">PROJECTS</a>
                         </li>
-
                     </ul>
                 </nav>
             </div>
@@ -52,6 +59,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 
 

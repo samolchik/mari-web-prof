@@ -28,28 +28,32 @@
     height: 40px;
 }
 
-.navigation ul {
+.navigation {
     list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 30px;
+    margin: 0;
     padding: 0;
 }
 
-.nav-element {
-    margin: 25px;
+.navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.nav-element a {
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    position: relative;
     font-family: Arial;
     font-weight: lighter;
+    position: relative;
 }
 
-.nav-element a::after {
+.navigation a::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -57,15 +61,12 @@
     width: 0;
     height: 2px;
     background-color: transparent;
-    transition:
-            width 0.3s ease-in-out,
-            background-color 0.3s ease-in-out,
-            box-shadow 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.nav-element a:hover::after {
+.navigation a:hover::after {
     width: 100%;
-    background-color:rgb(162, 225, 28);
+    background-color: rgb(162, 225, 28);
     box-shadow: 0 0 7px rgb(162, 225, 28);
 }
 
@@ -79,7 +80,11 @@
     height: 40px;
 }
 
-@media (max-width: 768px) {
+.mobile-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
     .header-content {
         padding: 0 10px;
     }
@@ -88,14 +93,49 @@
         font-size: 20px;
     }
 
-    .nav-element a {
-        font-size: 16px;
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background: #151414;
     }
-}
 
+    .navigation.open {
+        display: block;
+    }
 
-@media (max-width: 480px) {
-    .header {
-        background: transparent;
+    .mobile-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    .burger-icon {
+        background-color: white;
+        width: 25px;
+        height: 3px;
+        margin: 3px;
+    }
+
+    .navigation ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Display items as a vertical list */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .navigation li {
+        margin: 10px 0; /* Adjust spacing between list items */
+    }
+
+    .navigation a {
+        color: white;
+        font-size: 18px;
     }
 }
