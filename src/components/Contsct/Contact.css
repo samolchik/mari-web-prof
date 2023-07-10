@@ -65,8 +65,9 @@ label {
 
 .contact-input:focus,
 .contact-textarea:focus {
-    box-shadow: 0 0 5px rgb(162, 225, 28);
+    box-shadow: 0 0 3px rgb(162, 225, 28);
     outline: none;
+    border: solid black 1px;
 }
 
 .contact-textarea {

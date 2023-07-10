@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .motivation2-section {
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +19,9 @@
     left: 50%;
     margin: 0;
     padding: 0 20px;
-    font-size: 40px;
+    font-size: 35px;
     color: rgb(162, 225, 28);
-    text-shadow: 0 0 25px rgb(162, 225, 28);
+    text-shadow: 0 0 15px rgb(162, 225, 28);
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
 }
@@ -77,10 +77,10 @@
 
 .box {
     position: relative;
-    width: 70%;
-    height: 90%;
+    width: 65%;
+    height: 85%;
     background: #151414;
-    border-radius: 5px;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,9 +111,9 @@
 
 .box span {
     position: absolute;
-    inset: 7px;
+    inset: 5px;
     background: #151414;
-    border-radius: 5px;
+    border-radius: 3px;
     z-index: 1;
     display: flex;
     justify-content: center;
