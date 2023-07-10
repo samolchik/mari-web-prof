@@ -1,6 +1,7 @@
 import React from 'react';
 import './Skills.css';
 
+
 import {useEffect, useState} from "react";
 import skillLogo1 from '../../assets/js.png';
 import skillLogo2 from '../../assets/ts.png';
@@ -46,6 +47,7 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className="skills-container">
+
                     {skillsData.map((skill, index) => (
                         <div className="skill" key={index}>
                             <img className="skill-img" src={skill.logo} alt={skill.name} />

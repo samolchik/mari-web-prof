@@ -1,6 +1,4 @@
 
-
-
 .skills-section {
     display: flex;
     align-items: center;
@@ -8,16 +6,17 @@
     font-family: Arial;
     color: black;
     background: rgb(242, 241, 238);
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 .skills-container-main {
-    width: 80%;
+
     height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    overflow: hidden;
 }
 
 .header-container {
@@ -38,7 +37,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
     margin: 20px;
 
 }

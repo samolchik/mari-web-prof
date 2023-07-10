@@ -62,9 +62,7 @@ const Contact = () => {
                             required
                         ></textarea>
                     </div>
-                    <div className="button-container">
-                            <button className="contact-button">CONTACT ME</button>
-                    </div>
+                    <button className="contact-button">CONTACT ME</button>
                 </form>
             </div>
             </div>

@@ -3,11 +3,12 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
     background: linear-gradient(
             to right,
-            rgba(21, 21, 21, 0.96),
-            rgba(26, 26, 26, 0.96),
-            rgba(46, 45, 45, 0.96)
+            rgb(21, 21, 21),
+            rgb(26, 26, 26),
+            rgb(46, 45, 45)
 
     );
 

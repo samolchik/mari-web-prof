@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     }, []);
 
     return (
-        <section id="home" className="about-section">
+        <section id="home" className="home-section">
             {!showAbout && (
                 <div className="welcome-container">
                     <div className="welcome-animation">
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
                 </div>
             )}
             {showAbout && (
-                <div className="about-container">
+                <div className="home-container">
                     <div className="photo-container">
                         <img src={photo} alt="My Photo" />
                     </div>

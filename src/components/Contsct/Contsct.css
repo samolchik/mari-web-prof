@@ -82,7 +82,7 @@ label {
 
 .contact-button {
     height: 50px;
-    width: 200px;
+    width: fit-content;
     font-size: 18px;
     display: inline-block;
     cursor: pointer;
@@ -131,18 +131,15 @@ label {
 /* Media Queries */
 
 @media screen and (max-width: 480px) {
-    .contact-form {
-        width: 90%;
-    }
-
     .contact-input,
     .contact-textarea {
         width: 100%;
         max-width: 100%;
+        min-width: 300px;
     }
 
     .contact-button {
-        width: 100%;
+        width: fit-content;
         margin-bottom: 50px;
     }
 }
@@ -151,8 +148,9 @@ label {
     .contact-input,
     .contact-textarea {
         width: 100%;
+        max-width: 100%;
+        min-width: 400px;
     }
-
     .contact-form {
         position: center;
     }
@@ -162,6 +160,8 @@ label {
     .contact-input,
     .contact-textarea {
         width: 100%;
+        max-width: 100%;
+        min-width: 550px;
     }
 }
 

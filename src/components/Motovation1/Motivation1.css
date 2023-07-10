@@ -1,0 +1,54 @@
+.motivation1-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+
+.box {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background: #151414;
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+.box::before
+{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    background-image: conic-gradient(transparent, transparent,
+    transparent, #4cc616);
+    animation: animate 7s linear infinite;
+
+}
+
+@keyframes animate {
+
+0%
+{
+  transform: rotate(0deg);
+}
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    inset: 7px;
+    background: #151414;
+
+    border-radius: 5px;
+    z-index: 1;
+}
