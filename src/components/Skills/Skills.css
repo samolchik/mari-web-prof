@@ -1,3 +1,6 @@
+
+
+
 .skills-section {
     display: flex;
     align-items: center;
@@ -5,15 +8,17 @@
     font-family: Arial;
     color: black;
     background: rgb(242, 241, 238);
+    /*overflow: hidden;*/
 }
-
 .skills-container-main {
     width: 80%;
+    height: 400px;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
 }
-
 
 .header-container {
     display: flex;
@@ -22,11 +27,10 @@
     flex-direction: column;
 }
 
+
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 10px 20px;
+    flex-direction: row;
 }
 
 .skill {
@@ -40,8 +44,8 @@
 }
 
 .skill-img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .header-skills {
@@ -82,7 +86,7 @@
 .skill p {
     margin-top: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .skill {

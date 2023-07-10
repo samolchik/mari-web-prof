@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     }, []);
 
     return (
-        <section id="about" className="about-section">
+        <section id="home" className="about-section">
             {!showAbout && (
                 <div className="welcome-container">
                     <div className="welcome-animation">
