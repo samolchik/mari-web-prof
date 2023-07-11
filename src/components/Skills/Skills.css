@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial;
+    /*font-family: Arial;*/
     color: white;
     overflow: hidden;
     background: linear-gradient(
@@ -58,20 +58,8 @@
 .skill-img {
     width: 70px;
     height: 70px;
-
 }
 
-.header-skills {
-    font-weight: lighter;
-    position: relative;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.skills-load {
-    font-size: 20px;
-    color: #a2e11c;
-}
 
 @keyframes underline {
     0% {
@@ -86,7 +74,6 @@
     margin-top: 10px;
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
 }
 
 .skill {

@@ -15,8 +15,6 @@
 .contact-header {
     color: white;
     font-size: 38px;
-    font-family: Arial;
-    font-weight: lighter;
     margin: 50px;
 }
 
@@ -36,11 +34,8 @@
 
 label {
     color: white;
-    font-weight: bold;
     margin-bottom: 5px;
-    font-family: Arial;
     font-size: 18px;
-    font-weight: lighter;
 }
 
 .contact-input,
@@ -58,7 +53,6 @@ label {
 
     );
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 18px;
     transition: box-shadow 0.3s ease-in-out;
 }
