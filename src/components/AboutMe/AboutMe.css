@@ -38,7 +38,8 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 .skills-each {
@@ -124,7 +125,6 @@
     .skills-list {
         display: flex;
         flex-direction: column;
-
     }
     .aboutme-section {
         height: fit-content;
@@ -151,20 +151,22 @@
         height: fit-content;
     }
     .each {
-        margin: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .each p {
         font-size: 16px;
     }
     .skills-list {
-        width: 95%;
+        width: 90%;
         justify-content: space-around;
         overflow: hidden;
     }
-    .aboutme-container {
-        width: 95%;
+    .top-aboutme-container {
+        width: 90%;
 
     }
+
     .skills-each {
         height: fit-content;
         min-height: 350px;
@@ -181,7 +183,8 @@
         height: fit-content;
     }
     .each {
-        margin: 10px;
+        margin-top:10px;
+        margin-bottom: 10px;
     }
     .each p {
         font-size: 18px;
@@ -193,5 +196,8 @@
     }
     .skills-each {
        width: 50%;
+    }
+    .top-aboutme-container{
+        width: 50%;
     }
 }
