@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    font-family: Arial;
 }
 .contact-container{
     margin-bottom: 50px;
@@ -16,6 +17,7 @@
     color: white;
     font-size: 30px;
     margin: 50px;
+    font-weight: lighter;
 }
 
 .contact-form {
@@ -36,6 +38,7 @@ label {
     color: white;
     margin-bottom: 5px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .contact-input,
@@ -51,10 +54,11 @@ label {
             rgba(85, 117, 20, 0.87),
             rgba(142, 195, 29, 0.84)
 
-    );
+    ) no-repeat;
     color: white;
     font-size: 18px;
     transition: box-shadow 0.3s ease-in-out;
+
 }
 
 .contact-input:focus,

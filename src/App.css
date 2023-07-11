@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter&family=Montserrat:wght@300;400;500&display=swap');
 body {
     background-size: 100% 200%;
     background: #151414;
-    font-family: 'Inter', sans-serif;
-
 }
 
 * {

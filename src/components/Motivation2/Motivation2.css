@@ -55,7 +55,7 @@
 
 .header-container {
     opacity: 0;
-    animation-duration: 3s;
+    animation-duration: 2500ms;
 }
 
 .slide-in.visible {

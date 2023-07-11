@@ -9,6 +9,7 @@
     display: block;
     z-index: 100;
     background: #151414;
+    font-family: Arial;
 }
 ul {
     list-style: none;
@@ -25,6 +26,7 @@ ul {
     justify-content: space-between;
     height: 100%;
     padding: 0 15px;
+
 }
 
 .logo-header img {
@@ -42,6 +44,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
 }
 
 .navigation li {
@@ -52,8 +55,6 @@ ul {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    /*font-family: Arial;*/
-    font-weight: lighter;
     position: relative;
 }
 

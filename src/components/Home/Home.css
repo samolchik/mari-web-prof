@@ -6,6 +6,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    font-family: Arial;
 }
 
 .home-container {
