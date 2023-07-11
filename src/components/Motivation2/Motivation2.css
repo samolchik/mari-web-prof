@@ -124,7 +124,7 @@
     .neon {
         font-size: 20px;
         font-weight: bold;
-        text-shadow: 0 0 7px rgb(162, 225, 28);
+        text-shadow: 0 0 10px rgba(162, 225, 28, 0.87);
     }
     .box {
         width: 96%;
