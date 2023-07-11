@@ -48,11 +48,14 @@ const Motivation = () => {
             <div className="box">
             <span className="box-container">
                 <div className="motivation2-container">
+                     <div className="neon">
+                    <h1 className="neon header1">const happiness =</h1>
+                </div>
                 <div ref={container1Ref} className={`header-container ${shouldAnimate ? 'visible' : ''}`}>
-                    <h1 className="neon header1">[DO WHAT YOU LOVE]</h1>
+                    <h1 className="neon header1">"DO WHAT YOU LOVE,</h1>
                 </div>
                 <div ref={container2Ref} className={`header-container ${shouldAnimate ? 'visible' : ''}`}>
-                    <h1 className="neon header2" >[AND LOVE WHAT YOU DO]</h1>
+                    <h1 className="neon header2" >AND LOVE WHAT YOU DO";</h1>
                 </div>
             </div>
             </span>

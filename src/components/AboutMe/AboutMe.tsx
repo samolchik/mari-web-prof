@@ -3,8 +3,9 @@ import './AboutMe.css';
 import back from '../../assets/4.png';
 import front from '../../assets/5.png';
 import tools from '../../assets/6.png';
-import tagleft from '../../assets/1.png';
-import tagright from '../../assets/2.png';
+import linkedinLogo from "../../assets/linkedin.png";
+import astronaut from "../../assets/astronaut.png";
+
 
 const AboutMe = () => {
     const skill1Ref = useRef<HTMLDivElement>(null);
@@ -62,10 +63,31 @@ const AboutMe = () => {
             <div className={`top-aboutme-container`}>
                 <h1>About Me</h1>
             <div className={`aboutme-container`}>
-                <img src={tagleft} className="tagleft"/>
-                <img src={tagright} className="tagright"/>
-            </div>
+                   <div className="bullet-points-container">
+                       <div className="bullet-point">
+                           <ul className="bullet-point-ul">
+                               <li className="bullet-point">Behind me lie 8 months of intense training in web development at one of Ukraine's premier IT schools. I have complemented my qualifications with an online course in front-end development from META. During this journey, I have successfully completed numerous projects, including the website you are currently exploring, and have gained extensive experience in both front-end and back-end technologies. I am eager to bring my skills to the table and transform your dreams into a digital reality. Let's embark on this journey together!</li>
+                            <li className="bullet-point">I also love AI. Chat GPT is my ally and not an enemy! I have used it to streamline my web development process and enhance my productivity. I have become a confident user, leveraging its capabilities to improve efficiency, check for mistakes, and make necessary adjustments.</li>
+                            <li className="bullet-point">In my free time I'm learning about how to create a digital art. The drawing of Buzz Aldrin, Apolo 11 astronaut, which you can see floating here is one of my works. And yes, everything about space/univerce exites me! Is the cat a front end developer? Is the cat a back end developer? Is it both?</li>
+                           </ul>
+                       </div>
+                   </div>
+                <div className="astronaut-container">
+                    <img src={astronaut}/>
                 </div>
+            </div>
+
+                <div className="top-connect-container">
+                    <a href="https://www.linkedin.com"  className="link">
+                        <div className="connect-container">
+                            <p>CONNECT WITH ME ON </p>
+                            <img src={linkedinLogo} alt="LinkedIn" /></div>
+                    </a>
+                </div>
+                </div>
+            <div className="skills-list-header">
+                <h1>&lt;SKILLS/&gt;</h1>
+            </div>
             <div className="skills-list">
                 <div ref={skill1Ref} className={`skills-each skill1`}>
                     <div className="header-skills-each">
