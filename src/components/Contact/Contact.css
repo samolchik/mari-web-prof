@@ -7,7 +7,7 @@
     font-family: Arial;
 }
 .contact-container{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -145,6 +145,7 @@ label {
     .contact-button {
         width: fit-content;
     }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -157,6 +158,7 @@ label {
     .contact-form {
         position: center;
     }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {

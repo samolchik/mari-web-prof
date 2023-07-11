@@ -3,8 +3,8 @@ import './AboutMe.css';
 import back from '../../assets/4.png';
 import front from '../../assets/5.png';
 import tools from '../../assets/6.png';
-import tagleft from '../..assets/1.png';
-import tagright from '../..assets/2.png';
+import tagleft from '../../assets/1.png';
+import tagright from '../../assets/2.png';
 
 const AboutMe = () => {
     const skill1Ref = useRef<HTMLDivElement>(null);
@@ -59,11 +59,13 @@ const AboutMe = () => {
 
     return (
         <section id="about" className="aboutme-section">
+            <div className={`top-aboutme-container`}>
+                <h1>About Me</h1>
             <div className={`aboutme-container`}>
-
                 <img src={tagleft} className="tagleft"/>
                 <img src={tagright} className="tagright"/>
             </div>
+                </div>
             <div className="skills-list">
                 <div ref={skill1Ref} className={`skills-each skill1`}>
                     <div className="header-skills-each">

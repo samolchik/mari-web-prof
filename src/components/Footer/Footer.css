@@ -1,23 +1,15 @@
 .footer {
-
     width: 100%;
-    background: linear-gradient(
-            to top,
-            rgba(21, 20, 20, 0.93),
-            rgba(36, 50, 10, 0.78),
-            rgba(21, 20, 20, 0.83)
-    ) no-repeat;
     height: 50px;
     font-family: Arial;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 15px rgba(127, 255, 0, 0.81);
 }
-
 
 .footer-content {
     color: white;
-
 }
 
 .footer p {

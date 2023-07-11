@@ -9,10 +9,29 @@
     flex-direction: column;
 }
 .aboutme-container {
- background: #151414;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.top-aboutme-container {
+    margin-top: 10px;
     width: 90%;
-    margin: 10px;
+    height: 430px;
+    background: #151414;
+    color:white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.top-aboutme-container h1 {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .skills-list {
     display: flex;
@@ -94,29 +113,43 @@
 }
 
 .aboutme-container img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 @media screen and (max-width: 480px) {
+    .aboutme-section {
+        height: fit-content;
+    }
     .skills-list {
         display: flex;
         flex-direction: column;
+
     }
     .aboutme-section {
         height: fit-content;
     }
     .skills-each {
-        margin: 10px;
+        margin-top: 10px;
         height: fit-content;
-        width: 350px;
+        width: 100%;
     }
     .each p {
         font-size: 18px;
     }
+    .aboutme-container img {
+        height: 50px;
+        width: 50px;
+    }
+    .top-aboutme-container h1 {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .aboutme-section {
+        height: fit-content;
+    }
     .each {
         margin: 10px;
     }
@@ -137,9 +170,16 @@
         min-height: 350px;
         margin: 10px;
     }
+    .aboutme-container img {
+        height: 70px;
+        width: 70px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .aboutme-section {
+        height: fit-content;
+    }
     .each {
         margin: 10px;
     }

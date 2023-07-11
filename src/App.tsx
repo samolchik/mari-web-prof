@@ -5,7 +5,6 @@ import Footer from "./components/Footer/Footer";
 import SkillsSlider from "./components/SkillsSlider/SkillsSlider";
 import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
 import Motivation from "./components/Motivation/Motivation";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
