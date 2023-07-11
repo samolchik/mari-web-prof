@@ -28,8 +28,8 @@ const Home: React.FC = () => {
                         <img src={photo} alt="My Photo" />
                     </div>
                     <div className="about-me">
-                        <h1>I'm Marina.</h1>
-                        <h2>Full Stack Web Developer</h2>
+                        <h1>My name is Marina</h1>
+                        <h2> I'm a Full Stack Web Developer</h2>
                         <div className="button-container">
                             <a href="#contact" className="contact-link">
                                 <button className="contact-button">CONTACT ME</button>

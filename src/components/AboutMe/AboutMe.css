@@ -93,6 +93,11 @@
     transition-delay: 1500ms;
 }
 
+.aboutme-container img {
+    height: 200px;
+    width: 200px;
+}
+
 @media screen and (max-width: 480px) {
     .skills-list {
         display: flex;
