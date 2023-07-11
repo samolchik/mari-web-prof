@@ -123,11 +123,16 @@
 /* Media Queries */
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .home-section {
+         height: fit-content;;
+    }
     .home-container {
-        margin-top: 200px;
-        margin-bottom: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
+
+
     }
 .about-me {
    justify-content: center;
@@ -147,6 +152,7 @@
 
     .photo-container img {
         height: 60vh;
+        margin: 0;
     }
 
     .button-container {
@@ -162,7 +168,7 @@
 
 @media screen and (max-width: 480px) {
     .home-container {
-        margin: 50px 0px 100px;
+        margin: 70px 0px 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;

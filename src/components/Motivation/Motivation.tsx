@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './Motivation2.css';
+import './Motivation.css';
 
-const Motivation2 = () => {
+const Motivation = () => {
     const container1Ref = useRef<HTMLDivElement>(null);
     const container2Ref = useRef<HTMLDivElement>(null);
     const [shouldAnimate, setShouldAnimate] = useState(false);
 
     useEffect(() => {
         const options = {
-            threshold: 0.9,
+            threshold: 1,
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -61,5 +61,5 @@ const Motivation2 = () => {
     );
 };
 
-export default Motivation2;
+export default Motivation;
 

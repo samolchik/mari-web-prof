@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.aboutme-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(242, 241, 238);
+    font-family: Arial;
+    flex-direction: column;
+}
+.aboutme-container {
+ background: #151414;
+    height: 400px;
+    width: 90%;
+    margin: 10px;
+}
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.skills-each {
+    background: #151414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: calc(33.33% - 10px);
+    min-width: 200px;
+}
+
+.skills-each img {
+    height: 110px;
+}
+
+.header-skills-each {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-each h1 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    color: rgb(162, 225, 28);
+    text-shadow: 0 0 7px rgb(162, 225, 28);
+    font-family: 'Montserrat', sans-serif;
+}
+.contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.each {
+    margin: 5px;
+    color: white;
+    height: 25px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.each p {
+    margin: 10px;
+}
+
+.skills-each {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.skills-each.slide-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.skills-each.slide-right-delayed {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1500ms;
+}
+
+@media screen and (max-width: 480px) {
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutme-section {
+        height: fit-content;
+    }
+    .skills-each {
+        margin: 10px;
+        height: fit-content;
+        width: 350px;
+    }
+    .each p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .each {
+        margin: 10px;
+    }
+    .each p {
+        font-size: 16px;
+    }
+    .skills-list {
+        width: 95%;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .aboutme-container {
+        width: 95%;
+
+    }
+    .skills-each {
+        height: fit-content;
+        min-height: 350px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .each {
+        margin: 10px;
+    }
+    .each p {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1700px)  {
+    .skills-list {
+       width: 50%;
+    }
+    .skills-each {
+       width: 50%;
+    }
+}

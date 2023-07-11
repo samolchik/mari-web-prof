@@ -1,5 +1,5 @@
 import React from 'react';
-import './Skills.css';
+import './SkillsSlider.css';
 
 import skillLogo1 from '../../assets/js.png';
 import skillLogo2 from '../../assets/ts.png';
@@ -12,7 +12,7 @@ import skillLogo8 from '../../assets/git.png';
 import skillLogo9 from '../../assets/css.png';
 import skillLogo10 from '../../assets/html5.png';
 
-const Skills: React.FC = () => {
+const SkillsSlider: React.FC = () => {
 
     const skillsData = [
         { name: 'JavaScript', logo: skillLogo1 },
@@ -24,20 +24,18 @@ const Skills: React.FC = () => {
         { name: 'TypeScript', logo: skillLogo2 },
         { name: 'Git', logo: skillLogo8 },
         { name: 'React.js', logo: skillLogo3 },
-        { name: 'CSS', logo: skillLogo9 },
         { name: 'HTML5', logo: skillLogo10 },
 
     ];
 
     return (
-        <section id="skills" className="skills-section">
+        <section className="skills-section">
             <div className="skills-container-main">
                      <div className="top-container">
                 <div className="skills-container">
                     {skillsData.map((skill, index) => (
                         <div className="skill" key={index}>
                             <img className="skill-img" src={skill.logo} alt={skill.name} />
-                             <p>{skill.name}</p>
                          </div>
                     ))}
                 </div>
@@ -46,7 +44,6 @@ const Skills: React.FC = () => {
                     {skillsData.map((skill, index) => (
                         <div className="skill" key={index}>
                             <img className="skill-img" src={skill.logo} alt={skill.name} />
-                            <p>{skill.name}</p>
                         </div>
                     ))}
                 </div>
@@ -56,7 +53,6 @@ const Skills: React.FC = () => {
         </section>
     );
 };
-
-export default Skills;
+export default SkillsSlider;
 
 

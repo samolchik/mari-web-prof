@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Skills from "./components/Skills/Skills";
-import Contact from "./components/Contsct/Contact";
+import SkillsSlider from "./components/SkillsSlider/SkillsSlider";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Motivation1 from "./components/Motovation1/Motivation1";
-import Motivation2 from "./components/Motivation2/Motivation2";
+import Motivation from "./components/Motivation/Motivation";
 import Projects from "./components/Projects/Projects";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 
 
@@ -18,11 +18,10 @@ const App: React.FC = () => {
         <div className="page-container">
             <Header/>
             <Home/>
-            <About/>
-            <Motivation2/>
+            <AboutMe/>
+            <Motivation/>
             <Projects/>
-            <Skills/>
-            {/*<Motivation1/>*/}
+            <SkillsSlider/>
             <Contact/>
             <Footer/>
         </div>

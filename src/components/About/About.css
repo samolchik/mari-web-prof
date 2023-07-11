@@ -1,5 +1,24 @@
 .about-section {
-    height: 100vh;
+    height: 60vh;
      background: rgb(242, 241, 238);
+     font-family: Arial;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.p-container {
+    width: 60%;
+    height: 50vh;
+
+}
+
+@media screen and (max-width: 480px) {
+    .about-section {
+        height: fit-content;
+    }
+    .p-container {
+        height: fit-content;
+    }
 }
