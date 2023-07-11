@@ -66,9 +66,9 @@ const AboutMe = () => {
                    <div className="bullet-points-container">
                        <div className="bullet-point">
                            <ul className="bullet-point-ul">
-                               <li className="bullet-point">Behind me lie 8 months of intense training in web development at one of Ukraine's premier IT schools. I have complemented my qualifications with an online course in front-end development from META. During this journey, I have successfully completed numerous projects, including the website you are currently exploring, and have gained extensive experience in both front-end and back-end technologies. I am eager to bring my skills to the table and transform your dreams into a digital reality. Let's embark on this journey together!</li>
-                            <li className="bullet-point">I also love AI. Chat GPT is my ally and not an enemy! I have used it to streamline my web development process and enhance my productivity. I have become a confident user, leveraging its capabilities to improve efficiency, check for mistakes, and make necessary adjustments.</li>
-                            <li className="bullet-point">In my free time I'm learning about how to create a digital art. The drawing of Buzz Aldrin, Apolo 11 astronaut, which you can see floating here is one of my works. And yes, everything about space/univerce exites me! Is the cat a front end developer? Is the cat a back end developer? Is it both?</li>
+                               <li className="bullet-point">Behind me lie 8 months of intense training in <span className="highlight">Web Development</span> at one of Ukraine's premier IT schools. I have complemented my qualifications with an online course in Front-End Development from META. During this journey, I have successfully completed numerous projects, including the website you are currently exploring, and have gained experience in both <span className="highlight">Front-End</span> and <span className="highlight">Back-End</span> technologies. I am eager to bring my skills to the table and transform your dreams into a digital reality. Let's embark on this journey together!</li>
+                            <li className="bullet-point">I also love AI. <span className="highlight">Chat GPT</span> is my ally and not an enemy! I have used it to streamline my Web Development process and enhance my productivity. I have become a confident user, leveraging its capabilities to improve efficiency, check for mistakes, and make necessary adjustments.</li>
+                            <li className="bullet-point">In my free time I'm learning about how to create a <span className="highlight">Digital Art</span>. The drawing of Buzz Aldrin, Apolo 11 astronaut, which you can see floating here is one of my works. And yes, everything about space/univerce exites me! Is the cat a front end developer? Is the cat a back end developer? Is it both?</li>
                            </ul>
                        </div>
                    </div>
@@ -80,7 +80,7 @@ const AboutMe = () => {
                 <div className="top-connect-container">
                     <a href="https://www.linkedin.com"  className="link">
                         <div className="connect-container">
-                            <p>CONNECT WITH ME ON </p>
+                            <p> CLICK TO CONNECT WITH ME ON </p>
                             <img src={linkedinLogo} alt="LinkedIn" /></div>
                     </a>
                 </div>
