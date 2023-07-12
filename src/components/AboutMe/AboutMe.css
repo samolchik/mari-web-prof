@@ -191,6 +191,13 @@
     .aboutme-section {
         height: fit-content;
     }
+    .top-aboutme-container {
+        width: 95%;
+
+}
+    .skills-list {
+        width: 95%;
+    }
     .aboutme-container {
         flex-direction: column;
     }
