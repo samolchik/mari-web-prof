@@ -29,7 +29,10 @@ const Home: React.FC = () => {
                     </div>
                     <div className="about-me">
                         <h1>My name is Marina</h1>
+                        <div>
                         <h2> I'm a Full Stack Web Developer</h2>
+                        <h2> from Ukraine based in Canada</h2>
+                        </div>
                         <div className="button-container">
                             <a href="#contact" className="contact-link">
                                 <button className="contact-button">CONTACT ME</button>

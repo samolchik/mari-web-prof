@@ -74,7 +74,12 @@
     flex-direction: column;
     align-items: flex-start;
 }
-
+.about-me div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .welcome-container {
     position: absolute;
     top: 0;
@@ -118,6 +123,7 @@
 .about-me h2 {
     font-size: 25px;
     font-weight: lighter;
+    margin: 3px;
 }
 
 /* Media Queries */
@@ -146,6 +152,7 @@
     }
     .about-me h2 {
         font-size: 25px;
+        margin: 10px;
     }
 
     .photo-container img {
