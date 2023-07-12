@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import logo from '../../assets/logo1.png';
 import linkedinLogo from '../../assets/linkedin.png';
+import ukraine from '../../assets/Ukraine.png';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -33,6 +34,7 @@ const Header = () => {
             <div className="header-content">
                 <div className="logo-header">
                     <a href="#home"><img src={logo} alt="Logo" /></a>
+                    <img src={ukraine} alt="Logo" />
                 </div>
                 <h1></h1>
                 <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
