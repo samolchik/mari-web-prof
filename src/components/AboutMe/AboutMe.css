@@ -188,13 +188,19 @@
 @media screen and (max-width: 480px) {
     .aboutme-section {
         height: fit-content;
+        padding: 0;
     }
     .top-aboutme-container {
-        width: 95%;
+        width: 90%;
         padding: 0;
 }
     .skills-list {
-        width: 95%;
+        width: 90%;
+    }
+
+    .skills-list-header {
+        margin-top: 10px;
+        margin-bottom: 0;
     }
     .aboutme-container {
         flex-direction: column;
@@ -233,11 +239,11 @@
         margin-top: 10px;
         height: fit-content;
         width: 100%;
+        min-height: 300px;
     }
     .each  {
         font-size: 18px;
     }
-
     .top-aboutme-container h1 {
         font-size: 30px;
     }
