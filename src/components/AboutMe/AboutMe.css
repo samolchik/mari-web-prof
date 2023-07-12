@@ -8,6 +8,8 @@
     background: rgb(242, 241, 238);
     font-family: Arial;
     flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .highlight {
     color: rgb(162, 225, 28);
@@ -64,8 +66,7 @@
 }
 .bullet-point {
     font-size: 19px;
-    margin: 15px;
-    margin-left: 25px;
+    margin: 15px 15px 15px 25px;
     text-align: justify;
 }
 
@@ -100,7 +101,8 @@
     margin-bottom: 25px;
 }
 .skills-list-header {
-    margin: 10px;
+    margin: 30px;
+    font-size: 22px;
 }
 .skills-list {
     display: flex;
@@ -131,9 +133,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .skills-each h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: lighter;
@@ -191,7 +194,6 @@
     }
     .top-aboutme-container {
         width: 95%;
-
 }
     .skills-list {
         width: 95%;
@@ -211,13 +213,15 @@
         margin-right: 0;
     }
     .astronaut-container img {
-        height: 300px;
+        height: 350px;
     }
     .bullet-points-container{
         width: 100%;
+        margin: 0;
     }
     .bullet-point {
     font-size: 17px;
+        margin: 15px 10px;
     }
     .skills-list {
         display: flex;
@@ -266,6 +270,9 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .aboutme-section {
         height: fit-content;
+    }
+    .aboutme-container {
+        flex-direction: column;
     }
     .each p {
         font-size: 18px;
