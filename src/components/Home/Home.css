@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 480px) {
     .home-container {
-        margin: 70px 0px 100px;
+        margin: 45px 0px 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
