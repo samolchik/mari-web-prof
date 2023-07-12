@@ -47,7 +47,7 @@
 }
 .astronaut-container img {
     height: 300px;
-    animation: floatingAnimation 5s ease-in-out infinite;
+    animation: floatingAnimation 4s ease-in-out infinite;
 }
 
 @keyframes floatingAnimation {
@@ -55,10 +55,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-30px);
-    }
-    100% {
-        transform: translateY(0);
+        transform: translateY(-20px);
     }
 }
 .bullet-points-container{
@@ -66,7 +63,7 @@
     padding-left: 20px;
 }
 .bullet-point {
-    font-size: 19px;
+    font-size: 20px;
     margin:15px;
     text-align: justify;
     font-weight: lighter;
