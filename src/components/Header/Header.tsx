@@ -24,12 +24,15 @@ const Header = () => {
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    };
 
     return (
         <header className={`header ${isHeaderHidden ? 'hide' : ''}`}>
             <div className="header-content">
                 <div className="logo-header">
-                    <img src={logo} alt="Logo" />
+                    <a href="#home"><img src={logo} alt="Logo" /></a>
                 </div>
                 <h1></h1>
                 <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
@@ -42,23 +45,30 @@ const Header = () => {
                 <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="https://www.linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={closeMobileMenu}
+                            >
                                 <img className="linkedin" src={linkedinLogo} alt="LinkedIn" />
                             </a>
                         </li>
                         <li>
-                            <a href="#home">HOME</a>
+                            <a href="#about" onClick={closeMobileMenu}>
+                                ABOUT
+                            </a>
                         </li>
                         <li>
-                            <a href="#about">ABOUT</a>
+                            <a href="#projects" onClick={closeMobileMenu}>
+                                PROJECTS
+                            </a>
                         </li>
                         <li>
-                            <a href="#projects">PROJECTS</a>
+                            <a href="#contact" onClick={closeMobileMenu}>
+                                CONTACT
+                            </a>
                         </li>
-                        <li>
-                            <a href="#contact">CONTACT</a>
-                        </li>
-
                     </ul>
                 </nav>
             </div>
