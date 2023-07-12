@@ -156,8 +156,8 @@
     }
 
     .photo-container img {
-        min-height: 30px;
         margin: 0;
+        height: 45vh;
     }
 
     .button-container {
