@@ -38,14 +38,14 @@
 }
 .astronaut-container {
     min-height: 100%;
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 15px;
 }
 .astronaut-container img {
-    height: 450px;
+    height: 350px;
     animation: floatingAnimation 3s ease-in-out infinite;
 }
 
@@ -61,7 +61,7 @@
     }
 }
 .bullet-points-container{
-    width: 75%;
+    width: 80%;
     padding-left: 20px;
 }
 .bullet-point {
@@ -208,7 +208,7 @@
         margin-right: 0;
     }
     .astronaut-container img {
-        height: 350px;
+        height: 250px;
     }
     .bullet-points-container{
         width: 100%;
@@ -247,7 +247,7 @@
         font-size: 16px;
     }
     .astronaut-container img {
-        height: 350px;
+        height: 250px;
         margin: 20px;
     }
     .aboutme-container {
@@ -279,7 +279,7 @@
         height: fit-content;
     }
     .astronaut-container img {
-        height: 350px;
+        height: 250px;
         margin: 20px;
     }
     .aboutme-container {
