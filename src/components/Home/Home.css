@@ -147,26 +147,27 @@
     }
 
     .about-me h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin: 10px;
     }
     .about-me h2 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 10px;
     }
 
     .photo-container img {
-        height: 60vh;
+        min-height: 30px;
         margin: 0;
     }
 
     .button-container {
         margin: 15px;
         width: fit-content;
+
     }
 .contact-button {
-    width: 250px;
-    height: 50px;
+    width: fit-content;
+
 }
 
 }
@@ -211,4 +212,5 @@
         width: fit-content;
         margin: 20px;
     }
+
 }
