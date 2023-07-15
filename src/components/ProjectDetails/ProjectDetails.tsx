@@ -8,9 +8,12 @@ interface ProjectDetailsProps {
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
     return (
+        <div className="details-wrapper">
         <div className="details">
-
-            <button onClick={onClose}>Close</button>
+            <div className="close-button">
+            <button className="close" onClick={onClose}>Close</button>
+            </div>
+        </div>
         </div>
     );
 };

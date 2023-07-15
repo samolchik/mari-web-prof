@@ -1,7 +1,28 @@
-.details {
-    height: 83%;
-    width: 95%;
-    background: #151414;
+.details-wrapper {
+    height: 80%;
+    width: 90%;
+    border: solid #151414 2px;
     position: absolute;
     z-index: 1;
+    padding: 7px;
+    background: rgb(162, 225, 28);
+}
+
+.details {
+    height: 100%;
+    width: 100%;
+    background: #151414;
+}
+.close-button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+
+}
+.close {
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
 }
