@@ -43,7 +43,7 @@ const Projects = () => {
                                 <li>Git</li>
                                 <li>NPM</li>
                             </ul>
-                            <div className="findOut">← Click on the image to find out more</div>
+                            <div className="findOut">Click on the image to find out more</div>
                         </div>
                     </div>
                 </div>

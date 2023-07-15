@@ -60,11 +60,15 @@
 }
 .homePage img {
     width: 100%;
-    /*border: solid white 1px;*/
-    /*box-shadow: 0 0 2px white;*/
-
-
 }
+.homePage {
+    transition: transform 0.3s ease-in-out;
+}
+
+.homePage:hover {
+    transform: scale(1.01);
+}
+
 
 .project-description {
     width: 32%;
@@ -104,4 +108,56 @@
     text-shadow: 0 0 5px rgb(162, 225, 28);
     font-family: 'Montserrat', sans-serif;
     margin: 20px;
+}
+@media screen and (max-width: 480px) {
+.project1 {
+    flex-direction: column;
+
+}
+    .projects-container  {
+        width: 90%;
+    }
+    .project-description {
+        width: 100%;
+    }
+    .homePage {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .project1 {
+    flex-direction: column;
+
+}
+.projects-container  {
+    width: 90%;
+}
+.project-description {
+    width: 100%;
+}
+    .homePage {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .project1 {
+        flex-direction: column;
+
+    }
+    .projects-container  {
+        width: 90%;
+    }
+    .project-description {
+        width: 100%;
+    }
+    .homePage {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1700px)  {
+
 }
