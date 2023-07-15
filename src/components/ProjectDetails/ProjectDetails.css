@@ -16,10 +16,10 @@
     padding-bottom: 20px;
 }
 .close-button {
-    margin: 10px 20px 10px 10px;
+    margin: 10px 20px 20px 10px;
     position: absolute ;
     top:0;
-    right:0;
+    left:0;
 }
 .close {
     height: 30px;
