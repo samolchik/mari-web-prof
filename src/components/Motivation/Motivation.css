@@ -78,7 +78,7 @@
 .box {
     position: relative;
     width: 60%;
-    height: 60%;
+    height: 50%;
     background: #151414;
     border-radius: 3px;
     display: flex;
