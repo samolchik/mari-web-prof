@@ -8,7 +8,8 @@
     background: rgb(242, 241, 238);
     font-family: Arial;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .highlight {
     color: rgb(162, 225, 28);
