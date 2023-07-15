@@ -54,13 +54,13 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                                 TypeScript: Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.
                             </li>
                             <li>
-                                Redux Toolkit: To master complex states, I embraced Redux Toolkit, ensuring a delightful user experience for seamless movie exploration.
+                                Redux Toolkit: Mastering complex states was a breeze with Redux Toolkit, ensuring a captivating user journey through seamless movie exploration.
                             </li>
                             <li>
                                 TMDb API Integration: I  integrated the TMDb API, granting real-time access to a vast collection of movie data.
                             </li>
                         </ul>
-                        <p> My Movie Search Website reflects my passion for crafting user-friendly and visually captivating web applications.Lights, camera, search – let's dive into the cinematic world! 🎬🍿</p>
+                        <p> My Movie Search Website reflects my passion for crafting user-friendly and visually captivating web applications. Lights, camera, search – let's dive into the cinematic world! 🎬🍿</p>
                     </div>
                 </div>
             </div>

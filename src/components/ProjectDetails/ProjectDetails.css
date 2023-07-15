@@ -10,6 +10,7 @@
     /*background: rgb(162, 225, 28);*/
     background: #151414;
     box-shadow: 0 0 7px rgb(164, 235, 9);
+    padding: 20px;
 }
 
 .details {
@@ -19,10 +20,10 @@
     /*box-shadow: 0 0 20px rgb(171, 247, 4);*/
 }
 .close-button {
-    display: flex;
-    justify-content: right;
-    align-items: center;
     margin: 10px 20px 10px 10px;
+    position: absolute ;
+    top:0;
+    right:0;
 }
 .close {
     height: 30px;
