@@ -2,22 +2,28 @@
     height: 80vh;
     width: 90%;
     /*border: solid #151414 5px;*/
-    border: solid  #151414 2px;
+    border: solid  #151414 3px;
     /*border-bottom: solid rgb(162, 225, 28) 10px;*/
     position: absolute;
     z-index: 1;
-    padding: 7px;
-    background: rgb(242, 241, 238);
-
-
+    padding: 4px;
+    background: rgb(162, 225, 28);
 }
 
 .details {
     height: 100%;
     width: 100%;
-    background: #151414;
+    background:  rgb(162, 225, 28);
+    border: solid  #151414 5px;
     /*border: solid rgba(162, 225, 28, 0.36) 1px;*/
     /*box-shadow: 0 0 15px rgb(162, 225, 28);*/
+    padding: 2px;
+}
+
+.border {
+    height: 100%;
+    width: 100%;
+    background: #151414;
 }
 .close-button {
     display: flex;

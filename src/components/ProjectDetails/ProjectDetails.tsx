@@ -10,9 +10,11 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
     return (
         <div className="details-wrapper">
         <div className="details">
+            <div className="border">
             <div className="close-button">
             <button className="close" onClick={onClose}>Close</button>
             </div>
+        </div>
         </div>
         </div>
     );
