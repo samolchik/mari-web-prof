@@ -44,23 +44,32 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
 
                     <div className="description-details">
                         <p>
-                            Hey there! Check out the tech behind my Movie Search Website – a thrilling platform for movie enthusiasts.
+                            Hey there! Check out the tech behind my <span className="highlight">Movie Search Website</span> – a thrilling platform for movie enthusiasts.
                         </p>
                         <ul>
                             <li>
-                                React: I unleashed the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.
+                                <span className="highlight">React:</span> I unleashed the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.
                             </li>
                             <li>
-                                TypeScript: Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.
+                                <span className="highlight">TypeScript:</span> Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.
                             </li>
                             <li>
-                                Redux Toolkit: Mastering complex states was a breeze with Redux Toolkit, ensuring a captivating user journey through seamless movie exploration.
+                                 <span className="highlight">Redux Toolkit:</span>Mastering complex states was a breeze with Redux Toolkit, ensuring a captivating user journey through seamless movie exploration.
                             </li>
                             <li>
-                                TMDb API Integration: I  integrated the TMDb API, granting real-time access to a vast collection of movie data.
+                                 <span className="highlight">TMDb API Integration:</span>I  integrated the TMDb API, granting real-time access to a vast collection of movie data.
                             </li>
                         </ul>
                         <p> My Movie Search Website reflects my passion for crafting user-friendly and visually captivating web applications. Lights, camera, search – let's dive into the cinematic world! 🎬🍿</p>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/your-username" target="_blank">
+                            <button className="contact-button description-details-button">GO TO WEBSITE</button>
+                        </a>
+                        <a href="https://github.com/your-repo" target="_blank">
+                            <button className="contact-button description-details-button">GO TO GITHUB</button>
+                        </a>
                     </div>
                 </div>
             </div>

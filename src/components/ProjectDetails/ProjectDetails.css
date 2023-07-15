@@ -72,16 +72,25 @@
 .description-details {
     color: white;
     margin: 10px 30px;
-    font-family: 'Roboto', sans-serif;
-
 }
 .description-details p {
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
 }
 .description-details ul {
     list-style-type: disc;
     color: white;
     margin: 20px;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.highlight {
+    color: rgb(162, 225, 28);
+}
+.description-details-button {
+    font-size: 12px;
+    margin: 10px;
 }
 
