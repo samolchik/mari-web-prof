@@ -74,6 +74,7 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
 .about-me div {
     display: flex;
     flex-direction: column;
@@ -130,18 +131,21 @@
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .home-section {
-         height: fit-content;;
+        height: fit-content;;
     }
+
     .home-container {
         margin-top: 100px;
         margin-bottom: 100px;
         display: flex;
         flex-direction: column;
     }
-.about-me {
-   justify-content: center;
-    align-items: center;
-}
+
+    .about-me {
+        justify-content: center;
+        align-items: center;
+    }
+
     .photo-container {
         margin-top: 15px;
     }
@@ -150,6 +154,7 @@
         font-size: 40px;
         margin: 10px;
     }
+
     .about-me h2 {
         font-size: 20px;
         margin: 10px;
@@ -163,15 +168,12 @@
     .button-container {
         margin: 15px;
         width: fit-content;
-
     }
-.contact-button {
-    width: fit-content;
 
+    .contact-button {
+        width: fit-content;
+    }
 }
-
-}
-
 @media screen and (max-width: 480px) {
     .home-container {
         margin: 45px 0px 50px;
@@ -184,11 +186,13 @@
     .photo-container {
         margin: 50px 10px 10px;
     }
-    .about-me{
+
+    .about-me {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .about-me h1 {
         font-size: 30px;
         margin: 5px;
@@ -208,6 +212,7 @@
         height: 50vh;
         margin: 0;
     }
+
     .button-container {
         width: fit-content;
         margin: 20px;

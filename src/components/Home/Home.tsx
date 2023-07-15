@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import photo from '../../assets/photo.png';
+import AboutMe from "../AboutMe/AboutMe";
+import Motivation from "../Motivation/Motivation";
+import Projects from "../Projects/Projects";
+import SkillsSlider from "../SkillsSlider/SkillsSlider";
+import Contact from "../Contact/Contact";
 
 const Home: React.FC = () => {
     const [showAbout, setShowAbout] = useState(false);
@@ -14,6 +19,7 @@ const Home: React.FC = () => {
     }, []);
 
     return (
+        <div className="main">
         <section id="home" className="home-section">
             {!showAbout && (
                 <div className="welcome-container">
@@ -29,10 +35,8 @@ const Home: React.FC = () => {
                     </div>
                     <div className="about-me">
                         <h1>My name is Marina</h1>
-                        <div>
                         <h2> I'm a Full Stack Web Developer</h2>
                         <h2> from Ukraine based in Canada</h2>
-                        </div>
                         <div className="button-container">
                             <a href="#contact" className="contact-link">
                                 <button className="contact-button">CONTACT ME</button>
@@ -42,6 +46,7 @@ const Home: React.FC = () => {
                 </div>
             )}
         </section>
+        </div>
     );
 };
 

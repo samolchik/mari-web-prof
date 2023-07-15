@@ -1,4 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 .projects-section {
-    height: 100vh;
     background: rgb(242, 241, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+.projects-container  {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.projects-header {
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #151414;
+    color: white;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+.description ul {
+    margin: 20px;
+    list-style-type: disc;
+    color: white;
+}
+.project1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /*background: #151414;*/
+    padding: 10px;
+}
+.homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67%;
+    margin: 0;
+    padding: 0;
+
+}
+.homePage img {
+    width: 100%;
+    /*border: solid white 1px;*/
+    /*box-shadow: 0 0 2px white;*/
+
+
+}
+
+.project-description {
+    width: 32%;
+    color: white;
+    background: #151414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.description div {
+    margin: 10px;
+}
+.project-description h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(162, 225, 28);
+    text-shadow: 0 0 5px rgb(162, 225, 28);
+    margin: 15px;
+}
+
+.description {
+    margin: 15px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.findOut {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(162, 225, 28);
+    text-shadow: 0 0 5px rgb(162, 225, 28);
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
 }
