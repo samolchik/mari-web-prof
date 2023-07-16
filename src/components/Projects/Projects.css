@@ -19,7 +19,6 @@
     padding-bottom: 25px;
 }
 
-
 .projects-header {
     margin-top: 10px;
     font-size: 35px;
@@ -44,8 +43,6 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 10px;
-    /*background: #151414;*/
-    /*padding: 10px;*/
 }
 .homePage {
     display: flex;
@@ -69,7 +66,6 @@
     transform: scale(1.01);
 }
 
-
 .project-description {
     width: 32%;
     color: white;
@@ -79,7 +75,6 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
-
 }
 .description div {
     margin: 10px;
@@ -112,7 +107,6 @@
 @media screen and (max-width: 480px) {
 .project1 {
     flex-direction: column;
-
 }
     .projects-container  {
         width: 90%;
@@ -159,5 +153,7 @@
     }
 }
 @media screen and (min-width: 1700px)  {
-
+    .projects-container  {
+        width: 50%;
+    }
 }

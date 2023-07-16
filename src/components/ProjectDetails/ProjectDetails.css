@@ -128,5 +128,7 @@
     }
 }
 @media screen and (min-width: 1700px)  {
-
+    .details-wrapper {
+        width: 60%;
+    }
 }
