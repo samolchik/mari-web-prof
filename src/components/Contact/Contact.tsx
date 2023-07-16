@@ -12,7 +12,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5001/submit', {
+            const response = await fetch('https://portfolio-backend9696.azurewebsites.net/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
