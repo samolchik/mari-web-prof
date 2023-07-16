@@ -24,12 +24,21 @@
 .close {
     height: 30px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     background: none;
     border: none;
     font-family: 'Montserrat', sans-serif;
     color: rgb(162, 225, 28);
     text-shadow: 0 0 5px rgb(162, 225, 28);
+}
+.close {
+    transition: transform 0.3s ease-in-out;
+}
+
+.close:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgb(162, 225, 28);
 }
 
 .slide {
