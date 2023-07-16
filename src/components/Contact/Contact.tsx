@@ -12,7 +12,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://portfolio-website9696.azurewebsites.net/submit', {
+            const response = await fetch('http://localhost:5001/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -26,8 +26,10 @@ const Contact = () => {
                 setEmail('');
                 setMessage('');
 
+                // Show the rocket animation
                 setRocketVisible(true);
 
+                // Hide the rocket animation after 3 seconds
                 setTimeout(() => {
                     setRocketVisible(false);
                 }, 3000);
