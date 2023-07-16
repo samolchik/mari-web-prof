@@ -12,7 +12,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5001/submit', {
+            const response = await fetch('http://ec2-54-166-85-117.compute-1.amazonaws.com:8080/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
