@@ -21,15 +21,13 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                // Reset the form fields
+
                 setName('');
                 setEmail('');
                 setMessage('');
 
-                // Show the rocket animation
                 setRocketVisible(true);
 
-                // Hide the rocket animation after 3 seconds
                 setTimeout(() => {
                     setRocketVisible(false);
                 }, 3000);
