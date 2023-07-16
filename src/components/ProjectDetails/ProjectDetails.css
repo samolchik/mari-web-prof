@@ -63,11 +63,11 @@
 }
 
 .slider-controls button {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     margin-right: 20px;
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 30px;
     background: none;
     border: none;
     color: rgb(162, 225, 28);
