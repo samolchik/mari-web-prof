@@ -43,7 +43,10 @@
 .slide {
     width: 40%;
     margin: 10px;
+}
 
+.slider-controls button:hover {
+    text-shadow: 0 0 10px rgb(162, 225, 28);
 }
 .slide img {
     width: 100%;
