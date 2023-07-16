@@ -27,7 +27,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
         <div className="details-wrapper">
             <div className="details">
                 <div className="close-button">
-                    <button className="close" onClick={onClose}>CLOSE X</button>
+                    <button className="close" onClick={onClose}>X CLOSE</button>
                 </div>
                 <div className="screen-shots">
                     <div className="slider-container">
