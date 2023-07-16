@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import './Contact.css';
 import rocket from '../../assets/rocket.png';
 import emailjs from 'emailjs-com';
@@ -13,9 +13,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-
             emailjs.init('kZ71s_OSBmeMczpqD');
-
 
             const params = {
                 from_name: name,
@@ -26,18 +24,14 @@ const Contact = () => {
             const emailJsServiceId = 'service_zhimexo';
             const emailJsTemplateId = 'template_d8cx65g';
 
+            setRocketVisible(true);
+
             const response = await emailjs.send(emailJsServiceId, emailJsTemplateId, params);
 
             if (response.status === 200) {
                 setName('');
                 setEmail('');
                 setMessage('');
-
-                setRocketVisible(true);
-
-                setTimeout(() => {
-                    setRocketVisible(false);
-                }, 3000);
             } else {
                 console.log('Form submission failed');
             }
@@ -45,6 +39,17 @@ const Contact = () => {
             console.log('Error submitting form:', error);
         }
     };
+
+    // Use useEffect to automatically hide the rocket animation after a delay
+    useEffect(() => {
+        if (rocketVisible) {
+            const timeout = setTimeout(() => {
+                setRocketVisible(false);
+            }, 3000);
+
+            return () => clearTimeout(timeout);
+        }
+    }, [rocketVisible]);
 
     return (
         <section id="contact">
