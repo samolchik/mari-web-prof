@@ -13,21 +13,19 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            // Initialize EmailJS with your User ID
+
             emailjs.init('kZ71s_OSBmeMczpqD');
 
-            // Set up the email parameters with the form data
+
             const params = {
                 from_name: name,
                 reply_to: email,
                 message: message,
             };
 
-            // Replace 'YOUR_EMAILJS_SERVICE_ID' and 'YOUR_EMAILJS_TEMPLATE_ID' with the actual IDs
             const emailJsServiceId = 'service_zhimexo';
             const emailJsTemplateId = 'template_d8cx65g';
 
-            // Send the email using EmailJS
             const response = await emailjs.send(emailJsServiceId, emailJsTemplateId, params);
 
             if (response.status === 200) {
