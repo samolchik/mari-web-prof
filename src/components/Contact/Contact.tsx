@@ -8,24 +8,35 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [rocketVisible, setRocketVisible] = useState(false);
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        // Process the form submission here
-        // You can send the form data to a server or perform any other actions
+        try {
+            const response = await fetch('http://localhost:5001/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+            });
 
-        // Reset the form fields
-        setName('');
-        setEmail('');
-        setMessage('');
+            if (response.ok) {
+                // Reset the form fields
+                setName('');
+                setEmail('');
+                setMessage('');
 
-        // Show the rocket image
-        setRocketVisible(true);
+                setRocketVisible(true);
 
-        // Hide the rocket image after 3 seconds
-        setTimeout(() => {
-            setRocketVisible(false);
-        }, 3000);
+                setTimeout(() => {
+                    setRocketVisible(false);
+                }, 3000);
+            } else {
+                console.log('Form submission failed');
+            }
+        } catch (error) {
+            console.log('Error submitting form:', error);
+        }
     };
 
     return (
@@ -81,12 +92,16 @@ const Contact = () => {
                     <img src={rocket} alt="Rocket" className="rocket-image" />
                 </div>
             )}
-
         </section>
     );
 };
 
 export default Contact;
+
+
+
+
+
 
 
 
