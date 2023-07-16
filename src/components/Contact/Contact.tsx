@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './Contact.css';
 import rocket from '../../assets/rocket.png';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -12,16 +13,24 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:5001/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, message }),
-            });
+            // Initialize EmailJS with your User ID
+            emailjs.init('kZ71s_OSBmeMczpqD');
 
-            if (response.ok) {
+            // Set up the email parameters with the form data
+            const params = {
+                from_name: name,
+                reply_to: email,
+                message: message,
+            };
 
+            // Replace 'YOUR_EMAILJS_SERVICE_ID' and 'YOUR_EMAILJS_TEMPLATE_ID' with the actual IDs
+            const emailJsServiceId = 'service_zhimexo';
+            const emailJsTemplateId = 'template_d8cx65g';
+
+            // Send the email using EmailJS
+            const response = await emailjs.send(emailJsServiceId, emailJsTemplateId, params);
+
+            if (response.status === 200) {
                 setName('');
                 setEmail('');
                 setMessage('');
@@ -52,9 +61,7 @@ const Contact = () => {
                                 id="name"
                                 className="contact-input"
                                 value={name}
-                                onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                                    setName(e.target.value)
-                                }
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
                                 required
                             />
                         </div>
@@ -65,9 +72,7 @@ const Contact = () => {
                                 id="email"
                                 className="contact-input"
                                 value={email}
-                                onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                                    setEmail(e.target.value)
-                                }
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                                 required
                             />
                         </div>
@@ -77,9 +82,7 @@ const Contact = () => {
                                 id="message"
                                 className="contact-textarea"
                                 value={message}
-                                onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-                                    setMessage(e.target.value)
-                                }
+                                onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}
                                 required
                             ></textarea>
                         </div>
@@ -97,6 +100,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
