@@ -37,7 +37,7 @@
 
 .close:hover {
     transform: scale(1.1);
-    text-shadow: 0 0 15px rgb(162, 225, 28);
+    text-shadow: 0 0 10px rgb(162, 225, 28);
 }
 
 .slide {
