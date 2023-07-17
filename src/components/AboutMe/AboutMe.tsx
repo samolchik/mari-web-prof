@@ -121,7 +121,6 @@ const AboutMe = () => {
                         <div className="each">Github</div>
                         <div className="each">VS Code</div>
                         <div className="each">IntelliJ IDEA</div>
-                        <div className="each">NPM</div>
                     </div>
                 </div>
             </div>
