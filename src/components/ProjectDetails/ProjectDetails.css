@@ -30,7 +30,7 @@
     border: none;
     font-family: 'Montserrat', sans-serif;
     color: rgba(151, 213, 18, 0.96);
-    text-shadow: 0 0 3px rgb(162, 225, 28);
+    /*text-shadow: 0 0 3px rgb(162, 225, 28);*/
 }
 .close {
     transition: transform 0.3s ease-in-out;
@@ -75,7 +75,7 @@
     background: none;
     border: none;
     color: rgba(151, 213, 18, 0.96);
-    text-shadow: 0 0 3px rgb(162, 225, 28);
+    /*text-shadow: 0 0 3px rgb(162, 225, 28);*/
     cursor: pointer;
 }
 .description-details {

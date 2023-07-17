@@ -90,7 +90,7 @@
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     color: rgba(151, 213, 18, 0.96);
-    text-shadow: 0 0 2px rgb(162, 225, 28);
+    /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
 }
 .link  {
     text-decoration: none;
@@ -155,7 +155,7 @@
     margin-bottom: 10px;
     font-weight: lighter;
     color: rgba(151, 213, 18, 0.96);
-    text-shadow: 0 0 2px rgb(162, 225, 28);
+    /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
 }
 .contain {
