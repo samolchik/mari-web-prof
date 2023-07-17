@@ -48,6 +48,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            <div className="to-come">MORE TO COME...</div>
             {showProjectDetails && <ProjectDetails onClose={handleCloseProjectDetails} />}
         </section>
     );
