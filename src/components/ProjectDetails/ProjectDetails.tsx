@@ -67,7 +67,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                         <a href="https://movie-search-opal-two.vercel.app/" target="_blank">
                             <button className="contact-button description-details-button">GO TO WEBSITE</button>
                         </a>
-                        <a href="https://github.com/DevMari999" target="_blank">
+                        <a href="https://github.com/DevMari999/movie_search" target="_blank">
                             <button className="contact-button description-details-button">GO TO GITHUB</button>
                         </a>
                     </div>
