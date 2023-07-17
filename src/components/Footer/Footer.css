@@ -44,7 +44,7 @@
     font-size: 14px;
     right: 0;
     position: absolute;
-    margin-right: 30px;
+    padding-right: 30px;
     text-decoration: underline;
     overflow: hidden;
 }
@@ -66,7 +66,7 @@
 }
 .privacy-notice-content {
     max-height: 100%;
-    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    overflow-y: auto;
 }
 
 .privacy-notice p{
