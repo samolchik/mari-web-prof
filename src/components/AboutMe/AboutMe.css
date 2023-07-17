@@ -8,8 +8,8 @@
     background: rgb(242, 241, 238);
     font-family: Arial;
     flex-direction: column;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
 }
 .highlight {
@@ -103,7 +103,7 @@
     margin-bottom: 25px;
 }
 .skills-list-header {
-    margin: 15px;
+    margin: 5px;
     font-size: 22px;
 }
 .skills-list {
