@@ -11,13 +11,13 @@
 }
 
 .projects-container  {
-    width: 87%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }
 
