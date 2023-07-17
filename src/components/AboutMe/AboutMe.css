@@ -91,6 +91,7 @@
     font-family: 'Montserrat', sans-serif;
     color: rgba(151, 213, 18, 0.96);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
+    font-weight: bold;
 }
 .link  {
     text-decoration: none;
@@ -153,7 +154,7 @@
     font-size: 25px;
     margin-top: 15px;
     margin-bottom: 10px;
-    font-weight: lighter;
+    font-weight: bold;
     color: rgba(151, 213, 18, 0.96);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
