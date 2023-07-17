@@ -39,8 +39,10 @@ const Footer = () => {
 
                             The legal basis for processing personal data is the consent provided when submitting the contact form. By submitting the form, users acknowledge that they have read and understood this Privacy Notice and consent to the collection and processing of their personal data for the purposes stated herein.<br/>
 
-                            <b>Third-Party Service</b><br/>
-                            When you submit the contact form, your information will be processed using a third-party service called EmailJS. This service is used solely for the purpose of forwarding your inquiries to an email address for further processing and response. EmailJS does not use the data for its purposes, and the appropriate measures are implemented to protect your data during transmission to an email.<br/>
+
+                                <b>Third-Party Service</b><br/>
+                                When you submit the contact form, your information will be processed using a third-party service called EmailJS. This service is used solely for the purpose of forwarding your inquiries to an email address for further processing and response. EmailJS acts as a data processor on behalf and does not use the data for its purposes. The appropriate measures are implemented to protect your data during transmission to an email.<br/>
+
 
                             <b>Data Retention</b><br/>
 
