@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(245, 245, 242);
     min-height: 100vh;
     position: relative;
     overflow: hidden;

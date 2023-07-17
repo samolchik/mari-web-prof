@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 .description-details {
-    color: white;
+    color:rgb(242, 241, 238);
     margin: 10px 30px;
 }
 .description-details p {
@@ -88,7 +88,7 @@
 }
 .description-details ul {
     list-style-type: disc;
-    color: white;
+    color:rgb(242, 241, 238);
     margin: 10px 10px 10px 20px;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;

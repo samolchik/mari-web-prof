@@ -14,7 +14,7 @@
     align-items: center;
 }
 .contact-header {
-    color: white;
+    color:rgb(242, 241, 238);
     font-size: 30px;
     margin: 30px;
     font-weight: lighter;
@@ -27,7 +27,7 @@
 }
 
 .submission-message {
-    color: white;
+    color:rgb(242, 241, 238);
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -47,7 +47,7 @@
 }
 
 label {
-    color: white;
+    color:rgb(242, 241, 238);
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;

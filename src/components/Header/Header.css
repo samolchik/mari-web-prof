@@ -43,7 +43,7 @@ ul {
 }
 
 .navigation a {
-    color: white;
+    color:rgb(242, 241, 238);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -132,7 +132,7 @@ ul {
     }
 
     .burger-icon {
-        background-color: white;
+        color:rgb(242, 241, 238);
         width: 30px;
         height: 3px;
         margin: 3px;
@@ -156,7 +156,7 @@ ul {
     }
 
     .navigation a {
-        color: white;
+        color:rgb(242, 241, 238);
         font-size: 18px;
     }
 }

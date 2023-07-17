@@ -27,7 +27,7 @@
     padding: 10px 15px;
     width: 95%;
     background: #151414;
-    color:white;
+    color:rgb(242, 241, 238);
     font-size: 23px;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@
 
 .bullet-point-ul {
     list-style-type: disc;
-    color: white;
+    color: rgb(242, 241, 238);
     font-family: 'Roboto', sans-serif;
 
 }
@@ -115,7 +115,7 @@
 
 .skills-each {
     background: #151414;
-    color: white;
+    color:rgb(242, 241, 238);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +169,7 @@
 
 .each {
     margin: 5px;
-    color: white;
+    color:rgb(242, 241, 238);
     height: 25px;
     width: fit-content;
     display: flex;
