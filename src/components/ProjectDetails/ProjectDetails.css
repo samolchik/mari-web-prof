@@ -42,8 +42,9 @@
 }
 
 .slide {
-    width: 40%;
-    margin: 10px;
+    width: 37%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .slider-controls button:hover {
@@ -84,14 +85,14 @@
     font-weight: lighter;
 }
 .description-details p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 .description-details ul {
     list-style-type: disc;
     color: white;
     margin: 10px 10px 10px 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 
 }
