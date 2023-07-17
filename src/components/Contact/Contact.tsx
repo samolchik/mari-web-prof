@@ -8,6 +8,7 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [rocketVisible, setRocketVisible] = useState(false);
+    const [submissionStatus, setSubmissionStatus] = useState('');
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -24,15 +25,18 @@ const Contact = () => {
             const emailJsServiceId = 'service_zhimexo';
             const emailJsTemplateId = 'template_d8cx65g';
 
+            setName('');
+            setEmail('');
+            setMessage('');
+
             setRocketVisible(true);
 
             const response = await emailjs.send(emailJsServiceId, emailJsTemplateId, params);
 
             if (response.status === 200) {
-                setName('');
-                setEmail('');
-                setMessage('');
+                setSubmissionStatus('success');
             } else {
+                setSubmissionStatus('error');
                 console.log('Form submission failed');
             }
         } catch (error) {
@@ -40,7 +44,6 @@ const Contact = () => {
         }
     };
 
-    // Use useEffect to automatically hide the rocket animation after a delay
     useEffect(() => {
         if (rocketVisible) {
             const timeout = setTimeout(() => {
@@ -98,6 +101,10 @@ const Contact = () => {
                     <img src={rocket} alt="Rocket" className="rocket-image" />
                 </div>
             )}
+            <div className="submission-container">
+            {submissionStatus === 'success' && <p className="submission-message">Form submitted successfully!</p>}
+            {submissionStatus === 'error' && <p className="submission-message">Failed to submit form. Please try again later.</p>}
+        </div>
         </section>
     );
 };
