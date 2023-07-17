@@ -25,7 +25,7 @@
 .top-aboutme-container {
     margin-top: 10px;
     padding: 10px 15px;
-    width: 95%;
+    width: 97%;
     background: #151414;
     color: white;
     font-size: 23px;
@@ -73,7 +73,7 @@
     list-style-type: disc;
     color: white;
     font-family: 'Roboto', sans-serif;
-
+    font-weight: lighter;
 }
 
 .connect-container img{
@@ -103,14 +103,14 @@
     margin-bottom: 25px;
 }
 .skills-list-header {
-    margin: 5px;
-    font-size: 22px;
+    margin: 3px;
+    font-size: 20px;
 }
 .skills-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 97%;
     margin-bottom:10px;
 }
 
@@ -151,7 +151,7 @@
 
 }
 .skills-each h1 {
-    font-size: 25px;
+    font-size: 23px;
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;

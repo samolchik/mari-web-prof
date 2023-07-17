@@ -11,7 +11,7 @@
 }
 
 .projects-container  {
-    width: 95%;
+    width: 97%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,22 +44,25 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    /*background: #151414;*/
 }
 .homePage {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 67%;
+    width: 64%;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     cursor: pointer;
     background: #151414;
+
 
 }
 .homePage img {
     width: 100%;
+    /*border: solid white 1px;*/
 }
 .homePage {
     transition: transform 0.3s ease-in-out;
@@ -70,7 +73,7 @@
 }
 
 .project-description {
-    width: 32%;
+    width: 35%;
     color: white;
     background: #151414;
     display: flex;
