@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import movies from '../../assets/screen6.png';
+import movies from '../../assets/movieshome.png';
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
 
 const Projects = () => {
