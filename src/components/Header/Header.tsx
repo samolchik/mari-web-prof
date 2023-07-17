@@ -4,6 +4,7 @@ import logo from '../../assets/logo1.png';
 import linkedinLogo from '../../assets/linkedin.png';
 import ukraine from '../../assets/Ukraine.png';
 import githubLogo from '../../assets/github.png';
+import burgericon from '../../assets/burgericon.png';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -40,9 +41,7 @@ const Header = () => {
                 <h1></h1>
                 <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
                    <div className="burger-container">
-                    <div className="burger-icon"></div>
-                    <div className="burger-icon"></div>
-                    <div className="burger-icon"></div>
+                    <img src={burgericon}/>
                 </div>
                 </div>
                 <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
