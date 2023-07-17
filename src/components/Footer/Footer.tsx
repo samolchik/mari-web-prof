@@ -16,12 +16,15 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <p>&copy; Happy Coding</p>
-                <button  className="data-collection" onClick={handlePrivacyClick}>Privacy Notice</button>
+                <button className="data-collection" onClick={handlePrivacyClick}>
+                    Privacy Notice
+                </button>
             </div>
             {showPrivacyNotice && (
                 <div className="privacy-notice-overlay">
                     <div className="privacy-notice">
                         <h2>Privacy Notice</h2>
+                        <div className="privacy-notice-content">
                         <p>
                             This Privacy Notice explains how personal information is collected, used, and protected when using the contact form on the website in compliance with applicable data protection laws.<br/>
 
@@ -68,6 +71,7 @@ const Footer = () => {
                              This Privacy Notice can be updated or modified at any time. Any changes will be posted on this page, and the effective date will be indicated at the top of the notice.<br/>
                         </p>
 
+                        </div>
                         <button onClick={handleCloseClick}>Close</button>
                     </div>
                 </div>
