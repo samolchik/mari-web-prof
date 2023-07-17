@@ -3,6 +3,7 @@ import './Header.css';
 import logo from '../../assets/logo1.png';
 import linkedinLogo from '../../assets/linkedin.png';
 import ukraine from '../../assets/Ukraine.png';
+import githubLogo from '../../assets/github.png';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -48,12 +49,22 @@ const Header = () => {
                     <ul>
                         <li>
                             <a
+                                href="https://github.com/DevMari999"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={closeMobileMenu}
+                            >
+                                <img className="link-logo" src={githubLogo} alt="gitHub" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
                                 href="https://www.linkedin.com/in/marina-dvlpr/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={closeMobileMenu}
                             >
-                                <img className="linkedin" src={linkedinLogo} alt="LinkedIn" />
+                                <img className="link-logo" src={linkedinLogo} alt="LinkedIn" />
                             </a>
                         </li>
                         <li>

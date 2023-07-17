@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 .details-wrapper {
     width: 90%;
     position: absolute;
     z-index: 1;
     background: #151414;
-    box-shadow: 0 0 10px rgb(164, 235, 9);
-    padding: 20px;
+    box-shadow: 0 0 7px rgb(164, 235, 9);
+    padding: 10px;
 }
 
 .details {
@@ -66,8 +67,8 @@
 }
 
 .slider-controls button {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin-right: 20px;
     margin-left: 20px;
     font-size: 30px;
@@ -89,20 +90,20 @@
 .description-details ul {
     list-style-type: disc;
     color: white;
-    margin: 20px;
+    margin: 10px 10px 10px 20px;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
 .description-details li {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 .highlight {
     color: rgb(162, 225, 28);
 }
 .description-details-button {
     font-size: 16px;
-    margin: 10px;
+   margin: 5px;
 }
 
 @media screen and (max-width: 480px) {
@@ -125,6 +126,11 @@
     .description-details {
 
         margin: 10px;
+    }
+    .contact-button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

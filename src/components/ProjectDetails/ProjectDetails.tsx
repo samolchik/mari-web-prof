@@ -48,7 +48,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                         </p>
                         <ul>
                             <li>
-                                <span className="highlight">React:</span> I unleashed the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.
+                                <span className="highlight">React:</span> I utilized the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.
                             </li>
                             <li>
                                 <span className="highlight">TypeScript:</span> Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.
@@ -63,7 +63,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                         <p> My Movie Search Website reflects my passion for crafting user-friendly and visually captivating web applications. Lights, camera, search – let's dive into the cinematic world! 🎬🍿</p>
                     </div>
 
-                    <div>
+                    <div className="contact-button-div">
                         <a href="https://movie-search-opal-two.vercel.app/" target="_blank">
                             <button className="contact-button description-details-button">GO TO WEBSITE</button>
                         </a>

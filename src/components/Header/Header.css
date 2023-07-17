@@ -39,7 +39,7 @@ ul {
 }
 
 .navigation li {
-    margin: 0 15px;
+    margin: 0 13px;
 }
 
 .navigation a {
@@ -74,8 +74,8 @@ ul {
     margin-left: 15px;
 }
 
-.linkedin {
-    height: 40px;
+.link-logo {
+    height: 37px;
 }
 
 .mobile-menu-toggle {
