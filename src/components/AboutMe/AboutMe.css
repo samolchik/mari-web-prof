@@ -67,14 +67,13 @@
     font-size: 19px;
     margin:15px;
     text-align: justify;
-    font-weight: lighter;
-
 }
 
 .bullet-point-ul {
     list-style-type: disc;
     color: white;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .connect-container img{

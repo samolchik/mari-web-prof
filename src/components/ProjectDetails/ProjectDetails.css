@@ -84,7 +84,6 @@
 }
 .description-details p {
     font-size: 19px;
-    font-weight: lighter;
     font-family: 'Roboto', sans-serif;
 }
 .description-details ul {
@@ -93,7 +92,7 @@
     margin: 10px 10px 10px 20px;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
+
 }
 .description-details li {
     margin-bottom: 5px;
