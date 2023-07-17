@@ -6,7 +6,7 @@
     position: absolute;
     z-index: 1;
     background: #151414;
-    box-shadow: 0 0 7px rgb(164, 235, 9);
+    box-shadow: 0 0 5px rgb(164, 235, 9);
     padding: 10px;
 }
 
@@ -75,7 +75,7 @@
     background: none;
     border: none;
     color: rgb(162, 225, 28);
-    text-shadow: 0 0 5px rgb(162, 225, 28);
+    text-shadow: 0 0 3px rgb(162, 225, 28);
     cursor: pointer;
 }
 .description-details {
