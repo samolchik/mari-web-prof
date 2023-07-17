@@ -190,13 +190,9 @@
         padding: 0;
     }
     .top-aboutme-container {
-        width: 90%;
+
         padding: 0;
 }
-    .skills-list {
-        width: 90%;
-    }
-
     .skills-list-header {
         margin-top: 10px;
         margin-bottom: 0;
@@ -271,12 +267,12 @@
     }
 
     .skills-list {
-        width: 90%;
+
         justify-content: space-around;
         overflow: hidden;
     }
     .top-aboutme-container {
-        width: 90%;
+
         padding: 0;
     }
 
@@ -321,12 +317,10 @@
         font-size: 16px;
     }
     .top-aboutme-container {
-        width: 90%;
+
         padding: 0;
     }
-    .skills-list {
-        width: 90%;
-    }
+
 
 }
 @media screen and (min-width: 1700px)  {

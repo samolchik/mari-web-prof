@@ -133,9 +133,7 @@
     flex-direction: column;
 
 }
-.projects-container  {
-    width: 90%;
-}
+
 .project-description {
     width: 100%;
 }
@@ -149,9 +147,7 @@
         flex-direction: column;
 
     }
-    .projects-container  {
-        width: 90%;
-    }
+
     .project-description {
         width: 100%;
     }
