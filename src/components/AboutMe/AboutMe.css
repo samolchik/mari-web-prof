@@ -13,7 +13,7 @@
 
 }
 .highlight {
-    color: rgb(162, 225, 28);
+    color: rgba(151, 213, 18, 0.9);
 }
 
 .aboutme-container {
@@ -89,7 +89,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(162, 225, 28);
+    color: rgba(151, 213, 18, 0.96);
     text-shadow: 0 0 2px rgb(162, 225, 28);
 }
 .link  {
@@ -154,7 +154,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: lighter;
-    color: rgb(162, 225, 28);
+    color: rgba(151, 213, 18, 0.96);
     text-shadow: 0 0 2px rgb(162, 225, 28);
     font-family: 'Montserrat', sans-serif;
 }

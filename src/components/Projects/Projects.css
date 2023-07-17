@@ -86,7 +86,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: lighter;
-    color: rgb(162, 225, 28);
+    color: rgba(151, 213, 18, 0.96);
     text-shadow: 0 0 2px rgb(162, 225, 28);
     margin: 15px;
 }
@@ -102,7 +102,7 @@
 .findOut {
     font-size: 20px;
     font-weight: lighter;
-    color: rgb(162, 225, 28);
+    color: rgba(151, 213, 18, 0.96);
     text-shadow: 0 0 2px rgb(162, 225, 28);
     font-family: 'Montserrat', sans-serif;
     margin: 20px;

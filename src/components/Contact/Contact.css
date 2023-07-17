@@ -86,8 +86,8 @@ label {
 }
 
 :root {
-    --clr-neon: rgb(147, 202, 25);
-    --clr-bg: rgb(140, 195, 21);
+    --clr-neon:rgba(151, 213, 18, 0.96);
+    --clr-bg: rgba(151, 213, 18, 0.96);
 }
 
 *,
