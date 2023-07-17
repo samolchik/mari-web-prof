@@ -18,6 +18,7 @@
     flex-direction: column;
     padding-top: 25px;
     padding-bottom: 25px;
+
 }
 
 .projects-header {
@@ -32,6 +33,7 @@
     color: white;
     height: 100px;
     font-family: 'Montserrat', sans-serif;
+
 }
 .description ul {
     margin: 20px;
