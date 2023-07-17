@@ -20,7 +20,7 @@
     margin: 0;
     padding: 0 20px;
     font-size: 32px;
-    color: rgba(151, 213, 18, 0.9);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 2px rgba(162, 225, 28, 0.92);*/
     font-family: 'Montserrat', sans-serif;
 }
@@ -78,7 +78,7 @@
     position: relative;
     width: 60%;
     height: 50%;
-    background: #151414;
+    background: rgb(25, 25, 25);
     border-radius: 3px;
     display: flex;
     justify-content: center;
@@ -92,7 +92,7 @@
     width: 1500px;
     height: 1500px;
     background-image: conic-gradient(transparent, transparent, rgb(183, 241, 82),
-    rgb(167, 238, 11), rgb(88, 124, 8), transparent);
+    rgba(149, 208, 23, 0.86), rgb(88, 124, 8), transparent);
     animation: animate 7s linear infinite;
 }
 
@@ -111,7 +111,7 @@
 .box span {
     position: absolute;
     inset: 5px;
-    background: #151414;
+    background: rgb(25, 25, 25);
     border-radius: 3px;
     z-index: 1;
     display: flex;

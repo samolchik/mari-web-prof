@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px rgba(127, 255, 0, 0.81);
+    box-shadow: 0 0 15px rgba(149, 208, 23, 0.86);
 
 }
 
 .footer-content {
-    color: white;
+    color: rgb(245, 245, 241);
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@
 .data-collection {
     background: none;
     border: none;
-    color: white;
+    color: rgb(245, 245, 241);
     cursor: pointer;
     font-size: 14px;
     right: 0;
@@ -50,7 +50,7 @@
 }
 
 .privacy-notice {
-    background-color: #fff;
+    background-color: rgb(245, 245, 241);
     padding: 20px;
     max-width: 700px;
     max-height: 500px;

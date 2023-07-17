@@ -5,9 +5,10 @@
     width: 95%;
     position: absolute;
     z-index: 1;
-    background: #151414;
-    box-shadow: 0 0 3px rgb(164, 235, 9);
+    background: rgb(25, 25, 25);
+    box-shadow: 0 0 3px rgba(149, 208, 23, 0.86);
     padding: 10px;
+    border-radius: 5px;
 }
 
 .details {
@@ -29,7 +30,7 @@
     background: none;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(151, 213, 18, 0.96);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 3px rgb(162, 225, 28);*/
 }
 .close {
@@ -38,7 +39,7 @@
 
 .close:hover {
     transform: scale(1.1);
-    text-shadow: 0 0 5px rgb(162, 225, 28);
+    text-shadow: 0 0 5px rgba(149, 208, 23, 0.86);
 }
 
 .slide {
@@ -48,11 +49,11 @@
 }
 
 .slider-controls button:hover {
-    text-shadow: 0 0 5px rgb(162, 225, 28);
+    text-shadow: 0 0 5px rgba(149, 208, 23, 0.86);
 }
 .slide img {
     width: 100%;
-    border: solid white 1px;
+    border: solid rgb(245, 245, 241) 1px;
 }
 .screen-shots {
     display: flex;
@@ -75,12 +76,12 @@
     font-size: 30px;
     background: none;
     border: none;
-    color: rgba(151, 213, 18, 0.96);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 3px rgb(162, 225, 28);*/
     cursor: pointer;
 }
 .description-details {
-    color: white;
+    color: rgb(245, 245, 241);
     margin: 10px 30px;
     font-weight: lighter;
 }
@@ -90,7 +91,7 @@
 }
 .description-details ul {
     list-style-type: disc;
-    color: white;
+    color: rgb(245, 245, 241);
     margin: 10px 10px 10px 20px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -100,7 +101,7 @@
     margin-bottom: 5px;
 }
 .highlight {
-    color: rgba(151, 213, 18, 0.9);
+    color: rgba(149, 208, 23, 0.86);
 }
 .description-details-button {
     font-size: 16px;

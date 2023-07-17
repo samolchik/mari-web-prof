@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 .projects-section {
-    background: rgb(242, 241, 238);
+    background: rgb(245, 245, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,16 +29,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #151414;
-    color: white;
+    background: rgb(25, 25, 25);
+    color: rgb(245, 245, 241);
     height: 120px;
     font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
 
 }
 .description ul {
     margin: 20px;
     list-style-type: disc;
-    color: white;
+    color: rgb(245, 245, 241);
 }
 .project1 {
     width: 100%;
@@ -56,7 +57,8 @@
     margin: 0;
     padding: 0px;
     cursor: pointer;
-    background: #151414;
+    background: rgb(25, 25, 25);
+    border-radius: 5px;
 
 
 }
@@ -74,13 +76,14 @@
 
 .project-description {
     width: 35%;
-    color: white;
-    background: #151414;
+    color: rgb(245, 245, 241);
+    background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    border-radius: 5px;
 }
 .description div {
     margin: 10px;
@@ -89,7 +92,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    color: rgba(151, 213, 18, 0.96);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     margin: 15px;
 }
@@ -105,7 +108,7 @@
 .findOut {
     font-size: 20px;
     font-weight: bold;
-    color: rgba(151, 213, 18, 0.96);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
     margin: 20px;

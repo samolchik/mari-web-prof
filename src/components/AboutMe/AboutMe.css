@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     height: fit-content;
-    background: rgb(242, 241, 238);
+    background: rgb(245, 245, 241);
     font-family: Arial;
     flex-direction: column;
     padding-top: 5px;
@@ -13,7 +13,7 @@
 
 }
 .highlight {
-    color: rgba(151, 213, 18, 0.9);
+    color: rgba(149, 208, 23, 0.86);
 }
 
 .aboutme-container {
@@ -26,13 +26,14 @@
     margin-top: 10px;
     padding: 10px 15px;
     width: 95%;
-    background: #151414;
-    color: white;
+    background: rgb(25, 25, 25);
+    color: rgb(245, 245, 241);
     font-size: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 5px;
 }
 .top-aboutme-container h1 {
     margin-top: 30px;
@@ -71,7 +72,7 @@
 
 .bullet-point-ul {
     list-style-type: disc;
-    color: white;
+    color: rgb(245, 245, 241);
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
@@ -89,7 +90,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(151, 213, 18, 0.96);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-weight: bold;
 }
@@ -115,8 +116,8 @@
 }
 
 .skills-each {
-    background: #151414;
-    color: white;
+    background: rgb(25, 25, 25);
+    color: rgb(245, 245, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +130,7 @@
     transform: translateX(100px);
     transition: opacity 1s ease-in-out,
     transform 1s ease-in-out;
+    border-radius: 5px;
 }
 .skills-each.slide-right {
     opacity: 1;
@@ -155,7 +157,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
-    color: rgba(151, 213, 18, 0.96);
+    color: rgba(149, 208, 23, 0.86);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
 }
@@ -170,7 +172,7 @@
 
 .each {
     margin: 5px;
-    color: white;
+    color: rgb(245, 245, 241);
     height: 25px;
     width: fit-content;
     display: flex;

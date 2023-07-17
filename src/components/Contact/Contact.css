@@ -14,7 +14,7 @@
     align-items: center;
 }
 .contact-header {
-    color: white;
+    color: rgb(245, 245, 241);
     font-size: 30px;
     margin: 30px;
     font-weight: lighter;
@@ -27,7 +27,7 @@
 }
 
 .submission-message {
-    color: white;
+    color: rgb(245, 245, 241);
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -47,7 +47,7 @@
 }
 
 label {
-    color: white;
+    color: rgb(245, 245, 241);
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
@@ -67,7 +67,7 @@ label {
             rgba(134, 181, 33, 0.84)
 
     ) no-repeat;
-    color: white;
+    color: rgb(245, 245, 241);
     font-size: 18px;
     transition: box-shadow 0.3s ease-in-out;
 
@@ -86,8 +86,8 @@ label {
 }
 
 :root {
-    --clr-neon:rgba(151, 213, 18, 0.96);
-    --clr-bg: rgba(151, 213, 18, 0.96);
+    --clr-neon:rgba(149, 208, 23, 0.86);
+    --clr-bg: rgba(149, 208, 23, 0.86);
 }
 
 *,
@@ -110,7 +110,7 @@ label {
     /*text-shadow: 0 0 0.10em hsl(0 0% 100% / 0.3), 0 0 0.15em currentColor;*/
     box-shadow: inset 0 0 0.2em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
     position: relative;
-    background: #181717;
+    background: rgb(25, 25, 25);
 
 }
 

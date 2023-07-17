@@ -2,15 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     overflow: hidden;
     background: linear-gradient(
             to top,
-            #151414,
-            rgba(22, 28, 8, 0.94),
+            rgb(25, 25, 25),
+            rgb(29, 29, 29),
             rgba(36, 50, 10, 0.87),
-            rgba(22, 28, 8, 0.94),
-            #151414
+            rgb(29, 29, 29),
+            rgb(25, 25, 25)
     ) no-repeat;
     font-family: Arial;
 
