@@ -90,7 +90,7 @@
     list-style-type: disc;
     color: white;
     margin: 20px;
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
@@ -101,7 +101,7 @@
     color: rgb(162, 225, 28);
 }
 .description-details-button {
-    font-size: 15px;
+    font-size: 16px;
     margin: 10px;
 }
 
