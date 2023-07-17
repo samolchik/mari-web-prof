@@ -48,7 +48,7 @@ const Header = () => {
                     <ul>
                         <li>
                             <a
-                                href="https://www.linkedin.com"
+                                href="https://www.linkedin.com/in/marina-dvlpr/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={closeMobileMenu}

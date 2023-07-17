@@ -67,7 +67,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                         <a href="https://github.com/your-username" target="_blank">
                             <button className="contact-button description-details-button">GO TO WEBSITE</button>
                         </a>
-                        <a href="https://github.com/your-repo" target="_blank">
+                        <a href="https://github.com/DevMari999" target="_blank">
                             <button className="contact-button description-details-button">GO TO GITHUB</button>
                         </a>
                     </div>
