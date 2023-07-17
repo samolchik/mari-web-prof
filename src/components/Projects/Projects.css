@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     background: #151414;
-    color: rgb(248, 248, 245);
+    color: white;
     height: 100px;
     font-family: 'Montserrat', sans-serif;
 
@@ -38,7 +38,7 @@
 .description ul {
     margin: 20px;
     list-style-type: disc;
-    color: rgb(248, 248, 245);
+    color: white;
 }
 .project1 {
     width: 100%;
@@ -71,7 +71,7 @@
 
 .project-description {
     width: 32%;
-    color: rgb(248, 248, 245);
+    color: white;
     background: #151414;
     display: flex;
     justify-content: center;
