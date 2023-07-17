@@ -1,6 +1,6 @@
 body {
     background-size: 100% 200%;
-    background: rgb(25, 25, 25);
+    background:var(--primary-color);
 }
 
 * {
@@ -13,4 +13,9 @@ body {
     .page-container {
         background-size: contain;
     }
+}
+
+:root {
+    --primary-color: rgb(22, 22, 22);
+    --secondary-color: rgb(245, 245, 241);
 }

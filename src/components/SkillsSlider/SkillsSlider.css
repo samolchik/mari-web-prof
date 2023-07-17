@@ -5,11 +5,11 @@
     overflow: hidden;
     background: linear-gradient(
             to top,
-            rgb(25, 25, 25),
+            var(--primary-color),
             rgb(26, 28, 23),
             rgba(36, 50, 10, 0.87),
             rgb(26, 28, 23),
-            rgb(25, 25, 25)
+var(--primary-color)
     ) no-repeat;
     font-family: Arial;
 

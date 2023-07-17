@@ -5,7 +5,7 @@
     width: 95%;
     position: absolute;
     z-index: 1;
-    background: rgb(25, 25, 25);
+    background: var(--primary-color);
     box-shadow: 0 0 3px rgba(149, 208, 23, 0.86);
     padding: 10px;
     border-radius: 5px;

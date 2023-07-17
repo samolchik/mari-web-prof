@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(25, 25, 25);
+    background: var(--primary-color);
     color: rgb(245, 245, 241);
     height: 120px;
     font-family: 'Montserrat', sans-serif;
@@ -57,7 +57,7 @@
     margin: 0;
     padding: 0px;
     cursor: pointer;
-    background: rgb(25, 25, 25);
+    background: var(--primary-color);
     border-radius: 5px;
 
 
@@ -78,7 +78,7 @@
 .project-description {
     width: 35%;
     color: rgb(245, 245, 241);
-    background: rgb(25, 25, 25);
+    background: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
