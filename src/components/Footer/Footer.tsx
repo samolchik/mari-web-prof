@@ -36,7 +36,7 @@ const Footer = () => {
                             <b>Email address</b><br/>
                             <b>Message</b><br/>
 
-                            The collected information is used solely for the purpose of responding to inquiries and providing customer support. Information is not shared with any third parties, and it is not used for marketing purposes.<br/>
+                            The collected information is used solely for the purpose of responding to inquiries and providing support. Information is not shared with any third parties, and it is not used for marketing purposes.<br/>
 
                             <b>Legal Basis for Processing</b><br/>
 
