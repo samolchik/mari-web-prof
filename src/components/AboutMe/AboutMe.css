@@ -97,6 +97,7 @@
     font-family: 'Montserrat', sans-serif;
     color: rgba(149, 208, 23, 0.86);
     font-weight: bold;
+    padding-bottom: 20px;
 }
 .link  {
     text-decoration: none;
@@ -311,6 +312,7 @@
         overflow: hidden;
         flex-wrap: wrap;
         width: 95%;
+        margin: 0;
     }
 
     .top-aboutme-container {
@@ -358,6 +360,9 @@
     }
     .top-aboutme-container {
         padding: 0;
+    }
+    .skills-list {
+        margin: 0;
     }
 
 
