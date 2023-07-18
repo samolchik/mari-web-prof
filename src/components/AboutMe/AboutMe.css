@@ -123,12 +123,12 @@
 
 .skills-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     width: 30%;
     /*!*height: 100vh;*!*/
     /*flex-wrap: wrap;*/
-    gap: 10px;
+    /*gap: 10px;*/
     line-height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -185,6 +185,16 @@
     justify-content: center;
     flex-wrap: wrap;
 
+}
+
+/*.skill1.skill2 {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+.skills-each.skill1 {
+    margin-bottom: 10px;
+}
+.skills-each.skill2{
+    margin-bottom: 10px;
 }
 
 .each {
@@ -276,6 +286,12 @@
     .astronaut-bullet-point {
         flex-direction: column;
     }
+    .skills-each.skill1 {
+        margin-bottom: 0;
+    }
+    .skills-each.skill2{
+        margin-bottom: 0;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .aboutme-section {
@@ -295,7 +311,12 @@
         width: 100%;
         margin: 0;
         padding: 0;
-
+    }
+    .skills-each.skill1 {
+        margin-bottom: 0;
+    }
+    .skills-each.skill2{
+        margin-bottom: 0;
     }
     .top-aboutme-container {
         width: 95%;
