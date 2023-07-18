@@ -139,6 +139,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-basis: calc(33.33% - 0px);
     flex-direction: column;
     height: fit-content;
     opacity: 0;
@@ -191,10 +192,10 @@
 /*    margin-bottom: 10px;*/
 /*}*/
 .skills-each.skill1 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .skills-each.skill2{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .each {
