@@ -289,12 +289,10 @@
         margin: 0px;
     }
     .top-aboutme-container {
-        width: 90%;
+
         padding: 0;
     }
-    .skills-list {
-        width: 90%;
-    }
+
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .aboutme-section {
