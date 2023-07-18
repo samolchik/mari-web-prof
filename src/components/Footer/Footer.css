@@ -45,7 +45,8 @@
     font-size: 14px;
     right: 0;
     overflow: hidden;
-
+    position: absolute;
+    padding-right: 30px;
 
 }
 
