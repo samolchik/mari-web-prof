@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 15px rgba(149, 208, 23, 0.86);
+    overflow: hidden;
 
 }
 
@@ -47,6 +48,8 @@
     padding-right: 30px;
     text-decoration: underline;
     overflow: hidden;
+
+
 }
 
 .privacy-notice {
