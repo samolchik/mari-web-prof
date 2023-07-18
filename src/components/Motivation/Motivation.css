@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .motivation2-section {
-    height: 60vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,8 +76,8 @@
 
 .box {
     position: relative;
-    width: 60%;
-    height: 50%;
+    width: 65%;
+    height: 60%;
     background: var(--primary-color);
     border-radius: 3px;
     display: flex;
