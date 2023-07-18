@@ -30,7 +30,7 @@ const AboutMe = () => {
                     } else if (target === skill3Ref.current) {
                         setTimeout(() => {
                             target.classList.add('slide-right');
-                        }, 700);
+                        }, 450);
                     }
                     observer.unobserve(target);
                 }
