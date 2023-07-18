@@ -72,11 +72,10 @@ const AboutMe = () => {
                                         <li className="bullet-point">In my free time I'm learning about how to create <span className="highlight">Digital Art</span>. The drawing of Apollo 11 astronaut, which you can see floating here is one of my works. And yes, everything about space and universe excites me! Is the cat a Front End developer? Is the cat a Back End developer? Is it both?</li> </div>
                                 </ul>
                             </div>
-                            <div className="astronaut-container">
-                                <img src={astronaut}/>
-                            </div>
                         </div>
-
+                        <div className="astronaut-container">
+                            <img src={astronaut}/>
+                        </div>
                     </div>
 
                     <div className="top-connect-container">
@@ -87,9 +86,9 @@ const AboutMe = () => {
                         </a>
                     </div>
                 </div>
-                {/*<div className="skills-list-header">*/}
-                {/*    <h1>&lt;SKILLS/&gt;</h1>*/}
-                {/*</div>*/}
+                <div className="skills-list-header">
+                    <h1>&lt;SKILLS/&gt;</h1>
+                </div>
                 <div className="skills-list">
                     <div ref={skill1Ref} className={`skills-each skill1`}>
                         <div className="header-skills-each">

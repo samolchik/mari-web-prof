@@ -398,16 +398,16 @@
 
 
 }
-@media screen and (min-width: 1700px)  {
+@media screen and (min-width: 1700px) {
 
     .bullet-point {
         font-size: 22px;
     }
+
     /*.skills-each {*/
     /*   width: 50%;*/
     /*}*/
-    .top-aboutme-wrapper2{
+    .top-aboutme-wrapper2 {
         width: 50%;
     }
-å
 }
