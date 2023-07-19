@@ -10,7 +10,7 @@
     z-index: 100;
     background: var(--primary-color);
     font-family: Arial;
-    overflow: hidden;
+
 }
 ul {
     list-style: none;
