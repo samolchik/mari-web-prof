@@ -12,6 +12,7 @@
 var(--primary-color)
     ) no-repeat;
     font-family: Arial;
+    overflow: hidden;
 
 }
 .skills-container-main {

@@ -5,6 +5,7 @@
     flex-direction: column;
     font-family: Arial;
     padding: 30px;
+    overflow: hidden;
 }
 .contact-container{
     margin-bottom: 20px;
@@ -121,7 +122,7 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    box-shadow: 0 0 1.5em 0.2em var(--clr-neon);
     opacity: 0;
     background-color: var(--clr-neon);
     z-index: -1;
