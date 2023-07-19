@@ -44,7 +44,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
 
                     <div className="description-details">
                         <p>
-                            Hey there! Check out the tech behind my <span className="highlight">Movie Search Website</span> – a thrilling platform for movie enthusiasts.
+                            Hey there! Check out the tech behind my <span className="highlight">Movie Search Website</span>.
                         </p>
                         <ul>
                             <li>
@@ -60,7 +60,6 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                                  <span className="highlight">TMDb API Integration:</span>I  integrated the TMDb API, granting real-time access to a vast collection of movie data.
                             </li>
                         </ul>
-                        <p> My Movie Search Website reflects my passion for crafting user-friendly and visually captivating web applications. Lights, camera, search – let's dive into the cinematic world! 🎬🍿</p>
                     </div>
 
                     <div className="contact-button-div">

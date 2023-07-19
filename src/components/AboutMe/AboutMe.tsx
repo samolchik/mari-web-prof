@@ -65,11 +65,17 @@ const AboutMe = () => {
                 <div className={`aboutme-container`}>
                     <div className="bullet-points-container">
                         <div className="bullet-point">
-                            <ul className="bullet-point-ul">
-                                <li className="bullet-point">I have undergone intense 8-month training in <span className="highlight">Web Development</span> at a leading IT school in Ukraine, complemented by an online course in Front End Development from META. Throughout this journey, I have worked on numerous projects, including the website you are currently exploring, and have gained experience in both <span className="highlight">Front End</span> and <span className="highlight">Back End</span> technologies. Now I'm ready to bring my skills to the table and transform your dreams into a digital reality!</li>
-                                <li className="bullet-point">I love AI. <span className="highlight">Chat GPT</span> is my ally and not an enemy! I have used it to streamline my Web Development process and enhance my productivity. I have become a confident user, leveraging its capabilities to improve efficiency, check for mistakes, and make necessary adjustments.</li>
-                                <li className="bullet-point">In my free time I'm learning about how to create <span className="highlight">Digital Art</span>. The drawing of Apollo 11 astronaut, which you can see floating here is one of my works. And yes, everything about space and universe excites me! Is the cat a Front End developer? Is the cat a Back End developer? Is it both?</li>
-                            </ul>
+                            {/*<ul className="bullet-point-ul">*/}
+                            {/*    <li className="bullet-point">I have undergone intense 8-month training in <span className="highlight">Web Development</span> at a leading IT school in Ukraine, complemented by an online course in Front End Development from META. Throughout this journey, I have worked on numerous projects, including the website you are currently exploring, and have gained experience in both <span className="highlight">Front End</span> and <span className="highlight">Back End</span> technologies. Now I'm ready to bring my skills to the table and transform your dreams into a digital reality!</li>*/}
+                            {/*    <li className="bullet-point">I love AI. <span className="highlight">Chat GPT</span> is my ally and not an enemy! I have used it to streamline my Web Development process and enhance my productivity. I have become a confident user, leveraging its capabilities to improve efficiency, check for mistakes, and make necessary adjustments.</li>*/}
+                            {/*    <li className="bullet-point">In my free time I'm learning about how to create <span className="highlight">Digital Art</span>. The drawing of Apollo 11 astronaut, which you can see floating here is one of my works. And yes, everything about space and universe excites me! Is the cat a Front End developer? Is the cat a Back End developer? Is it both?</li>*/}
+                            {/*</ul>*/}
+
+                            <p>
+                                    Hi, I'm glad to have you here! I'm a passionate <span className="highlight">Web Developer</span>, constantly on a path of self improvement. I have recently graduated from an intense 8 month course in <span className="highlight">Full Stack Web Development</span> at a leading IT school in Ukraine, complemented by an online course in Front End Development from META. Throughout this journey, I have worked on numerous projects, including the website you are currently exploring, and have gained experience in both <span className="highlight">Front End</span> and <span className="highlight">Back End</span> technologies.
+                                I love what i do and im always aiming to get better and learn new things to stay at the forefront of the industry.
+                                In my free time I'm learning about how to create Digital Art. The Apollo 11 astronaut, which you can see floating here, is one of my works. Feel free to ask me any questions, or connect with me!
+                            </p>
                         </div>
                     </div>
                     <div className="astronaut-container">

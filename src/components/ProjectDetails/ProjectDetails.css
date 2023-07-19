@@ -93,13 +93,13 @@
 .description-details ul {
     list-style-type: disc;
     color: rgb(245, 245, 241);
-    margin: 10px 10px 10px 20px;
+    margin: 5px 5px 5px 20px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
 
 }
 .description-details li {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 .highlight {
     color: rgba(149, 208, 23, 0.86);
