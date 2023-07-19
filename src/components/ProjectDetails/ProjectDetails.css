@@ -16,42 +16,18 @@
 
 .details-wrapper {
     width: 80%;
-    position: fixed; /* Change to position: fixed */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     background: var(--primary-color);
     box-shadow: 0 0 5px rgba(149, 208, 23, 0.86);
-    /* border: solid white 10px; */
     border-radius: 5px;
     padding: 20px;
     overflow: auto;
-    max-height: 80vh; /* Limit the maximum height to enable scrolling */
-}
+    max-height: 80vh;
 
-/* Add this to your CSS file */
-/* Works on Chrome and Safari */
-
-/* Set the width and color of the scrollbar track */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Set the color of the scrollbar thumb */
-::-webkit-scrollbar-thumb {
-    background-color: rgba(149, 208, 23, 0.63);
-    border-radius: 5px;
-}
-
-/* Set the color of the scrollbar thumb on hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(158, 226, 12, 0.63);
-}
-
-/* Set the color of the scrollbar track on hover */
-::-webkit-scrollbar-track {
-    background-color: var(--background-color);
 }
 
 
