@@ -156,6 +156,10 @@
         margin: 10px;
     }
 
+    .photo-container img {
+        min-height: 350px;
+    }
+
     .about-me h2 {
         font-size: 20px;
         margin: 10px;
