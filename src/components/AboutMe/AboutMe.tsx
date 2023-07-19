@@ -98,6 +98,7 @@ const AboutMe = () => {
                         <div className="each">HTML</div>
                         <div className="each">CSS</div>
                         <div className="each">JavaScript</div>
+                        <div className="each">TypeScript</div>
                         <div className="each">React.js</div>
                         <div className="each">Redux</div>
                     </div>
