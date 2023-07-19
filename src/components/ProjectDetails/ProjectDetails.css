@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+.background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9999;
+}
+
 .details-wrapper {
-    width: 95%;
+    width: 80%;
     position: absolute;
     z-index: 1;
     background: var(--primary-color);
-    box-shadow: 0 0 3px rgba(149, 208, 23, 0.86);
-    padding: 10px;
+    box-shadow: 0 0 5px rgba(149, 208, 23, 0.86);
+    /*border: solid white 10px;*/
     border-radius: 5px;
-    overflow: hidden;
+    padding: 20px;
+
 }
 
 .details {

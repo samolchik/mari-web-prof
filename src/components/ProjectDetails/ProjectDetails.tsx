@@ -24,6 +24,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
     };
 
     return (
+        <div className="background ">
         <div className="details-wrapper">
             <div className="details">
                 <div className="close-button">
@@ -71,6 +72,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ onClose }) => {
                         </a>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );
