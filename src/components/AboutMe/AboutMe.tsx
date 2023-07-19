@@ -73,7 +73,7 @@ const AboutMe = () => {
 
                             <p>
                                     Hi, I'm glad to have you here! I'm a passionate <span className="highlight">Web Developer</span>, constantly on a path of self improvement. I have recently graduated from an intense 8 month course in <span className="highlight">Full Stack Web Development</span> at a leading IT school in Ukraine, complemented by an online course in Front End Development from META. Throughout this journey, I have worked on numerous projects, including the website you are currently exploring, and have gained experience in both <span className="highlight">Front End</span> and <span className="highlight">Back End</span> technologies.
-                                I love what i do and im always aiming to get better and learn new things to stay at the forefront of the industry.
+                                I love what i do and I'm always aiming to get better and learn new things to stay at the forefront of the industry.
                                 In my free time I'm learning about how to create Digital Art. The Apollo 11 astronaut, which you can see floating here, is one of my works. Feel free to ask me any questions, or connect with me!
                             </p>
                         </div>
