@@ -25,7 +25,6 @@
 }
 .top-aboutme-container {
     margin-top: 10px;
-    /*padding: 10px 25px;*/
     width: 95%;
     background: var(--primary-color);
     color: rgb(245, 245, 241);
@@ -35,8 +34,8 @@
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
+    /*padding-left: 150px;*/
+    /*padding-right: 150px;*/
 
 }
 .top-aboutme-container h1 {
@@ -54,8 +53,8 @@
 
 .bullet-point p {
     text-indent: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
@@ -231,6 +230,7 @@
     .bullet-point p{
         font-size: 17px;
         margin: 15px 10px;
+
     }
     .skills-list {
         display: flex;
@@ -259,20 +259,24 @@
     .aboutme-section {
         height: fit-content;
     }
+
     .each {
         font-size: 16px;
     }
+
     .astronaut-container img {
         height: 250px;
         margin: 20px;
     }
+
     .aboutme-container {
         flex-direction: column;
     }
-    .bullet-points-container{
+
+    .bullet-points-container {
         width: 100%;
         margin: 0;
-        padding-left:  10px;
+        padding-left: 10px;
     }
 
     .skills-list {
@@ -280,6 +284,7 @@
         justify-content: space-around;
         overflow: hidden;
     }
+
     .top-aboutme-container {
         padding: 20px;
     }
@@ -294,12 +299,19 @@
         min-height: 250px;
         margin: 0px;
     }
+
     .top-aboutme-container {
         width: 90%;
         padding: 0;
     }
+
     .skills-list {
         width: 90%;
+    }
+
+    .bullet-point p {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -326,6 +338,10 @@
     }
     .top-aboutme-container {
         padding: 0;
+    }
+    .bullet-point p {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
 

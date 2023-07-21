@@ -10,8 +10,6 @@ import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 
 
-
-
 const App: React.FC = () => {
     return (
         <div className="page-container">
@@ -27,7 +25,6 @@ const App: React.FC = () => {
 
     );
 };
-
 
 export default App;
 
