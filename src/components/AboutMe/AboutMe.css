@@ -5,8 +5,11 @@
     align-items: center;
     justify-content: center;
     height: fit-content;
-    background: rgb(245, 245, 241);
+    /*background: rgb(245, 245, 241);*/
     font-family: Arial;
+    background-image: url('../../assets/Untitled design.png');
+    background-position: center;
+    background-size: cover;
     flex-direction: column;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -25,7 +28,7 @@
 }
 .top-aboutme-container {
     margin-top: 10px;
-    width: 95%;
+    width:85%;
     background: var(--primary-color);
     color: rgb(245, 245, 241);
     font-size: 23px;
@@ -117,12 +120,13 @@
 .skills-list-header {
     margin: 3px;
     font-size: 20px;
+    color: var(--secondary-color);
 }
 .skills-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 85%;
     margin-bottom:10px;
 }
 
@@ -133,7 +137,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-basis: calc(33.33% - 10px);
+    flex-basis: calc(33.33% - 20px);
     min-width: 170px;
     height: fit-content;
     padding: 5px;
