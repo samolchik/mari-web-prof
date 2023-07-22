@@ -38,7 +38,7 @@
     height: 120px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
-    box-shadow: 0 0 3px white;
+    /*box-shadow: 0 0 3px white;*/
 
 }
 .description ul {
@@ -64,7 +64,7 @@
     cursor: pointer;
     background: var(--primary-color);
     border-radius: 5px;
-    box-shadow: 0 0 3px white;
+    /*box-shadow: 0 0 3px white;*/
 
 
 }
@@ -91,7 +91,7 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 3px white;
+    /*box-shadow: 0 0 3px white;*/
 }
 .description div {
     margin: 10px;
