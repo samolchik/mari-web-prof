@@ -16,7 +16,7 @@ body {
 }
 
 :root {
-    --primary-color: rgb(23, 23, 23);
+    --primary-color: rgb(21, 21, 21);
     --secondary-color: rgb(245, 245, 241);
 }
 ::-webkit-scrollbar {
