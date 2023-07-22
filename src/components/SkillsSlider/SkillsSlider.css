@@ -6,9 +6,9 @@
     background: linear-gradient(
             to top,
             var(--primary-color),
-            rgb(21, 21, 21),
+            rgb(29, 32, 20),
             rgba(30, 42, 8, 0.87),
-            rgb(21, 21, 21),
+            rgb(29, 32, 20),
 var(--primary-color)
     ) no-repeat;
     font-family: Arial;

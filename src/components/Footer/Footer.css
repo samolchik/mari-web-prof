@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px rgba(149, 208, 23, 0.86);
+    box-shadow: 0 0 10px rgba(149, 208, 23, 0.86);
     overflow: hidden;
 
 }

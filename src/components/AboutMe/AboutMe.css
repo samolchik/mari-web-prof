@@ -28,7 +28,7 @@
 }
 .top-aboutme-container {
     margin-top: 10px;
-    width:85%;
+    width:95%;
     background: var(--primary-color);
     color: rgb(245, 245, 241);
     font-size: 23px;
@@ -39,6 +39,7 @@
     border-radius: 5px;
     /*padding-left: 150px;*/
     /*padding-right: 150px;*/
+    box-shadow: 0 0 3px white;
 
 }
 .top-aboutme-container h1 {
@@ -126,7 +127,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 95%;
     margin-bottom:10px;
 }
 
@@ -137,7 +138,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(33.33% - 10px);
     min-width: 170px;
     height: fit-content;
     padding: 5px;
@@ -146,6 +147,7 @@
     transition: opacity 1s ease-in-out,
     transform 1s ease-in-out;
     border-radius: 5px;
+    box-shadow: 0 0 3px white;
 }
 .skills-each.slide-right {
     opacity: 1;
