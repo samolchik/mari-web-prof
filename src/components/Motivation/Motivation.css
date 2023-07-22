@@ -77,7 +77,7 @@
 
 .box {
     position: relative;
-    width: 65%;
+    width: 80%;
     height: 60%;
     background: var(--primary-color);
     border-radius: 3px;
@@ -85,6 +85,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-image: url('../../assets/Untitled design.png');
+    background-position: center;
+    background-size: cover;
 }
 .box::before
 {
@@ -94,6 +97,8 @@
     height: 1500px;
     background-image: conic-gradient(transparent, transparent, rgb(183, 241, 82),
     rgba(149, 208, 23, 0.86), rgb(88, 124, 8), transparent);
+    background-image: conic-gradient(transparent, transparent, var(--primary-color),
+     var(--primary-color), transparent);
     animation: animate 7s linear infinite;
 }
 
