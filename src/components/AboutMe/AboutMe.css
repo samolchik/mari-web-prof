@@ -32,9 +32,10 @@
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+    box-shadow: 0 0 7px var(--primary-color);
 }
 .top-aboutme-container h1 {
-    margin-top: 30px;
+    margin-top: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 .astronaut-container {
@@ -72,7 +73,7 @@
 }
 .bullet-point {
     font-size: 18px;
-    margin:15px;
+    margin:10px;
     text-align: justify;
 }
 
@@ -84,20 +85,19 @@
 }
 
 .connect-container img{
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
 }
 .top-connect-container {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .connect-container {
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-green);
-    /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-weight: bold;
 }
 .link  {
@@ -106,9 +106,7 @@
 .connect-container p {
     margin-right: 5px;
 }
-.connect-button {
-    margin-bottom: 25px;
-}
+
 .skills-list-header {
     margin: 3px;
     font-size: 22px;
@@ -116,7 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 50px;
 
 }
 .skills-list {
@@ -143,6 +141,7 @@
     transform 1s ease-in-out;
     border-radius: 5px;
     padding: 15px 5px;
+    box-shadow: 0 0 7px var(--primary-color);
 
 }
 .skills-each.slide-right {
@@ -342,8 +341,6 @@
         margin-left: 50px;
         margin-right: 50px;
     }
-
-
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1500px) {
