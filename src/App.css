@@ -34,7 +34,7 @@ position: relative;
 
 
 :root {
-    --primary-color: rgba(21, 21, 21, 0.96);
+    --primary-color: rgb(21, 21, 21);
     --secondary-color: rgb(245, 245, 241);
     --primary-green: rgba(130, 177, 44, 0.83);
     --secondary-green: rgba(112, 152, 24, 0.79);
