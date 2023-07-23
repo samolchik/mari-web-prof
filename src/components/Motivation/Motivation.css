@@ -21,7 +21,7 @@
     left: 50%;
     margin: 0;
     padding: 0 20px;
-    font-size: 32px;
+    font-size: 30px;
     color: var(--primary-green);
     /*text-shadow: 0 0 2px rgba(162, 225, 28, 0.92);*/
     font-family: 'Montserrat', sans-serif;
@@ -78,7 +78,7 @@
 
 .box {
     position: relative;
-    width: 80%;
+    width: 70%;
     height: 55%;
     border-radius: 3px;
     display: flex;
@@ -93,8 +93,8 @@
     position: absolute;
     width: 1500px;
     height: 1500px;
-    background-image: conic-gradient(transparent, transparent, rgba(125, 173, 35, 0.95),
-    rgba(134, 178, 34, 0.86), rgba(88, 124, 8, 0.9), transparent);
+    background-image: conic-gradient(transparent, transparent, rgba(122, 169, 32, 0.86),
+    rgba(134, 178, 34, 0.73), rgba(88, 124, 8, 0.83), transparent);
     /*background-image: conic-gradient(transparent, transparent, var(--primary-color),*/
     /* var(--primary-color), transparent);*/
     animation: animate 7s linear infinite;
