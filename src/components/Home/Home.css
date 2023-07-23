@@ -6,7 +6,8 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     overflow: hidden;
     background:var(--primary-color);
 }
