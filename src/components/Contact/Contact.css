@@ -20,7 +20,6 @@
     color: rgb(245, 245, 241);
     font-size: 35px;
     margin: 30px;
-    font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
 }
 .submission-container {
@@ -54,7 +53,8 @@ label {
     color: rgb(245, 245, 241);
     margin-bottom: 5px;
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-input,
