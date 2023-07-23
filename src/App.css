@@ -49,5 +49,6 @@ body {
      background-image: url('./assets/Untitled design.png');
      background-size: cover;
      background-position: center, center;
+     background-attachment: scroll;
  }
 }
