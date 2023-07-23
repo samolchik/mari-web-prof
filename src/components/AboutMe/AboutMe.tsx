@@ -14,7 +14,7 @@ const AboutMe = () => {
 
     useEffect(() => {
         const options = {
-            threshold: 0.5,
+            threshold: 0.3,
         };
 
         const animateOnScroll = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
