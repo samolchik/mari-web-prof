@@ -352,15 +352,16 @@
 }
 @media screen and (min-width: 1700px)  {
     .skills-list {
-        width: 50%;
+        width: 65%;
     }
     .bullet-point {
         font-size: 22px;
     }
     .skills-each {
-        width: 50%;
+        width: 65%;
     }
     .top-aboutme-container{
-        width: 50%;
+        width: 65%;
+
     }
 }
