@@ -8,6 +8,7 @@
     overflow: hidden;
     min-height: 80vh;
     background:var(--primary-color);
+
 }
 .contact-container{
     margin-bottom: 20px;

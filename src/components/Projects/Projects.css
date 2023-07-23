@@ -18,6 +18,7 @@
     flex-direction: column;
     padding-top: 15px;
     padding-bottom: 15px;
+
 }
 
 .projects-header {
@@ -46,6 +47,7 @@
     margin-bottom: 10px;
     background: var(--primary-color);
     border-radius: 5px;
+    box-shadow: 0 0 5px black;
 
 }
 .homePage {

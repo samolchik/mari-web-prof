@@ -10,6 +10,7 @@
     font-weight: bold;
     overflow: hidden;
     background:var(--primary-color);
+    box-shadow: 0 0 5px black;
 }
 
 .home-container {

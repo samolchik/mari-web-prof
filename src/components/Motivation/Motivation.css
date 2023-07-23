@@ -7,6 +7,7 @@
     justify-content: center;
     overflow: hidden;
     background:var(--primary-color);
+    box-shadow: 0 0 5px black;
 
 
 
