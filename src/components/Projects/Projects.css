@@ -46,7 +46,7 @@
     margin-bottom: 10px;
     background: var(--primary-color);
     border-radius: 5px;
-    box-shadow: 0 0 7px var(--primary-color);
+
 }
 .homePage {
     display: flex;
