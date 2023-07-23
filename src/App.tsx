@@ -13,6 +13,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 const App: React.FC = () => {
     return (
         <div className="page-container">
+            <div className="background-container"></div>
             <Header/>
             <Home/>
             <AboutMe/>
