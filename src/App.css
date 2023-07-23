@@ -1,7 +1,6 @@
 body {
 
     background-image: url('./assets/Untitled design.png');
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,9 +42,6 @@ body {
     background-color: rgba(158, 226, 12, 0.63);
 }
 
-@media (min-width: 769px) {
-    body {
-        background-size: cover;
-        background-attachment: fixed;
-    }
+@media (max-width: 768px) {
+
 }
