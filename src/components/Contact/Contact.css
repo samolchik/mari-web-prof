@@ -101,12 +101,13 @@ label {
     height: fit-content;
     width: fit-content;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
     color: var(--primary-green);
-    border: var(--primary-green) 0.125em solid;
-    padding: 0.25em 1em;
+    border: var(--primary-green) 1px solid;
+    padding: 0.30em 1em;
     border-radius: 0.25em;
     box-shadow: inset 0 0 0.1em 0 var(--primary-green), 0 0 0.3em 0 var(--primary-green);
     position: relative;
