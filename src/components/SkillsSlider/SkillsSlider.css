@@ -11,9 +11,7 @@
             rgba(21, 24, 15, 0.98),
 var(--primary-color)
     ) no-repeat;
-    font-family: Arial;
-    overflow: hidden;
-
+    font-family: Arial
 
 }
 .skills-container-main {

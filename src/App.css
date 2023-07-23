@@ -5,7 +5,7 @@ position: relative;
     position: relative;
 }
 
-.background-container {
+.app-background-container {
     background-image: url('./assets/Untitled design.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ position: relative;
 
 /* Mobile devices */
 @media (max-width: 768px) {
-    .background-container {
+    .app-background-container {
         height: 100vh;
     }
 }
@@ -32,11 +32,6 @@ position: relative;
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .page-container {
-        background-size: contain;
-    }
-}
 
 :root {
     --primary-color: rgba(21, 21, 21, 0.98);

@@ -126,7 +126,7 @@
 
 .description-details-button {
     font-size: 16px;
-   margin-left: 10px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -155,7 +155,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
     }
 
 }
