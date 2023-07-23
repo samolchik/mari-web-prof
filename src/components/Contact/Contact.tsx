@@ -95,16 +95,17 @@ const Contact = () => {
                         <button className="contact-button">CONTACT ME</button>
                     </form>
                 </div>
+                <div className="submission-container">
+                    {submissionStatus === 'success' && <p className="submission-message">Form submitted successfully!</p>}
+                    {submissionStatus === 'error' && <p className="submission-message">Failed to submit form. Please try again later.</p>}
+                </div>
             </div>
             {rocketVisible && (
                 <div className="rocket-container">
                     <img src={rocket} alt="Rocket" className="rocket-image" />
                 </div>
             )}
-            <div className="submission-container">
-            {submissionStatus === 'success' && <p className="submission-message">Form submitted successfully!</p>}
-            {submissionStatus === 'error' && <p className="submission-message">Failed to submit form. Please try again later.</p>}
-        </div>
+
         </section>
     );
 };

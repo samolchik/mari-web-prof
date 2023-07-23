@@ -65,8 +65,8 @@ ul {
 
 .navigation a:hover::after {
     width: 100%;
-    background-color: rgba(149, 208, 23, 0.86);
-    box-shadow: 0 0 7px rgba(149, 208, 23, 0.86);
+    background-color: var(--primary-green);
+    box-shadow: 0 0 5px var(--primary-green);
 }
 
 .header h1 {

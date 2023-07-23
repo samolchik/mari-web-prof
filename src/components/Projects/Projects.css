@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 .projects-section {
-    /*background: rgb(245, 245, 241);*/
-    background-image: url('../../assets/Untitled design.png');
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +16,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
 }
 
@@ -50,7 +46,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     /*background: #151414;*/
 }
@@ -101,7 +97,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    color: rgba(149, 208, 23, 0.86);
+    color: var(--primary-green);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     margin: 15px;
 }
@@ -117,7 +113,7 @@
 .findOut {
     font-size: 20px;
     font-weight: bold;
-    color: rgba(149, 208, 23, 0.86);
+    color: var(--primary-green);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
     margin: 20px;

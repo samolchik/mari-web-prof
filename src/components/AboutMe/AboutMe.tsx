@@ -14,7 +14,7 @@ const AboutMe = () => {
 
     useEffect(() => {
         const options = {
-            threshold: 0.1,
+            threshold: 0.5,
         };
 
         const animateOnScroll = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
@@ -30,7 +30,7 @@ const AboutMe = () => {
                     } else if (target === skill3Ref.current) {
                         setTimeout(() => {
                             target.classList.add('slide-right');
-                        }, 700);
+                        }, 500);
                     }
                     observer.unobserve(target);
                 }

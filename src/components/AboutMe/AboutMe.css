@@ -5,20 +5,16 @@
     align-items: center;
     justify-content: center;
     height: fit-content;
-    /*background: rgb(245, 245, 241);*/
     font-family: Arial;
-    background-image: url('../../assets/Untitled design.png');
-    background-position: center;
-    background-size: cover;
     flex-direction: column;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     overflow: hidden;
 
 
 }
 .highlight {
-    color: rgba(149, 208, 23, 0.86);
+    color: var(--primary-green);
 }
 
 .aboutme-container {
@@ -105,7 +101,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(149, 208, 23, 0.86);
+    color: var(--primary-green);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-weight: bold;
 }
@@ -141,7 +137,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(33.33% - 25px);
     min-width: 170px;
     height: fit-content;
     padding: 5px;
@@ -179,7 +175,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: bold;
-    color: rgba(149, 208, 23, 0.86);
+    color: var(--primary-green);
     /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
 }

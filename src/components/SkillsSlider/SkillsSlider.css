@@ -6,13 +6,14 @@
     background: linear-gradient(
             to top,
             var(--primary-color),
-            rgb(21, 24, 15),
-            rgba(30, 42, 8, 0.87),
-            rgb(21, 24, 15),
+            rgba(21, 24, 15, 0.98),
+            rgba(30, 42, 8, 0.98),
+            rgba(21, 24, 15, 0.98),
 var(--primary-color)
     ) no-repeat;
     font-family: Arial;
     overflow: hidden;
+
 
 }
 .skills-container-main {

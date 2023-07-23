@@ -5,8 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(149, 208, 23, 0.86);
+    box-shadow: 0 0 5px var(--primary-green);
     overflow: hidden;
+    background:var(--primary-color);
 
 }
 
