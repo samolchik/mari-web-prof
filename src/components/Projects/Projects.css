@@ -23,18 +23,15 @@
 
 .projects-header {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--primary-color);
-    color: rgb(245, 245, 241);
-    height: 100px;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    height:50px;
     border-radius: 5px;
-    /*box-shadow: 0 0 3px white;*/
 
 }
 .description ul {
@@ -55,18 +52,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 57%;
-    margin: 10px;
+    width: 50%;
+    margin: 15px 15px 15px 30px;
     cursor: pointer;
-    /*background: var(--primary-color);*/
-    /*box-shadow: 0 0 3px white;*/
-    /*box-shadow: 0 0 3px white;*/
-
 
 }
 .homePage img {
     width: 100%;
-    box-shadow: 0 0 3px white;
     border-radius: 5px;
 
 }
@@ -88,7 +80,6 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
-    /*box-shadow: 0 0 3px white;*/
 
 }
 .description div {
@@ -97,10 +88,8 @@
 .project-description h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    font-weight: bold;
     color: var(--primary-green);
-    /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
-    margin: 15px;
+    margin: 10px;
 }
 
 .description {
@@ -109,21 +98,20 @@
     padding: 15px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .findOut {
     font-size: 20px;
-    font-weight: bold;
     color: var(--primary-green);
-    /*text-shadow: 0 0 2px rgb(162, 225, 28);*/
     font-family: 'Montserrat', sans-serif;
-    margin: 20px;
+    margin: 15px;
+    font-weight: bold;
 }
 
 .to-come {
     font-size: 15px;
     margin-bottom: 10px;
-    /*color: var(--secondary-color);*/
     font-family: 'Roboto', sans-serif;
 }
 @media screen and (max-width: 480px) {

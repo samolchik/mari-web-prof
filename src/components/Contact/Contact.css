@@ -108,7 +108,7 @@ label {
     border: var(--primary-green) 0.125em solid;
     padding: 0.25em 1em;
     border-radius: 0.25em;
-    box-shadow: inset 0 0 0.2em 0 var(--primary-green), 0 0 0.5em 0 var(--primary-green);
+    box-shadow: inset 0 0 0.1em 0 var(--primary-green), 0 0 0.3em 0 var(--primary-green);
     position: relative;
     background: var(--primary-color);
 
@@ -121,7 +121,7 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 1.5em 0.2em var(--primary-green);
+    box-shadow: 0 0 1em 0.1em var(--primary-green);
     opacity: 0;
     transition: opacity 100ms linear;
 
