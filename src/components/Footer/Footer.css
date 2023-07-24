@@ -8,7 +8,7 @@
     box-shadow: 0 0 7px var(--primary-green);
     overflow: hidden;
     background:var(--primary-color);
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     left: 0;
 
