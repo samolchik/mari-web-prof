@@ -202,7 +202,7 @@
     }
     .top-aboutme-container {
         padding: 0;
-        width: 90%;
+        width: 93%;
     }
     .skills-list-header {
         margin-top: 10px;
@@ -238,7 +238,7 @@
     .skills-list {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 93%;
     }
     .aboutme-section {
         height: fit-content;
