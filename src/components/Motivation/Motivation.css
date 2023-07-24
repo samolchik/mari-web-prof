@@ -23,9 +23,8 @@
     left: 50%;
     margin: 0;
     padding: 0 20px;
-    font-size: 30px;
+    font-size: 29px;
     color: var(--primary-green);
-    /*text-shadow: 0 0 2px rgba(162, 225, 28, 0.92);*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -81,7 +80,7 @@
 .box {
     position: relative;
     width: 70%;
-    height: 70%;
+    height: 67%;
     border-radius: 3px;
     display: flex;
     justify-content: center;
