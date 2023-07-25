@@ -84,7 +84,7 @@ const AboutMe = () => {
                 </div>
 
                 <div className="top-connect-container">
-                    <a href="https://www.linkedin.com/in/marina-dvlpr/"  className="link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/mari-dvlpr/"  className="link" target="_blank" rel="noopener noreferrer">
                         <div className="connect-container">
                             <p> CLICK TO CONNECT WITH ME ON </p>
                             <img src={linkedinLogo} alt="LinkedIn"/></div>
