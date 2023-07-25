@@ -17,7 +17,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <p>&copy; Happy Coding</p>
-               <img className="glasses" src={glasses} alt="glasses"/>
+               {/*<img className="glasses" src={glasses} alt="glasses"/>*/}
                 <button className="data-collection" onClick={handlePrivacyClick}>
                     Privacy Notice
                 </button>
