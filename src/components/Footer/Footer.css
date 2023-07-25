@@ -18,6 +18,9 @@
     justify-content: center;
     align-items: center;
 }
+.glasses {
+    width: 100px;
+}
 
 .footer p {
     font-size: 14px;

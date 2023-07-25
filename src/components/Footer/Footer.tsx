@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.css';
+import glasses from "../../assets/Untitled design.gif";
 
 const Footer = () => {
     const [showPrivacyNotice, setShowPrivacyNotice] = useState(false);
@@ -16,6 +17,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <p>&copy; Happy Coding</p>
+               <img className="glasses" src={glasses} alt="glasses"/>
                 <button className="data-collection" onClick={handlePrivacyClick}>
                     Privacy Notice
                 </button>
