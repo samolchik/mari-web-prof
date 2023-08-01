@@ -63,7 +63,7 @@
 }
 
 .slide {
-    width:35%;
+    width:65vh;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -105,14 +105,14 @@
     font-weight: lighter;
 }
 .description-details p {
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 .description-details ul {
     list-style-type: disc;
     color: rgb(245, 245, 241);
     margin: 5px 5px 5px 20px;
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 
 }
