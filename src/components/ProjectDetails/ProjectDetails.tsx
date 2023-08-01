@@ -35,7 +35,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                 <div className="details">
                     <div className="close-button">
                         <button className="close" onClick={onClose}>
-                            X CLOSE
+                            CLOSE
                         </button>
                     </div>
                     <div className="screen-shots">
