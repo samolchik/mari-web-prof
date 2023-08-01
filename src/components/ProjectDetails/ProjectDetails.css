@@ -26,7 +26,7 @@
     border-radius: 5px;
     padding: 20px;
     overflow: auto;
-    max-height: 80vh;
+    max-height: 90vh;
 
 }
 
@@ -63,7 +63,7 @@
 }
 
 .slide {
-    width:40%;
+    width:35%;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -97,7 +97,6 @@
     background: none;
     border: none;
     color: rgb(245, 245, 241);
-    /*text-shadow: 0 0 3px rgb(162, 225, 28);*/
     cursor: pointer;
 }
 .description-details {
@@ -106,14 +105,14 @@
     font-weight: lighter;
 }
 .description-details p {
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
 }
 .description-details ul {
     list-style-type: disc;
     color: rgb(245, 245, 241);
     margin: 5px 5px 5px 20px;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -125,7 +124,7 @@
 }
 
 .description-details-button {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
 }
