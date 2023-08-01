@@ -5,9 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 7px var(--primary-green);
+    box-shadow: 0 0 5px var(--primary-green);
     overflow: hidden;
     background:var(--primary-color);
+
     position: relative;
     bottom: 0;
 }

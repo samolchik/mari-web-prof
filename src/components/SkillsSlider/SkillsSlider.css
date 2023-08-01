@@ -17,7 +17,7 @@ var(--primary-color)
 }
 .skills-container-main {
 
-    height: 150px;
+    height: 120px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -56,8 +56,8 @@ var(--primary-color)
 }
 
 .skill-img {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+
 }
 
 

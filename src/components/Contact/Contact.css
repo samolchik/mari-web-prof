@@ -19,7 +19,7 @@
 }
 .contact-header {
     color: rgb(245, 245, 241);
-    font-size: 35px;
+    font-size: 32px;
     margin: 30px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -53,18 +53,18 @@
 label {
     color: rgb(245, 245, 241);
     margin-bottom: 5px;
-    font-size: 18px;
-    /*font-weight: bold;*/
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 
 .contact-input,
 .contact-textarea {
     width: 70vh;
+    height: 40px;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background: linear-gradient(
             to right,
             rgba(32, 42, 8, 0.94),
@@ -101,7 +101,7 @@ label {
 .contact-button {
     height: fit-content;
     width: fit-content;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     cursor: pointer;

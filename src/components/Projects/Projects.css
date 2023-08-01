@@ -31,8 +31,6 @@
     align-items: center;
     color: var(--primary-color);
     height:35px;
-    border-radius: 5px;
-
 }
 .description ul {
     margin: 20px;
@@ -54,15 +52,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin: 15px 15px 15px 30px;
+    width: 37%;
+    margin: 15px 15px 15px 70px;
     cursor: pointer;
 
 }
 .homePage img {
     width: 100%;
-    border-radius: 5px;
-
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.64);
 }
 .homePage {
     transition: transform 0.3s ease-in-out;
@@ -73,9 +70,8 @@
 }
 
 .project-description {
-    width: 39%;
+    width: 47%;
     color: rgb(245, 245, 241);
-    /*background: var(--primary-color);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,16 +86,18 @@
 }
 .project-description h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--primary-green);
     margin: 10px;
 }
+
+
 
 .description {
     margin: 15px;
     width: 100%;
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
