@@ -52,14 +52,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    margin: 15px 15px 15px 70px;
+    width: 42%;
+    margin: 15px 15px 15px 30px;
     cursor: pointer;
 
 }
 .homePage img {
     width: 100%;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.64);
+    border-radius: 5px;
 }
 .homePage {
     transition: transform 0.3s ease-in-out;
@@ -70,7 +71,7 @@
 }
 
 .project-description {
-    width: 47%;
+    width: 50%;
     color: rgb(245, 245, 241);
     display: flex;
     justify-content: center;
