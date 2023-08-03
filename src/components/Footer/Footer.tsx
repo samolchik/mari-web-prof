@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import glasses from "../../assets/Untitled design.gif";
+import glasses from "../../assets/Untitled design.jpeg";
 
 const Footer = () => {
     const [showPrivacyNotice, setShowPrivacyNotice] = useState(false);

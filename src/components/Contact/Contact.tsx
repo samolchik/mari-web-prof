@@ -1,6 +1,6 @@
  import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import './Contact.css';
-import rocket from '../../assets/rocket.png';
+import rocket from '../../assets/rocket.jpeg';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {

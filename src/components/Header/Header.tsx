@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import logo from '../../assets/logo1.png';
-import linkedinLogo from '../../assets/linkedin.png';
-import ukraine from '../../assets/Ukraine.png';
-import githubLogo from '../../assets/github.png';
-import burgericon from '../../assets/burgericon.png';
+import logo from '../../assets/logo1.jpeg';
+import linkedinLogo from '../../assets/linkedin.jpeg';
+import ukraine from '../../assets/Ukraine.jpeg';
+import githubLogo from '../../assets/github.jpeg';
+import burgericon from '../../assets/burgericon.jpeg';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);

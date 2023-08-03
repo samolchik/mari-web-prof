@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import './AboutMe.css';
-import back from '../../assets/4.png';
-import front from '../../assets/5.png';
-import tools from '../../assets/6.png';
-import linkedinLogo from "../../assets/linkedin.png";
-import astronaut from "../../assets/astronaut.png";
+import back from '../../assets/4.jpeg';
+import front from '../../assets/5.jpeg';
+import tools from '../../assets/6.jpeg';
+import linkedinLogo from "../../assets/linkedin.jpeg";
+import astronaut from "../../assets/astronaut.jpeg";
 
 
 const AboutMe = () => {

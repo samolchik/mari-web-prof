@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
-import screen1 from '../../assets/screen1.png';
-import screen2 from '../../assets/screen2.png';
-import screen3 from '../../assets/screen3.png';
-import screen4 from '../../assets/screen4.png';
-import screen5 from '../../assets/screen5.png';
-import screen6 from '../../assets/screen6.png';
-import movies from '../../assets/movieshome.png';
-import screen7 from '../../assets/screenE1.png';
-import screen8 from '../../assets/screenE2.png';
-import screen9 from '../../assets/screenE3.png';
-import screen10 from '../../assets/screenE4.png';
-import screen11 from '../../assets/screenE5.png';
-import screen12 from '../../assets/screenE6.png';
-import furniture from '../../assets/furniturehome.png';
+import screen1 from '../../assets/screen1.jpeg';
+import screen2 from '../../assets/screen2.jpeg';
+import screen3 from '../../assets/screen3.jpeg';
+import screen4 from '../../assets/screen4.jpeg';
+import screen5 from '../../assets/screen5.jpeg';
+import screen6 from '../../assets/screen6.jpeg';
+import movies from '../../assets/movieshome.jpeg';
+import screen7 from '../../assets/screenE1.jpeg';
+import screen8 from '../../assets/screenE2.jpeg';
+import screen9 from '../../assets/screenE3.jpeg';
+import screen10 from '../../assets/screenE4.jpeg';
+import screen11 from '../../assets/screenE5.jpeg';
+import screen12 from '../../assets/screenE6.jpeg';
+import furniture from '../../assets/furniturehome.jpeg';
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);

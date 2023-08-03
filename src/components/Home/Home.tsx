@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import photo from '../../assets/photo.png';
+import photo from '../../assets/photo.jpeg';
 import AboutMe from "../AboutMe/AboutMe";
 import Motivation from "../Motivation/Motivation";
 import Projects from "../Projects/Projects";
