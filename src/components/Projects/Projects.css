@@ -53,17 +53,13 @@
     justify-content: center;
     align-items: center;
     width: 42%;
-    margin: 15px 15px 15px 30px;
+    margin: 15px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 
 }
 .homePage img {
     width: 100%;
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.64);
-    border-radius: 5px;
-}
-.homePage {
-    transition: transform 0.3s ease-in-out;
 }
 
 .homePage:hover {
@@ -79,20 +75,16 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
-
-
 }
 .description div {
     margin: 10px;
 }
 .project-description h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     color: var(--primary-green);
     margin: 10px;
 }
-
-
 
 .description {
     margin: 15px;
@@ -104,18 +96,12 @@
 }
 
 .findOut {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--primary-green);
     font-family: 'Montserrat', sans-serif;
     margin: 15px;
-    font-weight: bold;
 }
 
-.to-come {
-    font-size: 15px;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-}
 @media screen and (max-width: 480px) {
 .project1 {
     flex-direction: column;
