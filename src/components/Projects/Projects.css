@@ -57,10 +57,12 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 
+
 }
 .homePage img {
     width: 100%;
     box-shadow: 0 0 3px white;
+    border-radius: 5px;
 }
 
 .homePage:hover {
