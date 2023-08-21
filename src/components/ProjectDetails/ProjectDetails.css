@@ -73,7 +73,8 @@
 }
 .slide img {
     width: 100%;
-    box-shadow: 0 0 3px white;
+    box-shadow: 0 0 2px white;
+    border-radius: 3px;
 }
 .screen-shots {
     display: flex;

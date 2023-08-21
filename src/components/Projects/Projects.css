@@ -46,8 +46,8 @@
     background: var(--primary-color);
     border-radius: 5px;
     box-shadow: 0 0 5px black;
-
 }
+
 .homePage {
     display: flex;
     justify-content: center;
@@ -56,12 +56,11 @@
     margin: 15px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-
-
 }
+
 .homePage img {
     width: 100%;
-    box-shadow: 0 0 3px white;
+    box-shadow: 0 0 2px white;
     border-radius: 5px;
 }
 
