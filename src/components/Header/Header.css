@@ -48,6 +48,7 @@ ul {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    cursor: pointer;
 }
 
 .navigation a::after {

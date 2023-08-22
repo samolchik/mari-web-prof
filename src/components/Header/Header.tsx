@@ -5,7 +5,7 @@ import linkedinLogo from '../../assets/linkedin.jpeg';
 import ukraine from '../../assets/Ukraine.jpeg';
 import githubLogo from '../../assets/github.jpeg';
 import burgericon from '../../assets/burgericon.jpeg';
-
+import { Link } from "react-scroll";
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [isHeaderHidden, setIsHeaderHidden] = useState(false);
@@ -47,42 +47,33 @@ const Header = () => {
                 <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <li>
-                            <a
-                                href="https://github.com/DevMari999"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={closeMobileMenu}
-                            >
+                            <a href="https://github.com/DevMari999" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
                                 <img className="link-logo" src={githubLogo} alt="gitHub" />
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="https://www.linkedin.com/in/mari-dvlpr/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={closeMobileMenu}
-                            >
+                            <a href="https://www.linkedin.com/in/mari-dvlpr/" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
                                 <img className="link-logo" src={linkedinLogo} alt="LinkedIn" />
                             </a>
                         </li>
                         <li>
-                            <a href="#about" onClick={closeMobileMenu}>
+                            <Link to="about" smooth={true} duration={500} onClick={closeMobileMenu}>
                                 ABOUT
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#projects" onClick={closeMobileMenu}>
+                            <Link to="projects" smooth={true} duration={500} onClick={closeMobileMenu}>
                                 PROJECTS
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#contact" onClick={closeMobileMenu}>
+                            <Link to="contact" smooth={true} duration={500} onClick={closeMobileMenu}>
                                 CONTACT
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
+
             </div>
         </header>
     );
