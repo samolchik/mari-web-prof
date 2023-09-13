@@ -20,7 +20,6 @@ const App: React.FC = () => {
         <div className="page-container">
             <div className="app-background-container"></div>
             <div className="app-overlay-container"></div>
-            {/* eslint-disable-next-line react/jsx-no-undef */}
             <Header/>
             <MainComponent showWelcome={showWelcome}/>
             {!showWelcome && <Footer/>}

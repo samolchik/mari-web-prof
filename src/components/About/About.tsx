@@ -137,7 +137,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
+            <Projects/>
+            <Contact/>
         </section>
     );
 };

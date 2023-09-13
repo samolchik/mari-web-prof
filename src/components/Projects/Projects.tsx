@@ -121,7 +121,6 @@ const Projects = () => {
                     githubLink="https://github.com/DevMari999/backend_project"
                 />
             )}
-            <Contact/>
         </section>
     );
 };

@@ -5,6 +5,37 @@
     flex-direction: column;
     overflow: hidden;
     color: var(--primary-color);
+    background: linear-gradient(to top,
+    transparent,
+    rgba(15, 8, 5, 0.03),
+    rgba(15, 8, 5, 0.05),
+    rgba(15, 8, 5, 0.1),
+    rgba(14, 14, 14, 0.15),
+    rgba(15, 8, 5, 0.2),
+    rgba(15, 8, 5, 0.25),
+    rgba(15, 8, 5, 0.3),
+    rgba(15, 8, 5, 0.35),
+    rgba(15, 8, 5, 0.4),
+    rgba(15, 8, 5, 0.45),
+    rgba(15, 8, 5, 0.5),
+    rgba(15, 8, 5, 0.55),
+    rgba(15, 8, 5, 0.6),
+    rgba(15, 8, 5, 0.63),
+    rgba(15, 8, 5, 0.65),
+    rgba(15, 8, 5, 0.67),
+    rgba(15, 8, 5, 0.69),
+    rgba(15, 8, 5, 0.71),
+    rgba(15, 8, 5, 0.73),
+    rgba(15, 8, 5, 0.75),
+    rgba(15, 8, 5, 0.76),
+    rgba(15, 8, 5, 0.77),
+    rgba(15, 8, 5, 0.78),
+    rgba(15, 8, 5, 0.79),
+    rgba(15, 8, 5, 0.81),
+    rgba(15, 8, 5, 0.83),
+    rgba(15, 8, 5, 0.85)),
+    no-repeat;
+    padding-top: 80px;
 }
 
 .aboutme-container {
@@ -48,7 +79,7 @@
 }
 
 .photo-container img {
-    height: 400px;
+    height: 420px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 

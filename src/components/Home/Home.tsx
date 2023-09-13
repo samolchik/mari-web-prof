@@ -27,7 +27,6 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            <About/>
             {/*<Projects/>*/}
             {/*/!*<SkillsSlider/>*!/*/}
             {/*<Contact/>*/}
