@@ -1,16 +1,16 @@
 import React from 'react';
 import './SkillsSlider.css';
 
-import skillLogo1 from '../../assets/js.jpeg';
-import skillLogo2 from '../../assets/ts.jpeg';
-import skillLogo3 from '../../assets/react.jpeg';
-import skillLogo4 from '../../assets/redux.jpeg';
-import skillLogo5 from '../../assets/node.jpeg';
-import skillLogo6 from '../../assets/mySQL.jpeg';
-import skillLogo7 from '../../assets/mongo.jpeg';
-import skillLogo8 from '../../assets/git.jpeg';
-import skillLogo9 from '../../assets/css.jpeg';
-import skillLogo10 from '../../assets/html5.jpeg';
+import skillLogo1 from '../../assets/logos/js.jpeg';
+import skillLogo2 from '../../assets/logos/ts.jpeg';
+import skillLogo3 from '../../assets/logos/react.jpeg';
+import skillLogo4 from '../../assets/logos/redux.jpeg';
+import skillLogo5 from '../../assets/logos/node.jpeg';
+import skillLogo6 from '../../assets/logos/mySQL.jpeg';
+import skillLogo7 from '../../assets/logos/mongo.jpeg';
+import skillLogo8 from '../../assets/logos/git.jpeg';
+import skillLogo9 from '../../assets/logos/css.jpeg';
+import skillLogo10 from '../../assets/logos/html5.jpeg';
 
 const SkillsSlider: React.FC = () => {
 

@@ -1,31 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 .motivation2-section {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background:var(--primary-color);
-    box-shadow: 0 0 5px black;
-
-
-
+    width: 75%;
+   padding-top: 30px;
 }
+
 .motivation2-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .neon {
-    top: 50%;
-    left: 40%;
-    margin: 0;
-    padding: 0 20px;
-    font-size: 27px;
-    color: var(--primary-green);
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes slide-in {
@@ -71,93 +66,61 @@
 }
 
 .header1 {
-    margin: 10px;
+    margin: 2px;
 }
+
 .header2 {
-    margin: 10px;
+    margin: 2px;
 }
 
-.box {
-    position: relative;
-    width: 60%;
-    height: 63%;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-}
-.box::before
-{
-    content: '';
-    position: absolute;
-    width: 1500px;
-    height: 1500px;
-    background-image: conic-gradient(transparent, transparent, rgba(122, 169, 32, 0.86),
-    rgba(134, 178, 34, 0.73), rgba(88, 124, 8, 0.83), transparent);
-    /*background-image: conic-gradient(transparent, transparent, var(--primary-color),*/
-    /* var(--primary-color), transparent);*/
-    animation: animate 7s linear infinite;
-}
 
 @keyframes animate {
 
-    0%
-    {
+    0% {
         transform: rotate(0deg);
     }
-    100%
-    {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.box span {
-    position: absolute;
-    inset: 5px;
-    background: var(--primary-color);
-    border-radius: 3px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-@media screen and (max-width: 481px)  {
+/*@media screen and (max-width: 481px) {*/
 
-    .motivation2-section {
-        height: 50vh;
-    }
-    .neon {
-        font-size: 18px;
-        font-weight: bold;
-        /*text-shadow: 0 0 5px rgba(162, 225, 28, 0.87);*/
-    }
-    .box {
-        width: 96%;
-    }
+/*    .motivation2-section {*/
+/*        height: 50vh;*/
+/*    }*/
 
-    .box span {
-        inset: 4px;
-    }
-}
+/*    .neon {*/
+/*        font-size: 18px;*/
+/*        font-weight: bold;*/
+/*    }*/
 
-@media screen and (min-width: 1900px)  {
-    .box {
-        width: 50%;
-    }
-}
+/*    .box {*/
+/*        width: 96%;*/
+/*    }*/
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .neon {
-        font-size: 20px;
-        font-weight: bold;
-    }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .neon {
-        font-size: 25px;
-        font-weight: bold;
-    }
-}
+/*    .box span {*/
+/*        inset: 4px;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1900px) {*/
+/*    .box {*/
+/*        width: 50%;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 481px) and (max-width: 768px) {*/
+/*    .neon {*/
+/*        font-size: 20px;*/
+/*        font-weight: bold;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 769px) and (max-width: 1024px) {*/
+/*    .neon {*/
+/*        font-size: 25px;*/
+/*        font-weight: bold;*/
+/*    }*/
+/*}*/

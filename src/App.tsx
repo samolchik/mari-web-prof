@@ -1,31 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import MainComponent from "./components/MainComponent/MainComponent";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import SkillsSlider from "./components/SkillsSlider/SkillsSlider";
-import Contact from "./components/Contact/Contact";
-import Home from "./components/Home/Home";
-import Motivation from "./components/Motivation/Motivation";
-import Projects from "./components/Projects/Projects";
-import AboutMe from "./components/AboutMe/AboutMe";
-
+// other imports ...
 
 const App: React.FC = () => {
+    const [showWelcome, setShowWelcome] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowWelcome(false);
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className="page-container">
             <div className="app-background-container"></div>
+            <div className="app-overlay-container"></div>
+            {/* eslint-disable-next-line react/jsx-no-undef */}
             <Header/>
-            <Home/>
-            <AboutMe/>
-            <Motivation/>
-            <Projects/>
-            <SkillsSlider/>
-            <Contact/>
-            <Footer/>
+            <MainComponent showWelcome={showWelcome}/>
+            {!showWelcome && <Footer/>}
         </div>
-
     );
 };
 
 export default App;
-

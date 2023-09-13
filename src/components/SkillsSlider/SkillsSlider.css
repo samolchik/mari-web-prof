@@ -3,16 +3,11 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(
-            to top,
-            var(--primary-color),
-            rgb(21, 24, 15),
-            rgba(30, 42, 8),
-            rgba(21, 24, 15),
-var(--primary-color)
-    ) no-repeat;
+  background: rgba(15, 8, 5, 0.75);
     font-family: Arial;
-    box-shadow: 0 0 5px black;
+    /*border-top: 0.06em solid var(--primary-color);*/
+    /*border-bottom: 0.06em solid var(--primary-color);*/
+    box-shadow: 0 0 7px rgba(15, 8, 5, 0.5);
 
 }
 .skills-container-main {

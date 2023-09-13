@@ -1,15 +1,20 @@
 body {
-position: relative;
-    background-color: var(--primary-color);
-
+    position: relative;
+    padding-left: 8%;
 }
+
 .page-container {
     position: relative;
 
 }
 
+html {
+    font-size: 16px;
+    /*scroll-behavior: smooth;*/
+}
+
 .app-background-container {
-    background-image: url('./assets/Untitled design2.jpeg');
+    background-image: url('./assets/mainBG.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +27,13 @@ position: relative;
 
 }
 
+.app-overlay-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 /* Mobile devices */
 @media (max-width: 768px) {
     .app-background-container {
@@ -29,32 +41,29 @@ position: relative;
     }
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 :root {
-    --primary-color: rgb(20, 120, 22);
-    --secondary-color: rgb(245, 245, 241);
-    --primary-green: rgba(130, 177, 44, 0.83);
-    --secondary-green: rgba(109, 145, 29, 0.74);
+    --primary-color: rgb(245, 244, 241);
 }
+
 ::-webkit-scrollbar {
     width: 10px;
+    background: #0a0a0a;
 }
 
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--secondary-green);
+    background-color: #101914;
     border-radius: 5px;
 
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(142, 199, 22, 0.63);
+    background-color: #19271e;
 }

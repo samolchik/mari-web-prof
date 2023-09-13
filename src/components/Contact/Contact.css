@@ -1,14 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Corinthia:wght@700&family=Cormorant+Garamond:wght@500&family=Great+Vibes&family=Merienda:wght@500&family=Nanum+Myeongjo:wght@800&family=Noto+Serif+JP&family=Playfair+Display:wght@600&display=swap');
 .contact-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    padding: 30px;
     overflow: hidden;
-    min-height: 80vh;
-    background:var(--primary-color);
-
+    min-height: calc(100vh - 55px);
 }
 .contact-container{
     margin-bottom: 70px;
@@ -16,12 +15,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .contact-header {
-    color: rgb(245, 245, 241);
+    color: var(--primary-color);
     font-size: 30px;
     margin: 30px;
-    font-family: 'Montserrat', sans-serif;
 }
 .submission-container {
     display: flex;
@@ -40,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 100%;
 }
 
 .contact-element {
@@ -51,44 +50,48 @@
 }
 
 label {
-    color: rgb(245, 245, 241);
+    color: var(--primary-color);
     margin-bottom: 5px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .contact-input,
 .contact-textarea {
     width: 70vh;
-    height: 38px;
+    height: 45px;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 7px;
-    background: linear-gradient(
-            to right,
-            rgba(32, 42, 8, 0.94),
-            rgba(67, 92, 17, 0.87),
-            rgba(115, 155, 30, 0.84)
+    /*border-bottom: 1px solid var(--primary-color);*/
+    border-radius: 0;
+    /*background: linear-gradient(*/
+    /*        to right,*/
+    /*        rgba(32, 42, 8, 0.94),*/
+    /*        rgba(67, 92, 17, 0.87),*/
+    /*        rgba(115, 155, 30, 0.84)*/
 
-    ) no-repeat;
-
-
-    color: rgb(245, 245, 241);
+    /*) no-repeat;*/
+    /*backdrop-filter: blur(15px);*/
+    /*-webkit-backdrop-filter: blur(15px);*/
+    background:  none ;
     font-size: 18px;
     transition: box-shadow 0.3s ease-in-out;
+    border-bottom: var(--primary-color) solid 1px;
+    color: var(--primary-color);
 }
 
 .contact-input:focus,
 .contact-textarea:focus {
-    box-shadow: 0 0 3px var(--primary-green);
+    /*box-shadow: 0 0 3px var(--primary-green);*/
     outline: none;
-    border: solid black 1px;
 }
 
 .contact-textarea {
-    height: 120px;
+    height: 45px;
     resize: vertical;
+    color: var(--primary-color);
 }
 
 *,
@@ -101,17 +104,19 @@ label {
     height: fit-content;
     width: fit-content;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    color: var(--primary-green);
-    border: var(--primary-green) 2px solid;
-    padding: 0.30em 1em;
-    border-radius: 0.25em;
-    box-shadow: inset 0 0 0.1em 0 var(--primary-green), 0 0 0.3em 0 var(--primary-green);
+    color: var(--primary-color);
+    border: rgba(15, 8, 5,96) 0.07em solid;
+    padding: 0.4em 1.3em 0.5em 1.3em;
+    background:  rgba(15, 8, 5, 0.7) !important;
+
+    border-radius: 0.1em;
+    /*box-shadow: inset 0 0 0.3em 0 rgba(255, 255, 255, 0.7);*/
     position: relative;
-    background: var(--primary-color);
+    background: none;
 
 }
 
@@ -122,26 +127,26 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 1em 0.1em var(--primary-green);
+    /*box-shadow: 0 0 0.5em 0.1em white;*/
     opacity: 0;
-    transition: opacity 100ms linear;
-
+    cursor: pointer;
+    transition: ease-in-out 1s;
 }
 
 .contact-button:hover,
 .contact-button:focus {
-    color: var(--primary-green);
-    text-shadow: none;
 }
 
 .contact-button:hover::before,
 .contact-button:focus::before {
     opacity: 1;
+
 }
 
 .contact-button:hover::after,
 .contact-button:focus::after {
     opacity: 1;
+
 }
 
 /* Media Queries */
@@ -195,7 +200,7 @@ label {
         min-width: 400px;
     }
     .contact-form {
-        position: center;
+        /*position: center;*/
     }
 
 }

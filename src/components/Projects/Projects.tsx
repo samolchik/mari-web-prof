@@ -1,27 +1,28 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
-import screen1 from '../../assets/screen1.jpeg';
-import screen2 from '../../assets/screen2.jpeg';
-import screen3 from '../../assets/screen3.jpeg';
-import screen4 from '../../assets/screen4.jpeg';
-import screen5 from '../../assets/screen5.jpeg';
-import screen6 from '../../assets/screen6.jpeg';
-import movies from '../../assets/movieshome.jpeg';
-import screen7 from '../../assets/screenE1.jpeg';
-import screen8 from '../../assets/screenE2.jpeg';
-import screen9 from '../../assets/screenE3.jpeg';
-import screen10 from '../../assets/screenE4.jpeg';
-import screen11 from '../../assets/screenE5.jpeg';
-import screen12 from '../../assets/screenE6.jpeg';
-import screen13 from '../../assets/screenCar1.jpeg';
-import screen14 from '../../assets/screenCar2.jpeg';
-import screen15 from '../../assets/screenCar3.jpeg';
-import screen16 from '../../assets/screenCar4.jpeg';
-import screen17 from '../../assets/screenCar5.jpeg';
-import screen18 from '../../assets/screenCar6.jpeg';
-import furniture from '../../assets/furniturehome.jpeg';
-import cars from '../../assets/carshome.jpeg';
+import screen1 from '../../assets/screen-shots/screen1.jpeg';
+import screen2 from '../../assets/screen-shots/screen2.jpeg';
+import screen3 from '../../assets/screen-shots/screen3.jpeg';
+import screen4 from '../../assets/screen-shots/screen4.jpeg';
+import screen5 from '../../assets/screen-shots/screen5.jpeg';
+import screen6 from '../../assets/screen-shots/screen6.jpeg';
+import movies from '../../assets/screen-shots/movieshome.jpeg';
+import screen7 from '../../assets/screen-shots/screenE1.jpeg';
+import screen8 from '../../assets/screen-shots/screenE2.jpeg';
+import screen9 from '../../assets/screen-shots/screenE3.jpeg';
+import screen10 from '../../assets/screen-shots/screenE4.jpeg';
+import screen11 from '../../assets/screen-shots/screenE5.jpeg';
+import screen12 from '../../assets/screen-shots/screenE6.jpeg';
+import screen13 from '../../assets/screen-shots/screenCar1.jpeg';
+import screen14 from '../../assets/screen-shots/screenCar2.jpeg';
+import screen15 from '../../assets/screen-shots/screenCar3.jpeg';
+import screen16 from '../../assets/screen-shots/screenCar4.jpeg';
+import screen17 from '../../assets/screen-shots/screenCar5.jpeg';
+import screen18 from '../../assets/screen-shots/screenCar6.jpeg';
+import furniture from '../../assets/screen-shots/furniturehome.jpeg';
+import cars from '../../assets/screen-shots/carshome.jpeg';
+import Contact from "../Contact/Contact";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
@@ -36,10 +37,11 @@ const Projects = () => {
 
     return (
         <section className="projects-section" id="projects">
+            <div className="projects-header">
+                <h1>PROJECTS</h1>
+            </div>
             <div className="projects-container">
-                <div className="projects-header">
-                    <h1>PROJECTS</h1>
-                </div>
+                <div className="projects-block">
                 <div className="project1">
                     <div className="homePage">
                         <img
@@ -48,23 +50,25 @@ const Projects = () => {
                             onClick={() => handleClickProject('furniture')}
                         />
                     </div>
-                    <div className="project-description">
-                        <h1>E-commerce Furniture Store</h1>
-                        <div className="description">
-                            <div>
-                                <p>Technologies used:</p>
-                            </div>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>React.js</li>
-                                <li>Typescript</li>
-                                <li>Context API</li>
-                                <li>Git</li>
-                                <li>NPM</li>
-                            </ul>
-                            <div className="findOut">Click on the image to find out more</div>
+                </div>
+                    <div className="project1">
+                        <div className="homePage">
+                            <img
+                                src={cars}
+                                alt="Cars"
+                                onClick={() => handleClickProject('cars')}
+                            />
                         </div>
+                </div>
+                </div>
+                <div className="projects-block">
+                <div className="project1">
+                    <div className="homePage">
+                        <img
+                            src={movies}
+                            alt="Movies"
+                            onClick={() => handleClickProject('movies')}
+                        />
                     </div>
                 </div>
                 <div className="project1">
@@ -75,55 +79,9 @@ const Projects = () => {
                             onClick={() => handleClickProject('movies')}
                         />
                     </div>
-                    <div className="project-description">
-                        <h1>Movie Search</h1>
-                        <div className="description">
-                            <div>
-                                <p>Technologies used:</p>
-                            </div>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>React.js</li>
-                                <li>Typescript</li>
-                                <li>Redux Toolkit</li>
-                                <li>Git</li>
-                                <li>NPM</li>
-                            </ul>
-                            <div className="findOut">Click on the image to find out more</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="project1">
-                    <div className="homePage">
-                        <img
-                            src={cars}
-                            alt="Cars"
-                            onClick={() => handleClickProject('cars')}
-                        />
-                    </div>
-                    <div className="project-description">
-                        <h1>Car Sale Platform Back End</h1>
-                        <div className="description">
-                            <div>
-                                <p>Technologies used:</p>
-                            </div>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>EJS</li>
-                                <li>MongoDB</li>
-                                <li>Typescript</li>
-                                <li>JWT</li>
-                                <li>Git</li>
-                                <li>NPM</li>
-                            </ul>
-                            <div className="findOut">Click on the image to find out more</div>
-                        </div>
-                    </div>
                 </div>
             </div>
-
+            </div>
             {selectedProject === 'furniture' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
@@ -163,6 +121,7 @@ const Projects = () => {
                     githubLink="https://github.com/DevMari999/backend_project"
                 />
             )}
+            <Contact/>
         </section>
     );
 };
