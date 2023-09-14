@@ -9,7 +9,6 @@
     -webkit-backdrop-filter: blur(20px);
     background-color: rgba(7, 12, 14, 0.9);
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
-
     padding-top: 20px;
 }
 
@@ -60,34 +59,24 @@ ul {
 
 .navigation li {
     margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
 }
+
 .header-link-logo {
     margin-bottom: 15px !important;
 }
+
 .navigation a {
     color: white;
-
     text-decoration: none;
-    font-size: 0.85em;
+    font-size: 1em;
     position: relative;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-.navigation a::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: transparent;
-    transition: width 0.3s ease-in-out,
-    background-color 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out;
-}
-
-.navigation a:hover::after {
-    width: 100%;
+.navigation a:hover, .navigation li:hover {
+    transform: scale(1.1);
 }
 
 .header h1 {

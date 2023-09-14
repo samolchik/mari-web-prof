@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './ProjectDetails.css';
 
 
@@ -42,7 +42,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                         <div className="slider-container">
                             {images.slice(currentSlide, currentSlide + 2).map((image, index) => (
                                 <div key={index} className="slide">
-                                    <img src={image} alt={`Screen ${currentSlide + index + 1}`} />
+                                    <img src={image} alt={`Screen ${currentSlide + index + 1}`}/>
                                 </div>
                             ))}
                         </div>
@@ -58,7 +58,8 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                                     <li key={index}>
                                         {tech.includes(':') ? (
                                             <>
-                                                <span className="highlight">{tech.substring(0, tech.indexOf(':') + 1)}</span>
+                                                <span
+                                                    className="highlight">{tech.substring(0, tech.indexOf(':') + 1)}</span>
                                                 {tech.substring(tech.indexOf(':') + 1)}
                                             </>
                                         ) : (

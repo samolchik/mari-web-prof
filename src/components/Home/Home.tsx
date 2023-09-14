@@ -21,7 +21,6 @@ const Home: React.FC = () => {
                         <div className="about-me-header-container">
                             <h1>My name is Marina</h1>
                             <h2> I'm a Full Stack Web Developer</h2>
-                            {/*<h2> from Ukraine based in Canada</h2>*/}
                         </div>
                         <div className="button-container">
                             <a href="#contact" className="contact-link">

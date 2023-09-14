@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './Projects.css';
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
 import screen1 from '../../assets/screen-shots/screen1.jpeg';
@@ -22,24 +22,26 @@ import screen17 from '../../assets/screen-shots/screenCar5.jpeg';
 import screen18 from '../../assets/screen-shots/screenCar6.jpeg';
 import furniture from '../../assets/screen-shots/furniturehome.jpeg';
 import cars from '../../assets/screen-shots/carshome.jpeg';
-import Contact from "../Contact/Contact";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
-
     const handleClickProject = (project: string) => {
         setSelectedProject(project);
     };
-
     const handleCloseProjectDetails = () => {
         setSelectedProject(null);
     };
+    useEffect(() => {
+        if (selectedProject) {
 
+            document.body.style.overflow = 'hidden';
+        } else {
+
+            document.body.style.overflow = 'auto';
+        }
+    }, [selectedProject]);
     return (
         <section className="projects-section" id="projects">
-            <div className="projects-header">
-                <h1>PROJECTS</h1>
-            </div>
             <div className="projects-container">
                 <div className="projects-block">
                 <div className="project1"   onClick={() => handleClickProject('furniture')}>
@@ -49,32 +51,29 @@ const Projects = () => {
                         </div>
                         <img
                             src={furniture}
-                            alt="Furniture"
-                        />
+                            alt="Furniture"/>
                     </div>
                 </div>
-                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
+                    <div className="project1"   onClick={() => handleClickProject('cars')}>
                         <div className="homePage">
                             <div className="overlay">
                                 <h1 className="overlay-header">Cars platform back end</h1>
                             </div>
                             <img
                                 src={cars}
-                                alt="Cars"
-                            />
+                                alt="Cars"/>
                         </div>
                 </div>
                 </div>
                 <div className="projects-block">
-                <div className="project1"   onClick={() => handleClickProject('furniture')}>
+                <div className="project1"   onClick={() => handleClickProject('movies')}>
                     <div className="homePage">
                         <div className="overlay">
                             <h1 className="overlay-header">Movie search</h1>
                         </div>
                         <img
                             src={movies}
-                            alt="Movies"
-                        />
+                            alt="Movies"/>
                     </div>
                 </div>
                 <div className="project1"   onClick={() => handleClickProject('furniture')}>
@@ -84,8 +83,7 @@ const Projects = () => {
                         </div>
                         <img
                             src={movies}
-                            alt="Movies"
-                        />
+                            alt="Movies"/>
                     </div>
                 </div>
             </div>
@@ -100,8 +98,7 @@ const Projects = () => {
                         'Context API: To manage global state and avoid prop drilling, I implemented the Context API, enabling seamless data sharing between components and enhancing the overall performance of the application.',
                         '  HTML: The foundation of the website is built on HTML, providing a semantic and structured layout for enhanced accessibility.']}
                     websiteLink="https://furniture-store-black.vercel.app/"
-                    githubLink="https://github.com/DevMari999/e-commerce-furniture"
-                />
+                    githubLink="https://github.com/DevMari999/e-commerce-furniture"/>
             )}
             {selectedProject === 'movies' && (
                 <ProjectDetails
@@ -113,8 +110,7 @@ const Projects = () => {
                         'Redux Toolkit:Mastering complex states was a breeze with Redux Toolkit, ensuring a captivating user journey through seamless movie exploration.',
                         'TMDb API Integration:I integrated the TMDb API, granting real-time access to a vast collection of movie data.']}
                     websiteLink="https://movie-search-opal-two.vercel.app/"
-                    githubLink="https://github.com/DevMari999/movie_search"
-                />
+                    githubLink="https://github.com/DevMari999/movie_search"/>
             )}
             {selectedProject === 'cars' && (
                 <ProjectDetails
@@ -126,13 +122,11 @@ const Projects = () => {
                         'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
                         'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities. This ensures that content can be tailored and presented based on specific requirements and conditions.']}
                     websiteLink="https://car-sale-platform-c3fa3b2c4642.herokuapp.com"
-                    githubLink="https://github.com/DevMari999/backend_project"
-                />
+                    githubLink="https://github.com/DevMari999/backend_project"/>
             )}
         </section>
     );
 };
-
 export default Projects;
 
 

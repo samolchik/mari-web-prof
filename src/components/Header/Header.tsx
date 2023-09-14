@@ -32,7 +32,6 @@ const Header = () => {
                 </div>
                 <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul>
-
                         <div className="header-link-logo">
                         <li className="header-link-logo">
                             <a href="https://github.com/DevMari999" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
@@ -48,22 +47,17 @@ const Header = () => {
                         <li>
                             <Link to="home" smooth={true} duration={50} onClick={closeMobileMenu}>
 
-                                HOME
+                                Home
                             </Link>
                         </li>
                         <li>
-                            <Link to="about"  onClick={closeMobileMenu}>
-                                ABOUT
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="projects" onClick={closeMobileMenu}>
-                                PROJECTS
+                            <Link to="options" onClick={closeMobileMenu}>
+                                About
                             </Link>
                         </li>
                         <li>
                             <Link to="contact"  onClick={closeMobileMenu}>
-                                CONTACT
+                                Contact
                             </Link>
                         </li>
                     </ul>

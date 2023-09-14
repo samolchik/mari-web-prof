@@ -7,6 +7,7 @@ import About from "../About/About";
 import {CANCELLED} from "dns";
 import Contact from "../Contact/Contact";
 import Welcome from "../Welcome/Welcome";
+import Options from "../Options/Options";
 // other imports ...
 
 const MainComponent: React.FC<{ showWelcome: boolean }> = ({ showWelcome }) => {
@@ -14,7 +15,7 @@ const MainComponent: React.FC<{ showWelcome: boolean }> = ({ showWelcome }) => {
         <section id="main" className="main">
             {showWelcome ? <Welcome/> : <>
                 <Home />
-                <About/>
+               <Options/>
                 <Contact/>
             </>}
         </section>
