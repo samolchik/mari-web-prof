@@ -3,6 +3,10 @@
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .homePage:hover {
@@ -15,37 +19,87 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 10vh;
+    padding: 0 0 14vh 0;
 }
 
 .projects-header {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 40px ;
+    font-size: 1.3em;
 }
 
 .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 75%
+    justify-content: space-between;
+    width: 75%;
 }
 
 .projects-block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 16px;
+
 }
 
 .project1 {
-    flex-basis: calc(50% - 1rem);
-    margin: 0.5rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(50% - 8px);
+}
+
+.homePage {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: var(--bg-color);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    /*backdrop-filter: blur(15px);*/
+    /*-webkit-backdrop-filter: blur(15px);*/
+    box-shadow: 7px 7px 7px rgba(6, 13, 14, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.7s ease;
+}
+
+.overlay-header {
+    color: var(--primary-color);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.homePage:hover .overlay {
+    opacity: 0;
+}
+
+.homePage:hover {
+    transform: scale(1.02);
 }
 
 .homePage img {
-    max-width: 100%;
+    width: 100%;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.homePage:hover img {
+    opacity: 1;
+}
+
+.homePage:hover .overlay {
+    opacity: 0;
 }
 
 /*@media screen and (max-width: 480px) {*/

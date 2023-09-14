@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import photo from '../../assets/image777.png';
+import photo from '../../assets/image(2)3.png';
 import About from "../About/About";
 import Motivation from "../Motivation/Motivation";
 import Projects from "../Projects/Projects";
@@ -14,6 +14,9 @@ const Home: React.FC = () => {
         <div className="main">
         <section id="home" className="home-section">
                 <div className="home-container">
+                    <div className="photo-container">
+                        <img src={photo} alt="My Photo" />
+                    </div>
                     <div className="about-me">
                         <div className="about-me-header-container">
                             <h1>My name is Marina</h1>

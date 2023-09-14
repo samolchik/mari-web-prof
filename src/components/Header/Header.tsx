@@ -46,23 +46,23 @@ const Header = () => {
                         </li>
                         </div>
                         <li>
-                            <Link to="home" smooth={true} duration={500} onClick={closeMobileMenu}>
+                            <Link to="home" smooth={true} duration={50} onClick={closeMobileMenu}>
 
                                 HOME
                             </Link>
                         </li>
                         <li>
-                            <Link to="about" smooth={true} duration={500} onClick={closeMobileMenu}>
-                                ABOUT ME
+                            <Link to="about"  onClick={closeMobileMenu}>
+                                ABOUT
                             </Link>
                         </li>
                         <li>
-                            <Link to="projects" smooth={true} duration={500} onClick={closeMobileMenu}>
+                            <Link to="projects" onClick={closeMobileMenu}>
                                 PROJECTS
                             </Link>
                         </li>
                         <li>
-                            <Link to="contact" smooth={true} duration={500} onClick={closeMobileMenu}>
+                            <Link to="contact"  onClick={closeMobileMenu}>
                                 CONTACT
                             </Link>
                         </li>

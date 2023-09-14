@@ -15,7 +15,7 @@ const MainComponent: React.FC<{ showWelcome: boolean }> = ({ showWelcome }) => {
             {showWelcome ? <Welcome/> : <>
                 <Home />
                 <About/>
-
+                <Contact/>
             </>}
         </section>
     );

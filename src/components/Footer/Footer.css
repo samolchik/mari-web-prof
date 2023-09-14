@@ -6,9 +6,13 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: rgba(15, 8, 5, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(7, 12, 14, 0.9);
+    box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
     position: relative;
     bottom: 0;
+
 }
 
 .footer-content {
@@ -24,7 +28,7 @@
 }
 
 .footer p {
-    font-size: 14px;
+    font-size: 0.7em;
     margin: 10px;
 }
 
@@ -46,7 +50,7 @@
     border: none;
     color: rgb(245, 245, 241);
     cursor: pointer;
-    font-size: 14px;
+    font-size: 0.7em;
     right: 0;
     overflow: hidden;
     position: absolute;
