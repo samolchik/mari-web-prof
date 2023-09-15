@@ -3,7 +3,7 @@
 
 body {
     position: relative;
-    padding-left: 10%;
+    padding-left: 9%;
     background-color: var(--secondary-color);
 }
 
@@ -17,7 +17,7 @@ html {
 }
 
 .app-background-container {
-    background-image: url('./assets/IMG_5586.JPG');
+    background-image: url('./assets/main-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,8 +52,8 @@ html {
 }
 
 :root {
-    --primary-color: rgb(245, 242, 242);
-    --secondary-color: #0a0a0a;
+    --primary-color: rgb(242, 239, 239);
+    --secondary-color: #090e0e;
     --bg-color: rgba(6, 16, 17, 0.5);
     --bg2-color: rgba(6, 16, 17, 0.5);
 }
@@ -64,10 +64,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #101914;
+    background-color: rgba(10, 22, 24, 0.9);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #19271e;
+    background-color: rgba(14, 28, 32, 0.95);
 }

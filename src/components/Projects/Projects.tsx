@@ -44,16 +44,28 @@ const Projects = () => {
         <section className="projects-section" id="projects">
             <div className="projects-container">
                 <div className="projects-block">
-                <div className="project1"   onClick={() => handleClickProject('furniture')}>
-                    <div className="homePage">
-                        <div className="overlay">
-                            <h1 className="overlay-header">E-Commerce</h1>
+                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
+                        <div className="homePage">
+                            <div className="overlay" >
+                                <h1 className="overlay-header">Climate Change</h1>
+                            </div>
+                            <img
+                                src={movies}
+                                alt="Movies"/>
                         </div>
-                        <img
-                            src={furniture}
-                            alt="Furniture"/>
+                    </div>
+                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
+                        <div className="homePage">
+                            <div className="overlay">
+                                <h1 className="overlay-header">E-Commerce</h1>
+                            </div>
+                            <img
+                                src={furniture}
+                                alt="Furniture"/>
+                        </div>
                     </div>
                 </div>
+                <div className="projects-block">
                     <div className="project1"   onClick={() => handleClickProject('cars')}>
                         <div className="homePage">
                             <div className="overlay">
@@ -63,23 +75,11 @@ const Projects = () => {
                                 src={cars}
                                 alt="Cars"/>
                         </div>
-                </div>
-                </div>
-                <div className="projects-block">
+                    </div>
                 <div className="project1"   onClick={() => handleClickProject('movies')}>
                     <div className="homePage">
                         <div className="overlay">
                             <h1 className="overlay-header">Movie search</h1>
-                        </div>
-                        <img
-                            src={movies}
-                            alt="Movies"/>
-                    </div>
-                </div>
-                <div className="project1"   onClick={() => handleClickProject('furniture')}>
-                    <div className="homePage">
-                        <div className="overlay" >
-                            <h1 className="overlay-header">Climate Change</h1>
                         </div>
                         <img
                             src={movies}

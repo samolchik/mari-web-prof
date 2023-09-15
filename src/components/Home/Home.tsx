@@ -1,12 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Home.css';
-import photo from '../../assets/image(2)3.png';
-import About from "../About/About";
-import Motivation from "../Motivation/Motivation";
-import Projects from "../Projects/Projects";
-import SkillsSlider from "../SkillsSlider/SkillsSlider";
-import Contact from "../Contact/Contact";
-
+import photo from '../../assets/photo.png';
 
 const Home: React.FC = () => {
 
@@ -29,9 +23,6 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            {/*<Projects/>*/}
-            {/*/!*<SkillsSlider/>*!/*/}
-            {/*<Contact/>*/}
         </section>
 
         </div>

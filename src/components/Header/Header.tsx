@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './Header.css';
-import logo from '../../assets/logos/logo1.jpeg';
-import linkedinLogo from '../../assets/logos/linkedin.jpeg';
-import ukraine from '../../assets/logos/Ukraine.jpeg';
-import githubLogo from '../../assets/logos/github.jpeg';
+import linkedinLogo from '../../assets/logos/linkedin.png';
+import ukraine from '../../assets/logos/ukraine.png';
+import githubLogo from '../../assets/logos/github.png';
 import burgericon from '../../assets/logos/burgericon.jpeg';
 import { Link } from "react-scroll";
 const Header = () => {
@@ -38,24 +37,23 @@ const Header = () => {
                                 <img className="link-logo" src={githubLogo} alt="gitHub" />
                             </a>
                         </li>
-                        <li className="header-link-logo">
-                            <a href="https://www.linkedin.com/in/mari-dvlpr/" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
-                                <img className="link-logo" src={linkedinLogo} alt="LinkedIn" />
-                            </a>
-                        </li>
-                        </div>
-                        <li>
+                            <li className="header-link-logo">
+                                <a href="https://www.linkedin.com/in/mari-dvlpr/" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+                                    <img className="link-logo" src={linkedinLogo} alt="LinkedIn" />
+                                </a>
+                            </li>
+                        </div >
+                        <li className="link-hover">
                             <Link to="home" smooth={true} duration={50} onClick={closeMobileMenu}>
-
                                 Home
                             </Link>
                         </li>
-                        <li>
+                        <li className="link-hover">
                             <Link to="options" onClick={closeMobileMenu}>
-                                About
+                                Projects
                             </Link>
                         </li>
-                        <li>
+                        <li className="link-hover">
                             <Link to="contact"  onClick={closeMobileMenu}>
                                 Contact
                             </Link>

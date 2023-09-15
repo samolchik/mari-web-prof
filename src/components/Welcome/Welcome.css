@@ -8,14 +8,15 @@
 }
 
 .welcome-animation {
-    animation: slideIn 1000ms forwards;
+    animation: welcomeSlideIn 1000ms forwards;
 }
 
 .welcome-text {
     font-size: 50px;
     font-weight: lighter;
 }
-@keyframes slideIn {
+
+@keyframes welcomeSlideIn {
     0% {
         transform: translateY(-100%);
         opacity: 0;

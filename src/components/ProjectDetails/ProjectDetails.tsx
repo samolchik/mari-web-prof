@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './ProjectDetails.css';
-
 
 interface ProjectDetailsProps {
     onClose: () => void;
@@ -22,29 +21,32 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide + 2) % images.length);
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
     };
 
     const prevSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide - 2 + images.length) % images.length);
+        setCurrentSlide((prevSlide) =>
+            prevSlide === 0 ? images.length - 1 : prevSlide - 1
+        );
     };
 
     return (
         <div className="background">
+            <div className="close-button">
+                <button className="close" onClick={onClose}>
+                    CLOSE
+                </button>
+            </div>
             <div className="details-wrapper">
                 <div className="details">
-                    <div className="close-button">
-                        <button className="close" onClick={onClose}>
-                            CLOSE
-                        </button>
-                    </div>
                     <div className="screen-shots">
                         <div className="slider-container">
-                            {images.slice(currentSlide, currentSlide + 2).map((image, index) => (
-                                <div key={index} className="slide">
-                                    <img src={image} alt={`Screen ${currentSlide + index + 1}`}/>
-                                </div>
-                            ))}
+                            <div className="slide">
+                                <img
+                                    src={images[currentSlide]}
+                                    alt={`Screen ${currentSlide + 1}`}
+                                />
+                            </div>
                         </div>
                         <div className="slider-controls">
                             <button onClick={prevSlide}>&lt;</button>
@@ -58,9 +60,15 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                                     <li key={index}>
                                         {tech.includes(':') ? (
                                             <>
-                                                <span
-                                                    className="highlight">{tech.substring(0, tech.indexOf(':') + 1)}</span>
-                                                {tech.substring(tech.indexOf(':') + 1)}
+                                                <span className="highlight">
+                                                    {tech.substring(
+                                                        0,
+                                                        tech.indexOf(':') + 1
+                                                    )}
+                                                </span>
+                                                {tech.substring(
+                                                    tech.indexOf(':') + 1
+                                                )}
                                             </>
                                         ) : (
                                             tech
@@ -71,11 +79,23 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                         </div>
 
                         <div className="contact-button-div">
-                            <a href={websiteLink} target="_blank" rel="noopener noreferrer">
-                                <button className="contact-button description-details-button">GO TO WEBSITE</button>
+                            <a
+                                href={websiteLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="contact-button description-details-button">
+                                    GO TO WEBSITE
+                                </button>
                             </a>
-                            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                                <button className="contact-button description-details-button">GO TO GITHUB</button>
+                            <a
+                                href={githubLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="contact-button description-details-button">
+                                    GO TO GITHUB
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -86,6 +106,3 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
 };
 
 export default ProjectDetails;
-
-
-

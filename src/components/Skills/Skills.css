@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .skills-list-header {
@@ -19,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
 }
 
 .skills-each {

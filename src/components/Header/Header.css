@@ -2,7 +2,7 @@
     position: fixed;
     left: 0;
     height: 100vh;
-    width: 10%;
+    width: 9%;
     display: block;
     z-index: 100;
     backdrop-filter: blur(20px);
@@ -28,9 +28,8 @@ ul {
 }
 
 .logo-header img {
-    height: 33px;
+    height: 40px;
     margin-top: 15px;
-
 }
 
 .logo-header {
@@ -47,43 +46,51 @@ ul {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .navigation ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-direction: column;
 }
 
 .navigation li {
     margin-bottom: 30px;
     transition: transform 0.3s ease-in-out;
+    width: 100%;
+    text-transform: uppercase;
 }
 
 .header-link-logo {
-    margin-bottom: 15px !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
 }
 
 .navigation a {
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.95em;
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    margin: 4px;
+}
+.navigation a:hover {
+    transform: scale(1.05);
+}
+.link-hover:hover {
+    transform: scale(1.07);
 }
 
-.navigation a:hover, .navigation li:hover {
-    transform: scale(1.1);
-}
-
-.header h1 {
-    color: rgb(245, 245, 241);
-    font-size: 24px;
-    margin-left: 15px;
-}
+/*.header h1 {*/
+/*    color: rgb(245, 245, 241);*/
+/*    !*font-size: 24px;*!*/
+/*    margin-left: 15px;*/
+/*}*/
 
 .link-logo {
     height: 30px;
@@ -146,7 +153,7 @@ ul {
     }
 
     .burger-icon {
-        color: rgb(248, 248, 245);
+        color: var(--primary-color);
         width: 30px;
         height: 3px;
         margin: 3px;
@@ -168,7 +175,7 @@ ul {
     }
 
     .navigation a {
-        color: rgb(245, 245, 241);
+        color: var(--primary-color);
         font-size: 18px;
     }
 }

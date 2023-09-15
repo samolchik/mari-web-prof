@@ -3,6 +3,7 @@ import front from "../../assets/logos/4.png";
 import back from "../../assets/logos/5.png";
 import tools from "../../assets/logos/6.png";
 import "./Skills.css";
+
 const Skills = () => {
     const skill1Ref = useRef<HTMLDivElement>(null);
     const skill2Ref = useRef<HTMLDivElement>(null);

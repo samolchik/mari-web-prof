@@ -28,7 +28,8 @@
 
 .bullet-point {
     font-size: 1.2em;
-    padding: 5px 15px;
+    font-weight: normal;
+    padding: 5px 15px 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +38,7 @@
 
 .bullet-point p {
     text-indent: 20px;
-    font-size: 1em;
     padding-bottom: 10px;
-}
-.connect-container {
-transition: transform 0.3s ease-in-out;
 }
 
 .connect-container:hover {
@@ -72,16 +69,16 @@ transition: transform 0.3s ease-in-out;
 }
 
 .connect-container img {
-    height: 22px;
-    width: 22px;
+    height: 23px;
 }
 
 .connect-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    color: white;
+    font-weight: normal;
+    color: var(--primary-color);
+    transition: transform 0.3s ease-in-out;
 }
 
 .link {

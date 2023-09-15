@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
     position: relative;
-    background-image: url("../../assets/422.jpg");
+    min-height: 90vh;
+    background-image: url("../../assets/secondary-background.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
+    padding: 70px 0 50px 0;
 }
 
 .options-container {
@@ -41,7 +42,7 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--primary-color);
     font-size: 1.3em;
     font-weight: bolder;
     text-transform: uppercase;
@@ -51,4 +52,36 @@
 
 .options-switcher button:hover {
     transform: scale(1.1);
+}
+
+.music-record img {
+    position: fixed;
+    top:15px;
+    right: 20px;
+    height: 65px;
+    cursor: pointer;
+}
+.slideIn img {
+    animation: slideIn 1.5s ease-out forwards;
+}
+.spinning img {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes slideIn {
+    0% {
+        right: -100px;
+    }
+    100% {
+        right: 15px;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
