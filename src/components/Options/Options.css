@@ -4,13 +4,13 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 90vh;
+    min-height: 92vh;
     background-image: url("../../assets/secondary-background.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
-    padding: 70px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 .options-container {
@@ -47,7 +47,6 @@
     font-weight: bolder;
     text-transform: uppercase;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .options-switcher button:hover {
@@ -60,6 +59,7 @@
     right: 20px;
     height: 65px;
     cursor: pointer;
+    z-index: 999;
 }
 .slideIn img {
     animation: slideIn 1.5s ease-out forwards;
@@ -84,4 +84,89 @@
     100% {
         transform: rotate(360deg);
     }
+}
+@media screen and (max-width: 480px) {
+    .music-record img {
+        top:70px;
+        right: 5px;
+        height: 55px;
+    }
+    .options {
+        /*background-image:none;*/
+        /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
+        background-image: url("../../assets/secondary-background-mobile.jpg");
+        background-attachment: scroll;
+    }
+    .options-switcher {
+        width: 90%;
+        top: 25px;
+    }
+
+    .options-switcher button {
+        margin: 0 5px;
+        padding: 10px 5px;
+        color: var(--primary-color);
+        font-size: 1.1em;
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .music-record img {
+        top:70px;
+        right: 5px;
+        height: 55px;
+    }
+    .options {
+        /*background-image:none;*/
+        /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
+        background-image: url("../../assets/secondary-background-mobile.jpg");
+        background-attachment: scroll;
+    }
+    .options-switcher {
+        width: 90%;
+        top: 25px;
+    }
+
+    .options-switcher button {
+        margin: 0 7px;
+        padding: 10px 7px;
+        color: var(--primary-color);
+        font-size: 1.1em;
+
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1124px) {
+    .music-record img {
+        top:5px;
+        right: 5px;
+    }
+    .options {
+        /*background-image:none;*/
+        /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
+        /*background-image: url("../../assets/mobile-bg.png");*/
+        background-attachment: scroll;
+    }
+    .options-switcher {
+        width: 90%;
+        top: 25px;
+    }
+
+    .options-switcher button {
+        margin: 0 7px;
+        padding: 10px 7px;
+        color: var(--primary-color);
+        font-size: 1.1em;
+
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+
+
+}
+
+@media screen and (min-width: 1700px) {
+
 }

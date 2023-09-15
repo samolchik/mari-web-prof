@@ -5,7 +5,6 @@ import photo from '../../assets/photo.png';
 const Home: React.FC = () => {
 
     return (
-        <div className="main">
         <section id="home" className="home-section">
                 <div className="home-container">
                     <div className="photo-container">
@@ -24,8 +23,6 @@ const Home: React.FC = () => {
                     </div>
                 </div>
         </section>
-
-        </div>
     );
 };
 

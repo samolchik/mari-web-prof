@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import './Header.css';
 import linkedinLogo from '../../assets/logos/linkedin.png';
 import ukraine from '../../assets/logos/ukraine.png';
@@ -16,7 +16,17 @@ const Header = () => {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
 
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMobileMenuOpen]);
     return (
         <header className={`header ${isHeaderHidden ? 'hide' : ''}`}>
             <div className="header-content">
@@ -25,10 +35,11 @@ const Header = () => {
                 </div>
                 <h1></h1>
                 <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
-                   <div className="burger-container">
-                    <img src={burgericon}/>
+                    <div className="burger-container">
+                        <img src={burgericon} alt="Burger Icon"/>
+                    </div>
                 </div>
-                </div>
+
                 <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <div className="header-link-logo">

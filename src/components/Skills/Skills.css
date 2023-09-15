@@ -89,3 +89,84 @@
     align-items: center;
     font-size: 0.9em;
 }
+@media screen and (max-width: 480px) {
+   .skills {
+       width: 93%;
+   }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skills-each {
+        margin-bottom: 10px;
+        height: fit-content;
+        width: 100%;
+    }
+    .each  {
+        font-size: 0.9em;
+    }
+
+    .skills-each img {
+        height:80px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .each {
+        font-size: 0.9em;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .skills-each img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .skills-each {
+        height: fit-content;
+        margin-bottom: 10px;
+        padding: 25px 15px;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 1124px) {
+    .skills {
+        width: 85%;
+    }
+    .each  {
+        font-size: 0.8em;
+    }
+
+    .skills-list {
+        width: 100%;
+    }
+
+    .skills-each {
+        padding: 25px 15px;
+    }
+    .skills-each img {
+        height: 75px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+
+}
+@media screen and (min-width: 1700px)  {
+    /*.skills-list {*/
+    /*    width: 65%;*/
+    /*}*/
+
+    /*.skills-each {*/
+    /*    width: 65%;*/
+    /*}*/
+
+}

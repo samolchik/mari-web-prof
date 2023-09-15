@@ -123,21 +123,49 @@
 
 /* Media Queries */
 
+@media screen and (max-width: 576px) {
+    .home-section {
+        min-height: 100vh;
+    }
+    .home-container {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  .about-me {
+      margin: 0;
+      padding: 0;
+  }
+    .about-me h1 {
+        font-size: 1.5em;
+        margin: 5px;
+    }
+
+    .about-me h2 {
+        font-size: 1em;
+    }
+
+    .photo-container img {
+        height: 280px;
+        margin: 0;
+    }
+}
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .home-section {
-        height: fit-content;;
+        min-height: 100vh;
     }
 
     .home-container {
-        margin-top: 100px;
-        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .about-me {
-        justify-content: center;
-        align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
     .photo-container {
@@ -145,22 +173,16 @@
     }
 
     .about-me h1 {
-        font-size: 40px;
-        margin: 10px;
-    }
-
-    .photo-container img {
-        min-height: 350px;
+        font-size: 1.6em;
     }
 
     .about-me h2 {
-        font-size: 20px;
-        margin: 10px;
+        font-size: 1.2em;
     }
 
     .photo-container img {
         margin: 0;
-        height: 50vh;
+      height: 330px;
     }
 
     .button-container {
@@ -172,56 +194,31 @@
         width: fit-content;
     }
 }
-
-@media screen and (max-width: 480px) {
-    .home-container {
-        margin: 45px 0px 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .photo-container {
-        margin: 50px 10px 10px;
-    }
-
-    .about-me {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-me h1 {
-        font-size: 30px;
-        margin: 5px;
-    }
-
-    .about-me h2 {
-        font-size: 18px;
-    }
-
-    .about-me p {
-        font-size: 16px;
-        margin: 10px;
-        display: flex;
-    }
-
-    .photo-container img {
-        height: 50vh;
-        margin: 0;
-    }
-
-    .button-container {
-        width: fit-content;
-        margin: 20px;
-    }
-
-}
-
 @media screen and (min-width: 1800px) {
 
     .photo-container img {
         height: 60vh;
     }
+}
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1699px) {
+
+}
+
+@media (min-width: 1700px) {
 }
