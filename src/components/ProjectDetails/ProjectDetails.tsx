@@ -2,7 +2,6 @@ import React from 'react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './ProjectDetails.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 interface ProjectDetailsProps {
     onClose: () => void;
