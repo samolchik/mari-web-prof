@@ -41,6 +41,8 @@
 .project1 {
     flex-basis: calc(50% - 8px);
     margin-bottom: 16px;
+    height: 300px;
+    width: 450px;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     background-color: var(--bg-color);
@@ -97,6 +99,8 @@
 @media screen and (max-width: 480px) {
     .project1 {
         flex-direction: column;
+        height: 250px;
+        width: 350px;
     }
 
     .projects-container {
