@@ -1,39 +1,15 @@
 .background {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 91%;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    min-height: 100vh;
-    z-index: 1000;
-    backdrop-filter: blur(155px);
-    -webkit-backdrop-filter: blur(155px);
-    background-color: rgba(6, 16, 17, 0.55);
-    background-position: center;
-    background-size: cover;
-}
-
-.details-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-
-}
-
-.details {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-direction: column;
+    z-index: 998;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    background-color: rgba(6, 16, 17, 0.65);
+    overflow: auto;
 }
 
 .close-button {
@@ -41,9 +17,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    left: 30px;
-    top:20px;
-    position: absolute;
+    padding: 20px 0 20px 20px;
 }
 
 .close {
@@ -59,11 +33,6 @@
     transform: scale(1.07);
 }
 
-.slide img {
-    height: 47vh;
-    box-shadow: 7px 7px 7px rgba(6, 13, 14, 0.85);
-}
-
 .screen-shots {
     display: flex;
     justify-content: center;
@@ -72,139 +41,96 @@
 }
 
 .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 47vh;
-    overflow: hidden;
-}
-
-.slider-controls button {
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
-    font-size: 1.8em;
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    cursor: pointer;
-    font-weight: lighter;
+    box-shadow: 7px 12px 17px rgba(6, 13, 14, 0.96);
 }
 
 .description-details {
-    padding-top: 20px;
-    margin: 10px 30px;
+    margin: 20px 30px;
     font-weight: lighter;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 .description-details p {
-    font-size: 1.05em;
+    font-size: 1em;
     justify-content: flex-start;
-    width:74%;
+    width: 70%;
     padding-bottom: 10px;
     color: var(--primary-color);
     font-weight: normal;
-
 }
 
 .description-details ul {
     width: 75%;
     list-style-type: disc;
     color: var(--primary-color);
-    margin: 5px 5px 5px 20px;
-    font-size: 1.05em;
+    font-size: 1em;
     font-weight: normal;
     text-align: justify;
 }
 
-.description-details li {
-    margin-bottom: 5px;
-}
+/*.description-details li {*/
+/*    margin-bottom: 5px;*/
+/*}*/
 
 .description-details-button {
     margin-left: 10px;
     margin-right: 10px;
     border: solid 0.03em var(--primary-color);
+    font-size: 0.9em;
+
 }
 
+.carousel-root {
+    width: 655px;
+}
 
-/*.slider-wrapper {*/
-/*    height: 47vh;*/
-/*    width: auto;*/
-/*}*/
-/*.awssld__content {*/
-/*    height: 47vh !important;*/
-/*    width: auto !important;*/
-/*    object-fit: contain !important;*/
-/*}*/
-/*.slider-wrapper {*/
-/*    max-width: 800px;*/
-/*    margin: auto;*/
-/*    !* Add more styles if needed *!*/
-/*}*/
+.carousel .thumbs-wrapper {
+    display: none;
+}
 
-/*.awssld { !* Adjust as needed *!*/
-/*    max-width: 800px; !* Or whatever maximum width you prefer *!*/
-/*    margin: auto;*/
-/*    !* Add any other styling you want for the slider container *!*/
-/*}*/
+.carousel .control-dots .dot {
+    background: #010e11;
+}
 
-/*.awssld__content {*/
-/*    height: auto !important; !* Make sure the height fits the aspect ratio of your images *!*/
-/*}*/
-/*@media screen and (max-width: 480px) {*/
-/*    .details-wrapper {*/
-/*        width: 95%;*/
-/*    }*/
+.carousel .carousel-status {
+    display: none;
+}
 
-/*    .slider-container {*/
-/*        width: 100%;*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        margin: 20px 10px 10px;*/
-/*    }*/
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    background: none;
+    top: 0;
+    opacity: 1;
+}
 
-/*    .slide {*/
-/*        width: 100%;*/
-/*    }*/
+.carousel .control-next.control-arrow::before {
+    border-left: 10px solid #010e11;
+}
 
-/*    .details {*/
-/*        padding-bottom: 15px;*/
-/*    }*/
+.carousel .control-prev.control-arrow::before {
+    border-right: 10px solid #010e11;
+}
 
-/*    .description-details {*/
+.carousel .control-arrow:focus, .carousel .control-arrow:hover {
+    background: none;
+}
 
-/*        margin: 10px;*/
-/*    }*/
+.carousel.carousel-slider .control-arrow {
+    padding: 1px;
+}
 
-/*    .contact-button-div {*/
-/*        display: flex;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*    }*/
+.carousel.carousel-slider .control-arrow:hover {
+    background: none;
+}
 
-/*}*/
-
-/*@media screen and (min-width: 481px) and (max-width: 768px) {*/
-/*    .details-wrapper {*/
-/*        width: 95%;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (min-width: 769px) and (max-width: 1024px) {*/
-/*    .details-wrapper {*/
-/*        width: 95%;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (min-width: 1700px) {*/
-/*    .details-wrapper {*/
-/*        width: 60%;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 480px) {
+    .description-details {
+        margin: 10px;
+        max-height: 40vh;
+        overflow-y: auto;
+    }
+    .carousel-root {
+        width: 355px;
+    }
+}
