@@ -68,11 +68,7 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    /*.music-record img {*/
-    /*    top:70px;*/
-    /*    right: 5px;*/
-    /*    height: 55px;*/
-    /*}*/
+
     .options {
         background-image: url("../../assets/secondary-background-mobile.jpg");
         background-attachment: scroll;
@@ -92,10 +88,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1124px) {
-    /*.music-record img {*/
-    /*    top:5px;*/
-    /*    right: 5px;*/
-    /*}*/
+
     .options {
 
         background-attachment: scroll;
