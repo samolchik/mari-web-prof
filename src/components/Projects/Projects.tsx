@@ -46,9 +46,6 @@ const Projects = () => {
                 <div className="projects-block">
                     {['furniture', 'movies', 'cars'].map((projectType, idx) => (
                         <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
-                                <div className={`overlay ${projectType}`}>
-
-                                </div>
                             <h1 className="projects-header">{projectType.toUpperCase()}</h1>
                                 <img
                                     src={projectType === 'furniture' ? furniture : projectType === 'movies' ? movies : cars}

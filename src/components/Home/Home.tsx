@@ -1,11 +1,13 @@
 import React from 'react';
 import './Home.css';
 import photo from '../../assets/photo.png';
+import Music from "../Music/Music";
 
 const Home: React.FC = () => {
 
     return (
         <section id="home" className="home-section">
+            <Music/>
                 <div className="home-container">
                     <div className="photo-container">
                         <img src={photo} alt="My Photo" />
