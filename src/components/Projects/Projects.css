@@ -15,12 +15,22 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    min-height: 100vh;
 }
 
 .projects-header {
-    text-align: center;
-    font-size: 1.3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: var(--primary-color);
+    font-size: 2.1em;
+    transition: opacity 700ms ease-in-out;
 }
 
 .projects-container {
@@ -28,28 +38,44 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 70%;
 }
 
 .projects-block {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .project1 {
-    flex-basis: calc(50% - 8px);
-    margin-bottom: 16px;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
-    background-color: var(--bg-color);
-    box-shadow: 7px 7px 7px rgba(6, 13, 14, 0.85);
+    width: calc(49% - 10px);
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 7px;
+    box-shadow: 7px 7px 7px rgba(6, 13, 14, 0.85);
+}
 
+.overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    transition: opacity 700ms ease-in-out;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    z-index: 0;
 }
 
 .homePage {
@@ -65,7 +91,7 @@
 }
 
 .project1 img {
-    width: 100%;
+    height: 300px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 1s ease;
@@ -73,6 +99,8 @@
     justify-content: center;
     align-items: center;
 }
+
+.project1:hover .overlayer,
 .project1:hover .projects-header {
     opacity: 0;
 }
@@ -81,65 +109,65 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 480px) {
-    .project1 {
-        flex-direction: column;
-    }
+/*@media screen and (max-width: 480px) {*/
+/*    .project1 {*/
+/*        flex-direction: column;*/
+/*    }*/
 
-    .projects-container {
-        width: 95%;
-    }
+/*    .projects-container {*/
+/*        width: 95%;*/
+/*    }*/
 
-    .projects-block {
-        flex-direction: column;
-        margin: 0 4px 0 4px;
-    }
+/*    .projects-block {*/
+/*        flex-direction: column;*/
+/*        margin: 0 4px 0 4px;*/
+/*    }*/
 
-    .project-description {
-        width: 100%;
-    }
+/*    .project-description {*/
+/*        width: 100%;*/
+/*    }*/
 
-    .homePage {
-        width: 100%;
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
+/*    .homePage {*/
+/*        width: 100%;*/
+/*        margin-bottom: 10px;*/
+/*        margin-left: 0;*/
+/*    }*/
 
-}
+/*}*/
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .project1 {
-        flex-direction: column;
-    }
+/*@media screen and (min-width: 481px) and (max-width: 768px) {*/
+/*    .project1 {*/
+/*        flex-direction: column;*/
+/*    }*/
 
-    .projects-block {
-        flex-direction: column;
-        margin: 0 4px 0 4px;
-    }
-    .projects-container {
-          width: 80%;
-      }
+/*    .projects-block {*/
+/*        flex-direction: column;*/
+/*        margin: 0 4px 0 4px;*/
+/*    }*/
+/*    .projects-container {*/
+/*          width: 80%;*/
+/*      }*/
 
-    .project-description {
-        width: 100%;
-    }
+/*    .project-description {*/
+/*        width: 100%;*/
+/*    }*/
 
-    .homePage {
-        width: 100%;
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
+/*    .homePage {*/
+/*        width: 100%;*/
+/*        margin-bottom: 10px;*/
+/*        margin-left: 0;*/
+/*    }*/
 
-}
+/*}*/
 
-@media screen and (min-width: 769px) and (max-width: 1124px) {
+/*@media screen and (min-width: 769px) and (max-width: 1124px) {*/
 
-.projects-container {
-    width: 80%;
-    }
-}
+/*.projects-container {*/
+/*    width: 80%;*/
+/*    }*/
+/*}*/
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {*/
 
-}
+/*}*/
 

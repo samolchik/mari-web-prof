@@ -44,13 +44,14 @@ const Projects = () => {
         <section className="projects-section" id="projects">
             <div className="projects-container">
                 <div className="projects-block">
-                    {[ 'cars platform back end','e-commerce','movie search'].map((projectType, idx) => (
+                    {['cars platform back end', 'e-commerce', 'movie search', 'climate change'].map((projectType, idx) => (
                         <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
                             <h1 className="projects-header">{projectType.toUpperCase()}</h1>
                             <img
-                                src={projectType === 'cars platform back end' ? cars : projectType ===  'e-commerce'? furniture : movies}
+                                src={projectType === 'cars platform back end' ? cars : projectType === 'e-commerce' ? furniture : projectType === 'climate change' ? furniture : movies}
                                 alt={projectType}
                             />
+                            <div className="overlayer"></div>
                         </div>
                     ))}
                 </div>
@@ -58,7 +59,7 @@ const Projects = () => {
             {selectedProject === 'cars platform back end' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
-                    images={[ screen13, screen14, screen15,  screen16, screen17, screen18]}
+                    images={[screen13, screen14, screen15, screen16, screen17, screen18]}
                     projectDescription="Hey there! Explore the tech behind my Car Sale project."
                     projectTechnologies={['Node.js: At the core of this project lies Node.js, an industry-leading runtime that ensures the application operates with performance in mind.',
                         'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable. This lightweight framework has streamlined the creation of API endpoints, making data retrieval both swift and reliable.',
@@ -70,7 +71,7 @@ const Projects = () => {
             {selectedProject === 'e-commerce' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
-                    images={[ screen7, screen10, screen9, screen8, screen11, screen12]}
+                    images={[screen7, screen10, screen9, screen8, screen11, screen12]}
                     projectDescription="Explore the Tech Behind My Furniture Store E-Commerce Project!"
                     projectTechnologies={['Responsive Design: I crafted beautiful and user-friendly designs with a mobile-first approach, ensuring that the website looks stunning and functions seamlessly on various devices and screen sizes.',
                         ' CSS: Leveraging CSS, I styled the website\'s components to create visually appealing layouts, providing an enjoyable shopping experience for users.',
@@ -82,7 +83,19 @@ const Projects = () => {
             {selectedProject === 'movie search' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
-                    images={[ screen6, screen1, screen3,  screen4, screen2, screen5]}
+                    images={[screen6, screen1, screen3, screen4, screen2, screen5]}
+                    projectDescription="Explore the Tech Behind My Movie Search Project!"
+                    projectTechnologies={['React: I utilized the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.',
+                        'TypeScript: Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.',
+                        'Redux Toolkit:Mastering complex states was a breeze with Redux Toolkit, ensuring a captivating user journey through seamless movie exploration.',
+                        'TMDb API Integration:I integrated the TMDb API, granting real-time access to a vast collection of movie data.']}
+                    websiteLink="https://movie-search-opal-two.vercel.app/"
+                    githubLink="https://github.com/DevMari999/movie_search"/>
+            )}
+            {selectedProject === 'climate change' && (
+                <ProjectDetails
+                    onClose={handleCloseProjectDetails}
+                    images={[screen6, screen1, screen3, screen4, screen2, screen5]}
                     projectDescription="Explore the Tech Behind My Movie Search Project!"
                     projectTechnologies={['React: I utilized the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.',
                         'TypeScript: Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.',
