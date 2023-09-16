@@ -24,9 +24,8 @@ const App: React.FC = () => {
             <div className="app-overlay-container"></div>
             <Header />
             <section id="main" className="main">
-                {showWelcome ? <>
-                    <Welcome />
-                </> : <>
+                {showWelcome ?
+                    <Welcome />: <>
                     <Home />
                     <Options />
                     <Contact />
