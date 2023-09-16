@@ -52,7 +52,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    -moz-filter: blur(25px);
     -ms-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
@@ -61,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+    opacity: 3;
     transition: opacity 1s ease;
 }
 
