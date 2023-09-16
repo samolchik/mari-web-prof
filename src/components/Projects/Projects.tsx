@@ -44,49 +44,20 @@ const Projects = () => {
         <section className="projects-section" id="projects">
             <div className="projects-container">
                 <div className="projects-block">
-                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
-                        <div className="homePage">
-                            <div className="overlay" >
-                                <h1 className="overlay-header">Climate Change</h1>
+                    {['furniture', 'movies', 'cars'].map((projectType, idx) => (
+                        <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
+                            <div className="homePage">
+                                <div className={`overlay ${projectType}`}>
+                                    <h1 className="overlay-header">{projectType.toUpperCase()}</h1>
+                                </div>
+                                <img
+                                    src={projectType === 'furniture' ? furniture : projectType === 'movies' ? movies : cars}
+                                    alt={projectType}
+                                />
                             </div>
-                            <img
-                                src={movies}
-                                alt="Movies"/>
                         </div>
-                    </div>
-                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
-                        <div className="homePage">
-                            <div className="overlay">
-                                <h1 className="overlay-header">E-Commerce</h1>
-                            </div>
-                            <img
-                                src={furniture}
-                                alt="Furniture"/>
-                        </div>
-                    </div>
+                    ))}
                 </div>
-                <div className="projects-block">
-                    <div className="project1"   onClick={() => handleClickProject('cars')}>
-                        <div className="homePage">
-                            <div className="overlay">
-                                <h1 className="overlay-header">Cars platform back end</h1>
-                            </div>
-                            <img
-                                src={cars}
-                                alt="Cars"/>
-                        </div>
-                    </div>
-                <div className="project1"   onClick={() => handleClickProject('movies')}>
-                    <div className="homePage">
-                        <div className="overlay">
-                            <h1 className="overlay-header">Movie search</h1>
-                        </div>
-                        <img
-                            src={movies}
-                            alt="Movies"/>
-                    </div>
-                </div>
-            </div>
             </div>
             {selectedProject === 'furniture' && (
                 <ProjectDetails
