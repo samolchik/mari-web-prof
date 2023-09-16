@@ -90,7 +90,7 @@
 @media screen and (max-width: 480px) {
     .project1 {
         flex-direction: column;
-        height: auto;
+        height: 250px;
         width: 330px;
         margin-bottom: 7px;
     }
