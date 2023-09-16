@@ -47,10 +47,10 @@ const Projects = () => {
                     {[ 'cars platform back end','e-commerce','movie search'].map((projectType, idx) => (
                         <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
                             <h1 className="projects-header">{projectType.toUpperCase()}</h1>
-                                <img
-                                    src={projectType === 'cars platform back end' ? cars : projectType ===  'e-commerce'? furniture : movies}
-                                    alt={projectType}
-                                />
+                            <img
+                                src={projectType === 'cars platform back end' ? cars : projectType ===  'e-commerce'? furniture : movies}
+                                alt={projectType}
+                            />
                         </div>
                     ))}
                 </div>
