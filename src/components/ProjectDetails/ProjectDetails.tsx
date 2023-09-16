@@ -22,12 +22,12 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                                                            githubLink}) => {
     return (
         <div className="background">
+            <div className="close-button">
+                <button className="close" onClick={onClose}>
+                    CLOSE
+                </button>
+            </div>
             <div className="screen-shots">
-                <div className="close-button">
-                    <button className="close" onClick={onClose}>
-                        CLOSE
-                    </button>
-                </div>
                 <div className="slider-container">
                     <div className="slider-wrapper">
                         <Carousel
