@@ -30,3 +30,25 @@
         transform: rotate(360deg);
     }
 }
+@media screen and (max-width: 480px) {
+    .music-record img {
+        top:70px;
+        right: 5px;
+        height: 55px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .music-record img {
+        top: 70px;
+        right: 5px;
+        height: 55px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1124px) {
+    .music-record img {
+        top:5px;
+        right: 5px;
+    }
+}

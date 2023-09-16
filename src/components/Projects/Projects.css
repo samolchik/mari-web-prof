@@ -7,7 +7,6 @@
     align-items: center;
 }
 
-
 .projects-section {
     width: 100%;
     display: flex;
@@ -19,7 +18,6 @@
 
 .projects-header {
     text-align: center;
-    margin: 40px;
     font-size: 1.3em;
 }
 
@@ -49,14 +47,13 @@
     justify-content: center;
     align-items: center;
     transform: translate3d(0, 0, 0);
+    /*will-change: transform;*/
 }
 
 .homePage {
     position: relative;
     cursor: pointer;
 }
-
-
 
 .projects-header {
     color: var(--primary-color);
@@ -73,8 +70,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+}
+.project1:hover .projects-header {
+    opacity: 0;
 }
 
 .project1:hover img {

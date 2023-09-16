@@ -44,18 +44,30 @@ const Projects = () => {
         <section className="projects-section" id="projects">
             <div className="projects-container">
                 <div className="projects-block">
-                    {['furniture', 'movies', 'cars'].map((projectType, idx) => (
+                    {[ 'cars platform back end','e-commerce','movie search'].map((projectType, idx) => (
                         <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
                             <h1 className="projects-header">{projectType.toUpperCase()}</h1>
                                 <img
-                                    src={projectType === 'furniture' ? furniture : projectType === 'movies' ? movies : cars}
+                                    src={projectType === 'cars platform back end' ? cars : projectType ===  'e-commerce'? furniture : movies}
                                     alt={projectType}
                                 />
                         </div>
                     ))}
                 </div>
             </div>
-            {selectedProject === 'furniture' && (
+            {selectedProject === 'cars platform back end' && (
+                <ProjectDetails
+                    onClose={handleCloseProjectDetails}
+                    images={[ screen13, screen14, screen15,  screen16, screen17, screen18]}
+                    projectDescription="Hey there! Explore the tech behind my Car Sale project."
+                    projectTechnologies={['Node.js: At the core of this project lies Node.js, an industry-leading runtime that ensures the application operates with performance in mind.',
+                        'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable. This lightweight framework has streamlined the creation of API endpoints, making data retrieval both swift and reliable.',
+                        'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
+                        'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities. This ensures that content can be tailored and presented based on specific requirements and conditions.']}
+                    websiteLink="https://car-sale-platform-c3fa3b2c4642.herokuapp.com"
+                    githubLink="https://github.com/DevMari999/backend_project"/>
+            )}
+            {selectedProject === 'e-commerce' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={[ screen7, screen10, screen9, screen8, screen11, screen12]}
@@ -67,7 +79,7 @@ const Projects = () => {
                     websiteLink="https://furniture-store-black.vercel.app/"
                     githubLink="https://github.com/DevMari999/e-commerce-furniture"/>
             )}
-            {selectedProject === 'movies' && (
+            {selectedProject === 'movie search' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={[ screen6, screen1, screen3,  screen4, screen2, screen5]}
@@ -78,18 +90,6 @@ const Projects = () => {
                         'TMDb API Integration:I integrated the TMDb API, granting real-time access to a vast collection of movie data.']}
                     websiteLink="https://movie-search-opal-two.vercel.app/"
                     githubLink="https://github.com/DevMari999/movie_search"/>
-            )}
-            {selectedProject === 'cars' && (
-                <ProjectDetails
-                    onClose={handleCloseProjectDetails}
-                    images={[ screen13, screen14, screen15,  screen16, screen17, screen18]}
-                    projectDescription="Hey there! Explore the tech behind my Car Sale project."
-                    projectTechnologies={['Node.js: At the core of this project lies Node.js, an industry-leading runtime that ensures the application operates with performance in mind.',
-                        'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable. This lightweight framework has streamlined the creation of API endpoints, making data retrieval both swift and reliable.',
-                        'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
-                        'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities. This ensures that content can be tailored and presented based on specific requirements and conditions.']}
-                    websiteLink="https://car-sale-platform-c3fa3b2c4642.herokuapp.com"
-                    githubLink="https://github.com/DevMari999/backend_project"/>
             )}
         </section>
     );

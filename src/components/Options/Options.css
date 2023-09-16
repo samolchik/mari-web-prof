@@ -4,13 +4,14 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    min-height: 92vh;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
     padding: 100px 0 50px 0;
     background-image: url("../../assets/secondary-background.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .options-container {
@@ -47,11 +48,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    /*.music-record img {*/
-    /*    top:70px;*/
-    /*    right: 5px;*/
-    /*    height: 55px;*/
-    /*}*/
+
     .options {
         background-image: url("../../assets/secondary-background-mobile.jpg");
         background-attachment: scroll;
