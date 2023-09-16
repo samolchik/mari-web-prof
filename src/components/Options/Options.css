@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 92vh;
+    min-height: 100vh;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
     padding: 100px 0 50px 0;
     background-image: url("../../assets/secondary-background.jpg");
