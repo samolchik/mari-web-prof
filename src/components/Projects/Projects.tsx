@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './Projects.css';
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
 import screen1 from '../../assets/screen-shots/screen1.jpeg';
@@ -25,26 +25,61 @@ import cars from '../../assets/screen-shots/carshome.jpeg';
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
+    const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+
     const handleClickProject = (project: string) => {
         setSelectedProject(project);
     };
+
     const handleCloseProjectDetails = () => {
         setSelectedProject(null);
     };
+
     useEffect(() => {
         if (selectedProject) {
-
             document.body.style.overflow = 'hidden';
         } else {
-
             document.body.style.overflow = 'auto';
         }
     }, [selectedProject]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('slide-in-active');
+                    } else {
+                        entry.target.classList.remove('slide-in-active');
+                    }
+                });
+            },
+            {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5,
+            }
+        );
+
+        projectRefs.current.forEach((project) => {
+            if (project) observer.observe(project);
+        });
+
+        return () => {
+            projectRefs.current.forEach((project) => {
+                if (project) observer.unobserve(project);
+            });
+        };
+    }, []);
     return (
         <section className="projects-section" id="projects">
             <div className="projects-container">
                 <div className="projects-block">
-                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
+                    <div
+                        ref={(el) => (projectRefs.current[0] = el)}
+                        className="project1 slide-in"
+                        onClick={() => handleClickProject('furniture')}
+                    >
                         <div className="homePage">
                             <div className="overlay" >
                                 <h1 className="overlay-header">Climate Change</h1>
@@ -54,7 +89,11 @@ const Projects = () => {
                                 alt="Movies"/>
                         </div>
                     </div>
-                    <div className="project1"   onClick={() => handleClickProject('furniture')}>
+                    <div
+                        ref={(el) => (projectRefs.current[1] = el)}
+                        className="project1 slide-in"
+                        onClick={() => handleClickProject('furniture')}
+                    >
                         <div className="homePage">
                             <div className="overlay">
                                 <h1 className="overlay-header">E-Commerce</h1>
@@ -66,7 +105,11 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="projects-block">
-                    <div className="project1"   onClick={() => handleClickProject('cars')}>
+                    <div
+                        ref={(el) => (projectRefs.current[2] = el)}
+                        className="project1 slide-in"
+                        onClick={() => handleClickProject('furniture')}
+                    >
                         <div className="homePage">
                             <div className="overlay">
                                 <h1 className="overlay-header">Cars platform back end</h1>
@@ -76,7 +119,11 @@ const Projects = () => {
                                 alt="Cars"/>
                         </div>
                     </div>
-                <div className="project1"   onClick={() => handleClickProject('movies')}>
+                    <div
+                        ref={(el) => (projectRefs.current[3] = el)}
+                        className="project1 slide-in"
+                        onClick={() => handleClickProject('furniture')}
+                    >
                     <div className="homePage">
                         <div className="overlay">
                             <h1 className="overlay-header">Movie search</h1>
