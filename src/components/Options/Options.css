@@ -47,16 +47,14 @@
 }
 
 @media screen and (max-width: 480px) {
-    .music-record img {
-        top:70px;
-        right: 5px;
-        height: 55px;
-    }
+    /*.music-record img {*/
+    /*    top:70px;*/
+    /*    right: 5px;*/
+    /*    height: 55px;*/
+    /*}*/
     .options {
-        /*background-image:none;*/
-        /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
-        /*background-image: url("../../assets/secondary-background-mobile.jpg");*/
-        /*background-attachment: scroll;*/
+        background-image: url("../../assets/secondary-background-mobile.jpg");
+        background-attachment: scroll;
     }
     .options-switcher {
         width: 90%;
@@ -73,14 +71,12 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .music-record img {
-        top:70px;
-        right: 5px;
-        height: 55px;
-    }
+    /*.music-record img {*/
+    /*    top:70px;*/
+    /*    right: 5px;*/
+    /*    height: 55px;*/
+    /*}*/
     .options {
-        /*background-image:none;*/
-        /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
         background-image: url("../../assets/secondary-background-mobile.jpg");
         background-attachment: scroll;
     }
@@ -99,14 +95,12 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1124px) {
-    .music-record img {
-        top:5px;
-        right: 5px;
-    }
+    /*.music-record img {*/
+    /*    top:5px;*/
+    /*    right: 5px;*/
+    /*}*/
     .options {
-        /*background-image:none;*/
-        /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
-        /*background-image: url("../../assets/mobile-bg.png");*/
+
         background-attachment: scroll;
     }
     .options-switcher {
