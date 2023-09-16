@@ -94,8 +94,8 @@
     .options {
         /*background-image:none;*/
         /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
-        /*background-image: url("../../assets/secondary-background-mobile.jpg");*/
-        /*background-attachment: scroll;*/
+        background-image: url("../../assets/secondary-background-mobile.jpg");
+        background-attachment: scroll;
     }
     .options-switcher {
         width: 90%;
@@ -120,8 +120,8 @@
     .options {
         /*background-image:none;*/
         /*background: linear-gradient( to bottom, rgba(18, 26, 31, 0.5), rgba(18, 26, 31, 0.9));*/
-        /*background-image: url("../../assets/secondary-background-mobile.jpg");*/
-        /*background-attachment: scroll;*/
+        background-image: url("../../assets/secondary-background-mobile.jpg");
+        background-attachment: scroll;
     }
     .options-switcher {
         width: 90%;

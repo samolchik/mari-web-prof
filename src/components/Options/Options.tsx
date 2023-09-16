@@ -10,7 +10,7 @@ let audio = new Audio('/audio/jazz-ballad-164939.mp3');
 const Options = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isSlideInCompleted, setIsSlideInCompleted] = useState(false);
-    const [selectedOption, setSelectedOption] = useState('Projects');
+    const [selectedOption, setSelectedOption] = useState('Skills');
 
     useEffect(() => {
         if (!isSlideInCompleted) {
