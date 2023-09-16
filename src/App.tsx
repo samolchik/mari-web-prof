@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Welcome from "./components/Welcome/Welcome";
 import Options from "./components/Options/Options";
+import Projects from "./components/Projects/Projects";
 
 const App: React.FC = () => {
     const [showWelcome, setShowWelcome] = useState(true);
@@ -24,12 +25,13 @@ const App: React.FC = () => {
             <div className="app-overlay-container"></div>
             <Header />
             <section id="main" className="main">
-                {showWelcome ?
-                    <Welcome />: <>
-                    <Home />
-                    <Options />
-                    <Contact />
-                </>}
+                {/*{showWelcome ?*/}
+                {/*    <Welcome />: <>*/}
+                {/*    <Home />*/}
+                {/*    <Options />*/}
+                {/*    <Contact />*/}
+                {/*</>}*/}
+                <Projects/>
             </section>
             {!showWelcome && <Footer />}
         </div>
