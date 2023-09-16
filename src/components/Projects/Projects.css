@@ -52,6 +52,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+    -moz-filter: blur(25px);
+    -ms-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     background-color: var(--bg-color);
@@ -61,8 +63,6 @@
     align-items: center;
     opacity: 1;
     transition: opacity 1s ease;
-    transform: translate3d(0, 0, 0);
-    z-index: 99;
 }
 
 .overlay-header {
