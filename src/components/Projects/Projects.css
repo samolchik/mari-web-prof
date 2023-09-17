@@ -112,7 +112,7 @@
 @media screen and (max-width: 480px) {
     .project1 {
             width: 320px;
-            height: 255px;
+            height: 215px;
             margin: 0 5px 9px 5px;
     }
 
@@ -120,7 +120,7 @@
         width: 88%;
     }
     .project1 img {
-        height: 255px;
+        height: 215px;
     }
     .overlayer {
         /*background: var(--block-mobile-background);*/

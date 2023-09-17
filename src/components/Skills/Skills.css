@@ -106,13 +106,15 @@
         height: fit-content;
         width: 100%;
         background-color: var(--block-mobile-color);
+        padding: 15px 10px ;
     }
     .each  {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .skills-each img {
         height:80px;
+        margin: 5px 0;
     }
 }
 

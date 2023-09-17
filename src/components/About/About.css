@@ -97,7 +97,7 @@
     }
 
     .connect-container {
-        font-size: 1em;
+        font-size: 1.05em;
         margin-bottom:  45px;
     }
 
@@ -109,7 +109,7 @@
 
     .bullet-point p {
         font-size: 1em;
-        margin: 45px 20px 20px 25px;
+        margin: 35px 10px 10px 15px;
     }
 
     .aboutme-section {
