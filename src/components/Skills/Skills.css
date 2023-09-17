@@ -107,6 +107,7 @@
         width: 100%;
         background-color: var(--block-mobile-color);
         padding: 30px 25px ;
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
 
     }
     .each  {
@@ -140,6 +141,7 @@
         margin-bottom: 10px;
         padding: 25px 15px;
         background-color: var(--block-mobile-color);
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
 }
@@ -158,6 +160,7 @@
     .skills-each {
         padding: 25px 15px;
         background-color: var(--block-mobile-color);
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
     .skills-each img {
         height: 75px;
@@ -171,6 +174,7 @@
     .skills-each {
         padding: 25px 15px;
         background-color: var(--block-mobile-color);
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
     .each  {
         font-size: 0.8em;

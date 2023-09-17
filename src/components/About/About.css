@@ -92,6 +92,7 @@
         padding: 0;
         width: 92%;
         background-color: var(--block-mobile-color);
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
     .aboutme-container {
@@ -136,6 +137,7 @@
 
     .top-aboutme-container {
         background-color: var(--block-mobile-color);
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
     .top-aboutme-container {
@@ -159,6 +161,7 @@
         padding: 20px;
         width: 85%;
         background-color: var(--block-mobile-color);
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
     .bullet-points-container {
@@ -178,6 +181,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
    .top-aboutme-container {
        background-color: var(--block-mobile-color);
+       box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
    }
 }
 @media (min-width: 1200px) and (max-width: 1699px) {
