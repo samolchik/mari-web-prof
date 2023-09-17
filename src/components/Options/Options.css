@@ -38,7 +38,7 @@
     border: none;
     color: var(--primary-color);
     font-size: 1.3em;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: uppercase;
     transition: transform 0.3s ease-in-out;
 }
