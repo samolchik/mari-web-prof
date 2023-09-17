@@ -81,7 +81,7 @@
 .description-details-button {
     margin-left: 10px;
     margin-right: 10px;
-    border: solid 0.03em var(--primary-color);
+    border: solid 0.05em var(--primary-color);
     font-size: 0.9em;
 
 }
