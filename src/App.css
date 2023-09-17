@@ -46,11 +46,11 @@ html{
 :root {
     --primary-color: rgb(245, 247, 248);
     --secondary-color: #090e0e;
-    --bg-color: rgba(6, 15, 17, 0.5);
+    --bg-color: rgba(2, 15, 21, 0.5);
     /*--block-mobile-background: radial-gradient(circle at 40% 50%, rgba(82, 96, 108, 0.7), rgba(6, 12, 17, 0.7)) no-repeat;*/
     --block-mobile-color: rgba(2, 12, 17, 0.80);
-    --header-footer-color: rgba(4, 13, 20, 0.9);
-
+    --header-footer-color: rgba(2, 13, 20, 0.9);
+    /*--header-footer-color: rgba(1, 8, 14, 0.87);*/
 }
 
 ::-webkit-scrollbar {
