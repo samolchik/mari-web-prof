@@ -124,10 +124,11 @@
         height: 280px;
     }
     .overlayer {
-        background: var(--block-mobile-background);
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
+        /*background: var(--block-mobile-background);*/
+        /*background-size: cover;*/
+        /*height: 100vh;*/
+        /*width: 100%;*/
+        background-color: var(--block-mobile-color);
     }
 
 }
@@ -148,10 +149,11 @@
         height: 280px;
     }
     .overlayer {
-        background: var(--block-mobile-background);
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
+        /*background: var(--block-mobile-background);*/
+        /*background-size: cover;*/
+        /*height: 100vh;*/
+        /*width: 100%;*/
+        background-color: var(--block-mobile-color);
     }
 }
 
@@ -169,10 +171,11 @@
         height: 230px;
     }
     .overlayer {
-        background: var(--block-mobile-background);
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
+        /*background: var(--block-mobile-background);*/
+        /*background-size: cover;*/
+        /*height: 100vh;*/
+        /*width: 100%;*/
+        background-color: var(--block-mobile-color);
     }
 }
 
@@ -189,10 +192,11 @@
         height: 275px;
     }
     .overlayer {
-        background: var(--block-mobile-background);
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
+    /*    background: var(--block-mobile-background);*/
+    /*    background-size: cover;*/
+    /*    height: 100vh;*/
+    /*    width: 100%;*/
+        background-color: var(--block-mobile-color);
     }
 }
 
