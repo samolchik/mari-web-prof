@@ -135,10 +135,15 @@
         width: 100%;
     }
     .description-details {
-        max-height: 30vh;
+        max-height: 40vh;
         overflow-y: auto;
     }
     .carousel-root {
-        width: 355px;
+        width: 365px;
+    }
+    .close-button {
+
+        padding: 30px 0 0 35px;
+
     }
 }
