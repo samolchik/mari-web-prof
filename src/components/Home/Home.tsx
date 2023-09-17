@@ -14,8 +14,8 @@ const Home: React.FC = () => {
                     </div>
                     <div className="about-me">
                         <div className="about-me-header-container">
-                            <h1>My name is Marina</h1>
-                            <h2> I'm a Full Stack Web Developer</h2>
+                            <h1 className="home-header1">My name is Marina</h1>
+                            <h1 className="home-header2"> I'm a Full Stack Web Developer</h1>
                         </div>
                         <div className="button-container">
                             <a href="#contact" className="contact-link">

@@ -37,14 +37,15 @@
     margin-bottom: 20px;
 }
 
-.about-me h1 {
+.home-header1 {
     font-size: 1.9em;
-    font-weight: bold;
+  font-weight: normal;
 }
 
-.about-me h2 {
-    font-size: 1.3em;
+.home-header2 {
+    font-size: 1em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 @keyframes slideInLeft {
@@ -70,7 +71,7 @@
 }
 
 .photo-container img {
-    height: 395px;
+    height: 385px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
     animation-name: slideInLeft;
     animation-duration: 1500ms;
@@ -138,13 +139,14 @@
       margin: 0;
       padding: 0;
   }
-    .about-me h1 {
-        font-size: 1.5em;
-        margin: 5px;
+    .home-header1 {
+        font-size: 1.9em;
+
     }
 
-    .about-me h2 {
+    .home-header2 {
         font-size: 1em;
+
     }
 
     .photo-container img {
@@ -172,12 +174,14 @@
         margin-top: 15px;
     }
 
-    .about-me h1 {
-        font-size: 1.6em;
+    .home-header1 {
+        font-size: 1.9em;
+
     }
 
-    .about-me h2 {
-        font-size: 1.2em;
+    .home-header2 {
+        font-size: 1em;
+
     }
 
     .photo-container img {

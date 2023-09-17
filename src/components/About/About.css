@@ -39,6 +39,7 @@
 .bullet-point p {
     text-indent: 20px;
     padding-bottom: 10px;
+    font-weight: normal;
 }
 
 .connect-container:hover {

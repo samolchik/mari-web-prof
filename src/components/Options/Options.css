@@ -4,10 +4,10 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 90vh;
+    min-height: 70vh;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
     padding: 100px 0 50px 0;
-    background-image: url("../../assets/secondary-background2.webp");
+    background-image: url("../../assets/secondary-background.webp");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -50,20 +50,21 @@
 @media screen and (max-width: 480px) {
 
     .options {
-        /*background-image: none;*/
-        /*background-color: var(--bg-mobile-color);*/
-        background-image: url("../../assets/gradient.png");
-        background-attachment: scroll;
+        background-image: none;
+        background-color: var(--options-bg-color);
+        /*background-image: url("../../assets/gradient.png");*/
+        /*background-attachment: scroll;*/
     }
     .options-switcher {
         width: 90%;
         top: 25px;
+        border-bottom: solid 0.1em var(--secondary-color);
     }
 
     .options-switcher button {
         margin: 0 5px;
         padding: 10px 5px;
-        color: var(--primary-color);
+        color: var(--secondary-color);
         font-size: 1.1em;
 
     }
@@ -72,20 +73,21 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     .options {
-        /*background-image: none;*/
-        /*background-color: var(--bg-mobile-color);*/
-        background-image: url("../../assets/gradient.png");
-        background-attachment: scroll;
+        background-image: none;
+        background-color: var(--options-bg-color);
+        /*background-image: url("../../assets/gradient.png");*/
+        /*background-attachment: scroll;*/
     }
     .options-switcher {
         width: 90%;
         top: 25px;
+        border-bottom: solid 0.1em var(--secondary-color);
     }
 
     .options-switcher button {
         margin: 0 7px;
         padding: 10px 7px;
-        color: var(--primary-color);
+        color: var(--secondary-color);
         font-size: 1.1em;
 
     }
@@ -94,20 +96,21 @@
 @media screen and (min-width: 769px) and (max-width: 1124px) {
 
     .options {
-        /*background-image: none;*/
-        /*background-color: var(--bg-mobile-color);*/
-        background-image: url("../../assets/gradient.png");
-        background-attachment: scroll;
+        background-image: none;
+        background-color: var(--options-bg-color);
+        /*background-image: url("../../assets/gradient.png");*/
+        /*background-attachment: scroll;*/
     }
     .options-switcher {
         width: 90%;
         top: 25px;
+        border-bottom: solid 0.1em var(--secondary-color);
     }
 
     .options-switcher button {
         margin: 0 7px;
         padding: 10px 7px;
-        color: var(--primary-color);
+        color: var(--secondary-color);
         font-size: 1.1em;
 
     }
@@ -115,10 +118,17 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .options {
-        /*background-image: none;*/
-        /*background-color: var(--bg-mobile-color);*/
-        background-image: url("../../assets/gradient.png");
-        background-attachment: scroll;
+        background-image: none;
+        background-color: var(--options-bg-color);
+        /*background-image: url("../../assets/gradient.png");*/
+        /*background-attachment: scroll;*/
+    }
+    .options-switcher {
+        border-bottom: solid 0.1em var(--secondary-color);
+    }
+
+    .options-switcher button {
+        color: var(--secondary-color);
     }
 
 }
