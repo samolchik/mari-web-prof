@@ -34,17 +34,17 @@
     flex-direction: column;
     align-items: center;
     padding: 10px 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .about-me h1 {
-    font-size: 1.8em;
-    font-weight: bolder;
+    font-size: 1.9em;
+    font-weight: normal;
 }
 
 .about-me h2 {
-    font-size: 1.2em;
-    font-weight: bolder;
+    font-size: 1.3em;
+    font-weight: normal;
 }
 
 @keyframes slideInLeft {
@@ -70,7 +70,7 @@
 }
 
 .photo-container img {
-    height: 390px;
+    height: 395px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
     animation-name: slideInLeft;
     animation-duration: 1500ms;
@@ -148,7 +148,7 @@
     }
 
     .photo-container img {
-        height: 290px;
+        height: 337px;
         margin: 0;
     }
 }

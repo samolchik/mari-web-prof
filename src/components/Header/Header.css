@@ -2,7 +2,7 @@
     position: fixed;
     left: 0;
     height: 100vh;
-    width: 9%;
+    width: 10%;
     display: block;
     z-index: 100;
     backdrop-filter: blur(20px);
@@ -69,6 +69,7 @@ ul {
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    font-weight: normal;
 }
 .navigation a:hover {
     transform: scale(1.05);

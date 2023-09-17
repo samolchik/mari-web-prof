@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;450&display=swap');
 
 body {
     position: relative;
-    padding-left: 9%;
+    padding-left: 10%;
     background-color: var(--secondary-color);
 }
 
@@ -18,7 +17,7 @@ html{
 }
 
 .app-background-container {
-    background-image: url('./assets/main-background.webp');
+    background-image: url('./assets/main-background copy.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
