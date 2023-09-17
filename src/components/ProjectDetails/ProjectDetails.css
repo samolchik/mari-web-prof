@@ -109,7 +109,9 @@
 .carousel .control-arrow:focus, .carousel .control-arrow:hover {
     background: none;
 }
-
+.carousel .control-arrow:focus, .carousel .control-arrow:focus {
+    background: none;
+}
 .carousel .control-next.control-arrow::before {
     border-left: 10px solid #010e11;
 }
@@ -137,7 +139,7 @@
     .description-details {
         max-height: 40vh;
         overflow-y: auto;
-        width: 83%;
+        width: 90%;
     }
     .carousel-root {
         width: 365px;
@@ -150,6 +152,6 @@
     }
     .description-details p, .description-details ul {
         width: 100%;
-        padding: 5px 5px 5px 15px;
+        padding: 5px 5px 5px 20px;
     }
 }
