@@ -139,8 +139,6 @@
         z-index: 1000;
     }
     .description-details {
-        max-height: 40vh;
-        overflow-y: auto;
         width: 87%;
     }
     .carousel-root {
