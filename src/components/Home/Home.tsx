@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import photo from '../../assets/photo-main2.png';
+import photo from '../../assets/photo-main7.png';
 import Music from "../Music/Music";
 
 const Home: React.FC = () => {

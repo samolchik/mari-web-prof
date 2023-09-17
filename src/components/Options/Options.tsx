@@ -3,9 +3,6 @@ import Skills from "../Skills/Skills";
 import "./Options.css";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
-// import record from "../../assets/music-record.png";
-//
-// let audio = new Audio('/audio/jazz-ballad-164939.mp3');
 
 const Options = () => {
     const [selectedOption, setSelectedOption] = useState('Projects');
