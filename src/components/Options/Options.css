@@ -54,6 +54,7 @@
         background-color: var(--options-bg-color);
         /*background-image: url("../../assets/gradient.png");*/
         /*background-attachment: scroll;*/
+        box-shadow: none;
     }
     .options-switcher {
         width: 90%;
@@ -77,6 +78,7 @@
         background-color: var(--options-bg-color);
         /*background-image: url("../../assets/gradient.png");*/
         /*background-attachment: scroll;*/
+        box-shadow: none;
     }
     .options-switcher {
         width: 90%;
@@ -100,6 +102,7 @@
         background-color: var(--options-bg-color);
         /*background-image: url("../../assets/gradient.png");*/
         /*background-attachment: scroll;*/
+        box-shadow: none;
     }
     .options-switcher {
         width: 90%;
@@ -122,6 +125,7 @@
         background-color: var(--options-bg-color);
         /*background-image: url("../../assets/gradient.png");*/
         /*background-attachment: scroll;*/
+        box-shadow: none;
     }
     .options-switcher {
         border-bottom: solid 0.1em var(--secondary-color);
