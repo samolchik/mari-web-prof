@@ -39,12 +39,12 @@
 
 .about-me h1 {
     font-size: 1.9em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .about-me h2 {
     font-size: 1.3em;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 @keyframes slideInLeft {
