@@ -137,6 +137,7 @@
     .description-details {
         max-height: 40vh;
         overflow-y: auto;
+        width: 83%;
     }
     .carousel-root {
         width: 365px;
@@ -145,6 +146,10 @@
         padding: 30px 0 0 35px;
     }
     .contact-button-div {
-        margin-bottom: 90px;
+        margin-bottom: 50px;
+    }
+    .description-details p, .description-details ul {
+        width: 100%;
+        padding: 5px 5px 5px 15px;
     }
 }
