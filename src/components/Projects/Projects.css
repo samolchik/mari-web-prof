@@ -112,7 +112,7 @@
 @media screen and (max-width: 480px) {
     .project1 {
             width: 320px;
-            height: 215px;
+            height: 245px;
             margin: 0 5px 9px 5px;
     }
 
@@ -120,7 +120,29 @@
         width: 88%;
     }
     .project1 img {
-        height: 215px;
+        height: 285px;
+    }
+    .overlayer {
+        /*background: var(--block-mobile-background);*/
+        /*background-size: cover;*/
+        /*height: 100vh;*/
+        /*width: 100%;*/
+        background-color: var(--block-mobile-color);
+    }
+
+}
+@media (min-width: 481px) and (max-width: 599px) {
+    .project1 {
+        width: 320px;
+        height: 295px;
+        margin: 0 5px 9px 5px;
+    }
+
+    .projects-container {
+        width: 77%;
+    }
+    .project1 img {
+        height: 295px;
     }
     .overlayer {
         /*background: var(--block-mobile-background);*/
@@ -132,7 +154,7 @@
 
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .project1 {
         width: 320px;
         height: 280px;
