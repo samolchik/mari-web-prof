@@ -8,7 +8,7 @@
     z-index: 998;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    background-color: rgba(6, 16, 17, 0.65);
+    background-color: rgba(6, 16, 17, 0.6);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px 0 70px 0;
+    padding: 0 0 30px 0;
 }
 
 .slider-container {
@@ -48,7 +48,7 @@
 }
 
 .description-details {
-    margin: 30px 0;
+    margin: 15px 0;
     font-weight: lighter;
     display: flex;
     align-items: center;
@@ -59,13 +59,13 @@
     font-size: 1em;
     justify-content: flex-start;
     width: 70%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     color: var(--primary-color);
     font-weight: normal;
 }
 
 .description-details ul {
-    width: 75%;
+    width: 70%;
     list-style-type: disc;
     color: var(--primary-color);
     font-size: 1em;
@@ -86,7 +86,7 @@
 }
 
 .carousel-root {
-    width: 620px;
+    width: 610px;
 }
 
 .carousel .thumbs-wrapper {
@@ -113,11 +113,11 @@
     background: none;
 }
 .carousel .control-next.control-arrow::before {
-    border-left: 10px solid #010e11;
+    border-left: 9px solid #010e11;
 }
 
 .carousel .control-prev.control-arrow::before {
-    border-right: 10px solid #010e11;
+    border-right: 9px solid #010e11;
 }
 
 .carousel .control-arrow:focus, .carousel .control-arrow:hover {
@@ -132,9 +132,10 @@
     background: none;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 576px) {
     .background {
         width: 100%;
+        z-index: 1000;
     }
     .description-details {
         max-height: 40vh;
@@ -145,7 +146,7 @@
         width: 365px;
     }
     .close-button {
-        padding: 30px 0 0 35px;
+        padding: 30px 0 0 20px;
     }
     .contact-button-div {
         margin-bottom: 50px;
@@ -154,4 +155,45 @@
         width: 100%;
         padding: 5px 5px 5px 20px;
     }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .background {
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .carousel-root {
+        width:500px;
+    }
+    .close-button {
+        padding: 30px 0 0 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .background {
+        width: 87%;
+    }
+
+    .carousel-root {
+        width:500px;
+    }
+    .close-button {
+        padding: 30px 0 0 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .background {
+        width: 89%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1700px) {
 }

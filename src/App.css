@@ -48,8 +48,9 @@ html{
     --primary-color: rgb(242, 239, 239);
     --secondary-color: #090e0e;
     --bg-color: rgba(6, 16, 17, 0.5);
-    --bg-mobile-color: rgba(23, 38, 38, 0.51);
-    --bg2-color: rgba(6, 16, 17, 0.5);
+    --block-mobile-color: rgba(4, 11, 17, 0.7);
+    --bg-mobile-color: rgba(0, 12, 18, 0.65);
+
 }
 
 ::-webkit-scrollbar {

@@ -89,6 +89,7 @@
     .top-aboutme-container {
         padding: 0;
         width: 90%;
+        background-color: var(--block-mobile-color);
     }
 
     .aboutme-container {
@@ -132,7 +133,7 @@
     }
 
     .top-aboutme-container {
-
+        background-color: var(--block-mobile-color);
     }
 
     .top-aboutme-container {
@@ -155,6 +156,7 @@
     .top-aboutme-container {
         padding: 20px;
         width: 85%;
+        background-color: var(--block-mobile-color);
     }
 
     .bullet-points-container {
@@ -172,7 +174,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
+   .top-aboutme-container {
+       background-color: var(--block-mobile-color);
+   }
 }
 @media (min-width: 1200px) and (max-width: 1699px) {
 
