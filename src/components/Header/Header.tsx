@@ -1,10 +1,12 @@
 import React, {useEffect, useState } from 'react';
 import './Header.css';
 import linkedinLogo from '../../assets/logos/linkedin.png';
-import ukraine from '../../assets/logos/ukraine.png';
+import Ukraine1 from '../../assets/logos/Ukraine1.png';
+import Ukraine2 from '../../assets/logos/Ukraine2.png';
 import githubLogo from '../../assets/logos/github.png';
 import burgericon from '../../assets/logos/burgericon.jpeg';
 import { Link } from "react-scroll";
+import musician from "../../assets/musitian.png";
 const Header = () => {
 
     const [isHeaderHidden, setIsHeaderHidden] = useState(false);
@@ -31,7 +33,8 @@ const Header = () => {
         <header className={`header ${isHeaderHidden ? 'hide' : ''}`}>
             <div className="header-content">
                 <div className="logo-header">
-                    <img src={ukraine} alt="Logo" />
+                    <img src={Ukraine2} alt="Logo" className="Ukraine2" />
+                    <img src={Ukraine1} alt="Logo" className="Ukraine1"/>
                 </div>
                 <h1></h1>
                 <div className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
@@ -71,8 +74,8 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
-
             </div>
+            <img src={musician} className="musician"/>
         </header>
     );
 };

@@ -2,7 +2,7 @@
     position: fixed;
     top:15px;
     right: 20px;
-    height: 65px;
+    height: 67px;
     cursor: pointer;
     z-index: 999;
 }
@@ -18,7 +18,7 @@
         right: -100px;
     }
     100% {
-        right: 0px;
+        right: 20px;
     }
 }
 
@@ -36,6 +36,14 @@
         right: 7px;
         height: 45px;
     }
+    @keyframes slideIn {
+        0% {
+            right: -100px;
+        }
+        100% {
+            right: 7px;
+        }
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -44,11 +52,27 @@
         right: 5px;
         height: 55px;
     }
+    @keyframes slideIn {
+        0% {
+            right: -100px;
+        }
+        100% {
+            right: 5px;
+        }
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1124px) {
     .music-record img {
         top:5px;
         right: 5px;
+    }
+    @keyframes slideIn {
+        0% {
+            right: -100px;
+        }
+        100% {
+            right: 5px;
+        }
     }
 }

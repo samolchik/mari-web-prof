@@ -38,14 +38,17 @@
 }
 
 .home-header1 {
-    font-size: 1.9em;
-  font-weight: normal;
+    font-size:1.9em;
+    font-weight: bold;
+    /*-webkit-text-stroke: var(--secondary-color) 0.02em;*/
 }
 
 .home-header2 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
+    -webkit-text-stroke: var(--secondary-color) 0.03em;
+
 }
 
 @keyframes slideInLeft {

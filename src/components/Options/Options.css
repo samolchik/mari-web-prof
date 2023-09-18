@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    min-height: 70vh;
+    min-height: 80vh;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
     padding: 100px 0 50px 0;
     background-image: url("../../assets/secondary-background.webp");
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     width: 60%;
-    border-bottom: solid 0.1em var(--primary-color);
+    border-bottom: solid 0.12em var(--primary-color);
     z-index: 10;
     position: absolute;
     top: 25px;
@@ -37,8 +37,9 @@
     background-color: transparent;
     border: none;
     color: var(--primary-color);
-    font-size: 1.3em;
-    font-weight: bold;
+    -webkit-text-stroke: var(--primary-color) 0.02em;
+    font-size: 1.4em;
+    font-weight: normal;
     text-transform: uppercase;
     transition: transform 0.3s ease-in-out;
 }
@@ -52,8 +53,6 @@
     .options {
         background-image: none;
         background-color: var(--options-bg-color);
-        /*background-image: url("../../assets/gradient.png");*/
-        /*background-attachment: scroll;*/
         box-shadow: none;
     }
     .options-switcher {
@@ -67,6 +66,7 @@
         padding: 10px 5px;
         color: var(--secondary-color);
         font-size: 1.1em;
+        -webkit-text-stroke: var(--secondary-color) 0.04em;
 
     }
 }
@@ -76,10 +76,9 @@
     .options {
         background-image: none;
         background-color: var(--options-bg-color);
-        /*background-image: url("../../assets/gradient.png");*/
-        /*background-attachment: scroll;*/
         box-shadow: none;
     }
+
     .options-switcher {
         width: 90%;
         top: 25px;
@@ -91,7 +90,7 @@
         padding: 10px 7px;
         color: var(--secondary-color);
         font-size: 1.1em;
-
+        -webkit-text-stroke: var(--secondary-color) 0.04em;
     }
 }
 
@@ -100,10 +99,9 @@
     .options {
         background-image: none;
         background-color: var(--options-bg-color);
-        /*background-image: url("../../assets/gradient.png");*/
-        /*background-attachment: scroll;*/
         box-shadow: none;
     }
+
     .options-switcher {
         width: 90%;
         top: 25px;
@@ -115,7 +113,7 @@
         padding: 10px 7px;
         color: var(--secondary-color);
         font-size: 1.1em;
-
+        -webkit-text-stroke: var(--secondary-color) 0.04em;
     }
 }
 
@@ -123,8 +121,6 @@
     .options {
         background-image: none;
         background-color: var(--options-bg-color);
-        /*background-image: url("../../assets/gradient.png");*/
-        /*background-attachment: scroll;*/
         box-shadow: none;
     }
     .options-switcher {
@@ -133,8 +129,8 @@
 
     .options-switcher button {
         color: var(--secondary-color);
+        -webkit-text-stroke: var(--secondary-color) 0.04em;
     }
-
 }
 
 @media screen and (min-width: 1700px) {

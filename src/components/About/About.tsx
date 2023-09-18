@@ -10,8 +10,9 @@ const About = () => {
                 <div className={`aboutme-container`}>
                     <div className="bullet-points-container">
                         <div className="bullet-point">
+                            <h2>Hi, I'm glad to have you here!</h2>
                             <p>
-                                Hi, I'm glad to have you here! I'm a passionate Web Developer,
+                                I'm a passionate Web Developer,
                                 constantly on a path of self improvement. I have recently graduated from an intense 8
                                 month course in Full Stack Web Development at a
                                 leading IT school in Ukraine, complemented by an online course in Front End Development

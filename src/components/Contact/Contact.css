@@ -22,7 +22,8 @@
 .contact-header {
     color: var(--secondary-color);
     font-size: 1.6em;
-    font-weight: normal;
+    font-weight: bold;
+    -webkit-text-stroke: var(--secondary-color) 0.02em;
     margin: 30px;
 }
 
@@ -85,11 +86,12 @@ label {
     color: var(--secondary-color);
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+/**,*/
+/**::before,*/
+/**::after {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
 
 .contact-button {
     height: fit-content;
@@ -100,42 +102,21 @@ label {
     text-decoration: none;
     color: var(--primary-color);
     border: none;
-    padding: 0.35em 1.35em 0.37em 1.3em;
-    backdrop-filter: blur(25px)!important;
-    -webkit-backdrop-filter: blur(25px)!important;
-    background-color: rgba(6, 16, 17, 0.85)!important;
+    padding: 0.4em 1.5em 0.45em 1.5em;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background: linear-gradient(to right, rgba(2, 12, 21, 0.9), rgba(6, 35, 53, 0.9));
     border-radius: 0.1em;
+    overflow: hidden;
     position: relative;
-    background: none;
+    box-shadow: 1px 2px 2px rgba(2, 16, 22, 0.5);
+    transition: transform 0.3s ease-in-out;
 }
 
-.contact-button::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    cursor: pointer;
-    transition: ease-in-out 1s;
+.contact-button:hover {
+   transform: scale(1.05);
+    background: linear-gradient(to right, rgba(5, 24, 36, 0.9), rgba(12, 48, 70, 0.9));
 }
-
-.contact-button:hover,
-.contact-button:focus {
-}
-
-.contact-button:hover::before,
-.contact-button:focus::before {
-    opacity: 1;
-}
-
-.contact-button:hover::after,
-.contact-button:focus::after {
-    opacity: 1;
-}
-
-/* Media Queries */
 
 @media (max-width: 576px) {
     .contact-input,

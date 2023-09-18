@@ -8,10 +8,16 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     background-color: var(--header-footer-color);
-    box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
+    box-shadow: 0 0 5px rgba(6, 13, 14, 0.85);
     padding-top: 20px;
 }
-
+.musician {
+    position: absolute;
+    height:75px;
+    bottom: 30px;
+    left: 20%;
+    cursor: pointer;
+}
 ul {
     list-style: none;
 }
@@ -28,8 +34,11 @@ ul {
 }
 
 .logo-header img {
-    height: 40px;
+    height: 60px;
     margin-top: 15px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
 }
 
 .logo-header {
@@ -39,6 +48,17 @@ ul {
     align-items: center;
     width: 100%;
 }
+
+.logo-header:hover .Ukraine1 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.logo-header .Ukraine1 {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
 
 .header-link-logo {
     display: flex;
@@ -53,6 +73,7 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 70px;
 }
 
 .navigation li {
@@ -65,11 +86,11 @@ ul {
 .navigation a {
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 0.95em;
+    font-size: 1em;
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    font-weight: normal;
+    font-weight: bolder;
 }
 .navigation a:hover {
     transform: scale(1.05);

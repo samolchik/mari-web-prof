@@ -8,7 +8,7 @@
     z-index: 998;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    background-color: rgba(6, 16, 17, 0.6);
+    background-color: rgba(2, 10, 13, 0.6);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -18,12 +18,11 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 15px 0 0 25px;
-
+    padding: 25px 0 10px 25px;
 }
 
 .close {
-    font-size: 18px;
+    font-size: 1.15em;
     cursor: pointer;
     background: none;
     border: none;
@@ -44,12 +43,11 @@
 }
 
 .slider-container {
-    box-shadow: 7px 12px 17px rgba(6, 13, 14, 0.96);
-    margin-bottom: 20px;
+    box-shadow: 5px 5px 7px rgba(6, 13, 14, 0.7);
 }
 
 .description-details {
-    margin: 15px 0;
+    margin: 30px 0 10px 0;
     font-weight: lighter;
     display: flex;
     align-items: center;
@@ -74,20 +72,18 @@
     text-align: justify;
 }
 
-/*.description-details li {*/
-/*    margin-bottom: 5px;*/
-/*}*/
+.description-details li {
+    margin-bottom: 5px;
+}
 
 .description-details-button {
-    margin-left: 10px;
-    margin-right: 10px;
-    border: solid 0.05em var(--primary-color);
+    margin: 0 10px 50px 10px;
+    border: solid 0.04em var(--primary-color);
     font-size: 0.9em;
-
 }
 
 .carousel-root {
-    width: 610px;
+    width: 650px;
 }
 
 .carousel .thumbs-wrapper {
@@ -107,12 +103,15 @@
     top: 0;
     opacity: 1;
 }
+
 .carousel .control-arrow:focus, .carousel .control-arrow:hover {
     background: none;
 }
+
 .carousel .control-arrow:focus, .carousel .control-arrow:focus {
     background: none;
 }
+
 .carousel .control-next.control-arrow::before {
     border-left: 9px solid #010e11;
 }
@@ -138,22 +137,28 @@
         width: 100%;
         z-index: 1000;
     }
+
     .description-details {
         width: 85%;
     }
+
     .carousel-root {
         width: 360px;
     }
+
     .close-button {
         padding: 50px 0 25px 20px;
     }
+
     .contact-button-div {
         margin: 20px 0 90px 0;
     }
+
     .description-details p, .description-details ul {
         width: 100%;
         padding: 5px 5px 5px 10px;
     }
+
     .description-details-button {
         margin-left: 5px;
         margin-right: 5px;
@@ -167,8 +172,9 @@
     }
 
     .carousel-root {
-        width:500px;
+        width: 500px;
     }
+
     .close-button {
         padding: 30px 0 0 20px;
     }
@@ -181,8 +187,9 @@
     }
 
     .carousel-root {
-        width:500px;
+        width: 500px;
     }
+
     .close-button {
         padding: 30px 0 0 20px;
     }

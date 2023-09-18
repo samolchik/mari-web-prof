@@ -17,7 +17,7 @@ html{
 }
 
 .app-background-container {
-    background-image: url('./assets/main-background copy.webp');
+    background-image: url('./assets/main-background.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@ html{
 :root {
     --primary-color: rgb(245, 247, 248);
     --secondary-color: #090e0e;
-    --bg-color: rgba(1, 14, 21, 0.59);
+    --bg-color: rgba(1, 11, 21, 0.59);
     --options-bg-color: rgba(5, 12, 20, 0.24);
     /*--block-mobile-background: radial-gradient(circle at 40% 50%, rgba(82, 96, 108, 0.7), rgba(6, 12, 17, 0.7)) no-repeat;*/
     --block-mobile-color: rgba(2, 12, 20, 0.85);

@@ -23,7 +23,8 @@
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     background-color: var(--bg-color);
-    box-shadow: 7px 7px 7px rgba(6, 13, 14, 0.85);
+    box-shadow: 6px 5px 7px rgba(6, 13, 14, 0.8);
+    border-radius: 0.1em;
 }
 
 .bullet-point {
@@ -35,10 +36,15 @@
     align-items: center;
     flex-direction: column;
 }
+.bullet-point h2 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
 
 .bullet-point p {
     text-indent: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-weight: normal;
 }
 
@@ -67,6 +73,7 @@
     color: var(--primary-color);
     transition: transform 0.3s ease-in-out;
     font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 .link {
@@ -90,7 +97,7 @@
 
     .top-aboutme-container {
         padding: 0;
-        width: 92%;
+        width: 91%;
         background-color: var(--block-mobile-color);
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
