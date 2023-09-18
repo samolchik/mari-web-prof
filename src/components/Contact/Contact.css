@@ -81,7 +81,7 @@ label {
 }
 
 .contact-textarea {
-    height: 45px;
+    height: 75px;
     resize: vertical;
     color: var(--secondary-color);
 }

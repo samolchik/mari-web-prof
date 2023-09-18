@@ -8,7 +8,7 @@
     z-index: 998;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    background-color: rgba(2, 10, 13, 0.6);
+    background-color: rgba(1, 11, 21, 0.5);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -18,7 +18,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 25px 0 10px 25px;
+    padding: 20px 0 0 25px;
 }
 
 .close {
@@ -47,7 +47,7 @@
 }
 
 .description-details {
-    margin: 30px 0 10px 0;
+    margin: 20px 0 10px 0;
     font-weight: lighter;
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@
 }
 
 .carousel-root {
-    width: 650px;
+    width: 630px;
 }
 
 .carousel .thumbs-wrapper {
