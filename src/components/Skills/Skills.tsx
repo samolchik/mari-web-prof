@@ -2,12 +2,14 @@ import React, {useEffect, useRef} from 'react';
 import front from "../../assets/logos/4.png";
 import back from "../../assets/logos/5.png";
 import tools from "../../assets/logos/6.png";
+import design from "../../assets/logos/7.png";
 import "./Skills.css";
 
 const Skills = () => {
     const skill1Ref = useRef<HTMLDivElement>(null);
     const skill2Ref = useRef<HTMLDivElement>(null);
     const skill3Ref = useRef<HTMLDivElement>(null);
+    const skill4Ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const options = {
@@ -22,11 +24,15 @@ const Skills = () => {
                     } else if (target === skill2Ref.current) {
                         setTimeout(() => {
                             target.classList.add('slide-right');
-                        }, 350);
+                        }, 250);
                     } else if (target === skill3Ref.current) {
                         setTimeout(() => {
                             target.classList.add('slide-right');
-                        }, 500);
+                        }, 350);
+                    } else if (target === skill4Ref.current) {
+                        setTimeout(() => {
+                            target.classList.add('slide-right');
+                        }, 450);
                     }
                     observer.unobserve(target);
                 }
@@ -43,6 +49,9 @@ const Skills = () => {
 
         if (skill3Ref.current) {
             observer.observe(skill3Ref.current);}
+
+        if (skill4Ref.current) {
+            observer.observe(skill4Ref.current);}
 
         return () => {
             if (observer) {
@@ -64,7 +73,6 @@ const Skills = () => {
                         <div className="each">TypeScript</div>
                         <div className="each">React.js</div>
                         <div className="each">Redux</div>
-                        <div className="each">Figma</div>
                     </div>
                 </div>
                 <div ref={skill2Ref} className={`skills-each skill2`}>
@@ -88,6 +96,15 @@ const Skills = () => {
                         <div className="each">Github</div>
                         <div className="each">VS Code</div>
                         <div className="each">IntelliJ IDEA</div>
+                    </div>
+                </div>
+                <div ref={skill4Ref} className={`skills-each skill4`}>
+                    <h1>Tools</h1>
+                    <img src={design} alt="Tools"/>
+                    <div className="contain">
+                        <div className="each">Figma</div>
+                        <div className="each">Adobe Photoshop</div>
+                        <div className="each">Canva</div>
                     </div>
                 </div>
             </div>

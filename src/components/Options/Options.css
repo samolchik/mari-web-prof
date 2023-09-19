@@ -7,7 +7,7 @@
     min-height: 80vh;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
     padding: 100px 0 50px 0;
-    background-image: url("../../assets/secondary-background.webp");
+    background-image: url("../../assets/jonathan-gallegos-PgHc0Ka1E0A-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     width: 60%;
-    border-bottom: solid 0.12em var(--primary-color);
+    border-bottom: solid 0.12em var(--secondary-color);
     z-index: 10;
     position: absolute;
     top: 25px;
@@ -36,8 +36,8 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: var(--primary-color);
-    -webkit-text-stroke: var(--primary-color) 0.02em;
+    color: var(--secondary-color);
+    -webkit-text-stroke: var(--secondary-color) 0.05em;
     font-size: 1.4em;
     font-weight: normal;
     text-transform: uppercase;

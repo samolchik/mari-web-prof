@@ -80,21 +80,23 @@ const Header = () => {
                                 Contact
                             </Link>
                         </li>
+                        <li>
+                            <img src={musician} className="musician"
+                                 data-tooltip-id="musician"
+                                 data-tooltip-content="Spesial thanks to Nama name, a Ukrainian musitian who so kindly provided this beautiful music for free use in public domain."
+                                 data-tooltip-delay-show={50}
+                                 data-place="right"/>
+
+                            <Tooltip id="musician"
+                                     className="style-tooltip"
+                                     arrowColor="transparent"
+                                     data-place="right"
+                                     place="right"
+                            />
+                        </li>
                     </ul>
                 </nav>
             </div>
-            <img src={musician} className="musician"
-                 data-tooltip-id="musician"
-                 data-tooltip-content="Spesial thanks to Nama name, a Ukrainian musitian who so kindly provided this beautiful music for free use in public domain."
-                 data-tooltip-delay-show={50}
-                 data-place="right"/>
-
-            <Tooltip id="musician"
-                     className="style-tooltip"
-                     arrowColor="transparent"
-                     data-place="right"
-                     place="right"
-            />
             {/*<Tooltip id="ukraine" className="style-tooltip" arrowColor="transparent"/>*/}
 
         </header>
