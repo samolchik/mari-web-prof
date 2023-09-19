@@ -108,8 +108,35 @@ label {
 }
 
 .contact-button:hover {
-   transform: scale(1.05);
+    transform: scale(1.05);
     background: linear-gradient(to right, rgba(5, 24, 36, 0.9), rgba(12, 48, 70, 0.9));
+}
+
+.contact-section {
+    padding-top: 70px;
+}
+
+.rocket-container {
+    position: fixed;
+    bottom: 0;
+    animation: flyAnimation 3s ease-in-out forwards;
+}
+
+.contact-header {
+    -webkit-text-stroke: var(--secondary-color) 0.00em;
+}
+
+@keyframes flyAnimation {
+    0% {
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+    }
+    100% {
+        bottom: 100vh;
+        left: 100vw;
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 576px) {
@@ -124,37 +151,6 @@ label {
         width: fit-content;
     }
 }
-.contact-section {
-    padding-top: 70px;
-}
-.rocket-image {
-    height: 120px;
-}
-
-.rocket-container {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: flyAnimation 2s ease-in-out forwards;
-
-}
-.contact-header {
-    -webkit-text-stroke: var(--secondary-color) 0.00em;
-}
-@keyframes flyAnimation {
-    0% {
-        bottom: 0;
-    }
-    90% {
-        bottom: 100vh;
-    }
-    100% {
-        bottom: 100vh;
-
-    }
-}
-
 
 @media (min-width: 576px) and (max-width: 768px) {
     .contact-input,
@@ -177,6 +173,7 @@ label {
         max-width: 100%;
         min-width: 550px;
     }
+
     .contact-header {
         -webkit-text-stroke: var(--secondary-color) 0.00em;
     }

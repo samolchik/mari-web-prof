@@ -1,6 +1,7 @@
  import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
+import rocket from "../../assets/logos/rocket.png"
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -99,11 +100,11 @@ const Contact = () => {
                     {submissionStatus === 'error' && <p className="submission-message">Failed to submit form. Please try again later.</p>}
                 </div>
             </div>
-            {/*{rocketVisible && (*/}
-            {/*    <div className="rocket-container">*/}
-            {/*        <img src={rocket} alt="Rocket" className="rocket-image" />*/}
-            {/*    </div>*/}
-            {/*)}*/}
+            {rocketVisible && (
+                <div className="rocket-container">
+                    <img src={rocket} alt="Rocket" className="rocket-image" />
+                </div>
+            )}
 
         </section>
     );

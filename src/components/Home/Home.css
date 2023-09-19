@@ -8,6 +8,7 @@
     font-weight: bold;
     flex-direction: column;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
+    height: 100vh;
 }
 
 .welcome-container {
@@ -16,7 +17,9 @@
     position: fixed;
     font-weight: bold;
 }
-
+.rocket-container img{
+    height: 70px;
+}
 .home-container {
     display: flex;
     align-items: center;
@@ -24,7 +27,6 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
-    height: 100vh;
 }
 
 .about-me {

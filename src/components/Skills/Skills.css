@@ -95,7 +95,7 @@
 }
 @media screen and (max-width: 480px) {
    .skills {
-       width: 91%;
+       width: 97%;
    }
 
     .skills-list {
@@ -128,7 +128,9 @@
     .each {
         font-size: 0.9em;
     }
-
+    .skills {
+        width: 75%;
+    }
     .skills-list {
         flex-direction: column;
     }
@@ -136,7 +138,6 @@
     .skills-each img {
         height: 80px;
         width: 80px;
-
     }
 
     .skills-each {
@@ -145,6 +146,7 @@
         padding: 25px 15px;
         background-color: var(--block-mobile-color);
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
+        width: 100%;
     }
 
 }
@@ -172,7 +174,7 @@
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     .skills {
-        width:85%;
+        width:65%;
     }
     .skills-each {
         padding: 25px 15px;

@@ -49,11 +49,9 @@ html
     --primary-color: rgb(245, 247, 248);
     --secondary-color: #090e0e;
     --bg-color: rgba(2, 12, 20, 0.75);
-    --options-bg-color: rgba(5, 12, 20, 0.18);
-    /*--block-mobile-background: radial-gradient(circle at 40% 50%, rgba(82, 96, 108, 0.7), rgba(6, 12, 17, 0.7)) no-repeat;*/
-    --block-mobile-color: rgba(2, 12, 20, 0.85);
+    --options-bg-color: rgba(5, 12, 20, 0.15);
+    --block-mobile-color: rgba(2, 14, 24, 0.85);
     --header-footer-color: rgba(1, 11, 21, 0.87);
-    /*--header-footer-color: rgba(1, 8, 14, 0.87);*/
 }
 
 ::-webkit-scrollbar {

@@ -103,12 +103,13 @@
         padding: 0;
     }
     .bullet-point h2 {
-        margin: 35px 0 10px 0;
+        margin: 35px 0 0 0;
+        font-size: 1.15em;
     }
 
     .top-aboutme-container {
         padding: 0;
-        width: 91%;
+        width: 94%;
         background-color: var(--block-mobile-color);
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
@@ -118,7 +119,7 @@
     }
 
     .connect-container {
-        font-size: 1.05em;
+        font-size: 1.15em;
         margin-bottom:  45px;
     }
 
