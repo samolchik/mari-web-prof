@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 480px) {
     .project1 {
-            width: 320px;
+            width: 230px;
             height: 255px;
             margin: 0 5px 9px 5px;
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
