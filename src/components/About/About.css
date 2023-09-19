@@ -94,6 +94,9 @@
         height: fit-content;
         padding: 0;
     }
+    .bullet-point h2 {
+        margin: 35px 0 10px 0;
+    }
 
     .top-aboutme-container {
         padding: 0;
@@ -131,7 +134,9 @@
     .aboutme-section {
         height: fit-content;
     }
-
+    .bullet-point h2 {
+        margin: 10px 0 15px 0;
+    }
     .aboutme-container {
         flex-direction: column;
     }
@@ -163,7 +168,9 @@
     .aboutme-section {
         height: fit-content;
     }
-
+    .bullet-point h2 {
+        margin: 10px 0 15px 0;
+    }
     .top-aboutme-container {
         padding: 20px;
         width: 85%;

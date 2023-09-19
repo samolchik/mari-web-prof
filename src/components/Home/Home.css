@@ -74,7 +74,7 @@
 }
 
 .photo-container img {
-    height: 385px;
+    height: 400px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
     animation-name: slideInLeft;
     animation-duration: 1500ms;

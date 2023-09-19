@@ -83,7 +83,7 @@ const Header = () => {
                         <li>
                             <img src={musician} className="musician"
                                  data-tooltip-id="musician"
-                                 data-tooltip-content="Spesial thanks to Nama name, a Ukrainian musitian who so kindly provided this beautiful music for free use in public domain."
+                                 data-tooltip-content="Special thanks to Oleg Kirilkov, a talented Ukrainian musician, who has generously made this beautiful music available for free use in the public domain."
                                  data-tooltip-delay-show={50}
                                  data-place="right"/>
 
@@ -92,13 +92,12 @@ const Header = () => {
                                      arrowColor="transparent"
                                      data-place="right"
                                      place="right"
+
                             />
                         </li>
                     </ul>
                 </nav>
             </div>
-            {/*<Tooltip id="ukraine" className="style-tooltip" arrowColor="transparent"/>*/}
-
         </header>
     );
 };
