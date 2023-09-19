@@ -86,13 +86,6 @@ label {
     color: var(--secondary-color);
 }
 
-/**,*/
-/**::before,*/
-/**::after {*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-
 .contact-button {
     height: fit-content;
     width: fit-content;
@@ -130,7 +123,9 @@ label {
         width: fit-content;
     }
 }
-
+.contact-section {
+    padding-top: 70px;
+}
 .rocket-image {
     height: 120px;
 }
@@ -143,7 +138,9 @@ label {
     animation: flyAnimation 2s ease-in-out forwards;
 
 }
-
+.contact-header {
+    -webkit-text-stroke: var(--secondary-color) 0.00em;
+}
 @keyframes flyAnimation {
     0% {
         bottom: 0;
@@ -166,8 +163,8 @@ label {
         min-width: 400px;
     }
 
-    .contact-form {
-        /*position: center;*/
+    .contact-section {
+        padding-top: 50px;
     }
 
 }
@@ -178,6 +175,9 @@ label {
         width: 100%;
         max-width: 100%;
         min-width: 550px;
+    }
+    .contact-header {
+        -webkit-text-stroke: var(--secondary-color) 0.00em;
     }
 }
 

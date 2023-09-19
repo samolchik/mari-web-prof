@@ -99,8 +99,8 @@ const Skills = () => {
                     </div>
                 </div>
                 <div ref={skill4Ref} className={`skills-each skill4`}>
-                    <h1>Tools</h1>
-                    <img src={design} alt="Tools"/>
+                    <h1>Design</h1>
+                    <img src={design} alt="Design"/>
                     <div className="contain">
                         <div className="each">Figma</div>
                         <div className="each">Adobe Photoshop</div>
