@@ -114,17 +114,17 @@
 
 @media screen and (max-width: 480px) {
     .project1 {
-            width: 230px;
-            height: 255px;
+            width: 320px;
+            height: 245px;
             margin: 0 5px 9px 5px;
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
     .projects-container {
-        width: 96%;
+        width: 92%;
     }
     .project1 img {
-        height: 300px;
+        height: 280px;
 
     }
     .overlayer {
@@ -199,7 +199,7 @@
     }
 
     .projects-container {
-        width:75%;
+        width: 80%;
         margin-top: 30px;
     }
     .project1 img {
