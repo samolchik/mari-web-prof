@@ -116,7 +116,7 @@
     .project1 {
             width: 320px;
             height: 245px;
-            margin: 0 5px 9px 5px;
+            margin-bottom: 7px;
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
@@ -144,7 +144,7 @@
     .project1 {
         width: 320px;
         height: 295px;
-        margin: 0;
+        margin-bottom: 7px;
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
     }
 
