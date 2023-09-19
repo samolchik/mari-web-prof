@@ -1,13 +1,38 @@
-import React from 'react';
+import {useEffect, useRef} from "react";
 import './About.css';
 import linkedinLogo from "../../assets/logos/linkedin.png";
-
 const About = () => {
+    const bulletPointsContainerRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        if (bulletPointsContainerRef.current) {
+            observer.observe(bulletPointsContainerRef.current);
+        }
+
+        return () => {
+            if (bulletPointsContainerRef.current) {
+                observer.unobserve(bulletPointsContainerRef.current);
+            }
+        };
+    }, []);
+
 
     return (
         <section id="about" className="aboutme-section">
-            <div className={`top-aboutme-container`}>
-                <div className={`aboutme-container`}>
+            <div className={`top-aboutme-container`} ref={bulletPointsContainerRef}>
+                <div className={`aboutme-container`} >
                     <div className="bullet-points-container">
                         <div className="bullet-point">
                             <h2>Hi, I'm glad to have you here!</h2>

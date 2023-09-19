@@ -55,7 +55,7 @@
 .skills-each.slide-right-delayed {
     opacity: 1;
     transform: translateX(0);
-    transition-delay: 1500ms;
+    transition-delay: 1000ms;
 }
 
 .skills-each img {

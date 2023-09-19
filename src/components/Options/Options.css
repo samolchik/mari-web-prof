@@ -37,11 +37,12 @@
     background-color: transparent;
     border: none;
     color: var(--secondary-color);
-    -webkit-text-stroke: var(--secondary-color) 0.05em;
-    font-size: 1.4em;
+    -webkit-text-stroke: var(--secondary-color) 0.03em;
+    font-size: 1.3em;
     font-weight: normal;
     text-transform: uppercase;
     transition: transform 0.3s ease-in-out;
+    font-style: italic;
 }
 
 .options-switcher button:hover {

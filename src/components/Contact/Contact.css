@@ -21,10 +21,11 @@
 
 .contact-header {
     color: var(--secondary-color);
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-weight: bold;
     -webkit-text-stroke: var(--secondary-color) 0.02em;
     margin: 30px;
+    font-style: italic;
 }
 
 .submission-container {
@@ -95,7 +96,7 @@ label {
     text-decoration: none;
     color: var(--primary-color);
     border: none;
-    padding: 0.4em 1.5em 0.45em 1.5em;
+    padding: 0.4em 1.5em 0.4em 1.5em;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     background: linear-gradient(to right, rgba(2, 12, 21, 0.9), rgba(6, 35, 53, 0.9));
