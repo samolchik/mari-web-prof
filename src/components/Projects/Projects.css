@@ -142,7 +142,7 @@
 }
 @media (min-width: 481px) and (max-width: 599px) {
     .project1 {
-        width: 320px;
+        width: 500px;
         height: 295px;
         margin-bottom: 7px;
         box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
@@ -152,7 +152,7 @@
         width: 77%;
     }
     .project1 img {
-        height: 295px;
+        height: 500px;
     }
     .overlayer {
         background-color: var(--block-mobile-color);
