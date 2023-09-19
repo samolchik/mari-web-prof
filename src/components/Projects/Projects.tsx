@@ -45,11 +45,11 @@ const Projects = () => {
             <div className="projects-container">
                 <div className="projects-block">
                     {['cars platform back end', 'e-commerce', 'movie search', 'climate change'].map((projectType, idx) => (
-                        <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
+                        <div key={idx} className="project1">
                             <h1 className="projects-header">{projectType.toUpperCase()}</h1>
                             <img
                                 src={projectType === 'cars platform back end' ? cars : projectType === 'e-commerce' ? furniture : projectType === 'climate change' ? furniture : movies}
-                                alt={projectType}
+                                alt={projectType} onClick={() => handleClickProject(projectType)}
                             />
                             <div className="overlayer"></div>
                         </div>
