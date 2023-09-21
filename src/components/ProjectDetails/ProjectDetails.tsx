@@ -6,7 +6,8 @@ import './ProjectDetails.css';
 interface ProjectDetailsProps {
     onClose: () => void;
     images: string[];
-    projectDescription: string;
+    projectDescription1: string;
+    projectDescription2: string;
     projectTechnologies: string[];
     websiteLink: string;
     githubLink: string;
@@ -15,7 +16,8 @@ interface ProjectDetailsProps {
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                                                            onClose,
                                                            images,
-                                                           projectDescription,
+                                                           projectDescription1,
+                                                           projectDescription2,
                                                            projectTechnologies,
                                                            websiteLink,
                                                            githubLink}) => {
@@ -45,7 +47,8 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                     </div>
                 </div>
                 <div className="description-details">
-                    <p>{projectDescription}</p>
+                    <p>{projectDescription1}</p>
+                    <p>{projectDescription2}</p>
                     <ul>
                         {projectTechnologies.map((tech, index) => (
                             <li key={index}>

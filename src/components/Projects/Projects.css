@@ -243,6 +243,18 @@
 
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1500px)  {
+    .project1 {
+        height: 325px;
+        box-shadow: 5px 5px 5px rgba(6, 13, 14, 0.55);
+        max-width: 500px;
+    }
+    .project1 img {
+        height: 325px;
+    }
+    .projects-container {
+        width: 65%;
+        margin-top: 30px;
+    }
 
 }

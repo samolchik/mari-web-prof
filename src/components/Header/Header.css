@@ -14,18 +14,18 @@
 .style-tooltip::before {
     content: "";
     position: absolute;
-    left: -10px;
-    top: 50%;
+    bottom: -10px;
+    left: 50%;
     margin-left: -5px;
-    border-width: 5px 5px 5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-width: 5px 5px 0;
+    border-color: #fff transparent transparent transparent;
     border-style: solid;
 }
 
 .style-tooltip {
     background-color: rgba(1, 12, 22, 0.5) !important;
      font-family: 'Sahitya', serif !important;
-    font-weight: 0.9em !important;
+    font-size: 0.9em !important;
     text-transform: none !important;
     color: var(--primary-color) !important;
     max-width: 250px;
@@ -231,7 +231,6 @@ ul {
     .navigation ul {
         margin-top: 0;
     }
-
 
 }
 

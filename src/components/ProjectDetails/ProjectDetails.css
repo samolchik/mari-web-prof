@@ -1,5 +1,5 @@
 .background {
-    width: 90%;
+    width: 100%;
     min-height: 100vh;
     position: fixed;
     top: 0;
@@ -8,7 +8,7 @@
     z-index: 998;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    background-color: rgba(0, 9, 25, 0.6);
+    background-color: rgba(0, 9, 25, 0.7);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -55,25 +55,25 @@
 }
 
 .description-details p {
-    font-size: 1.05em;
+    font-size: 1.15em;
     justify-content: flex-start;
     width: 70%;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     color: var(--primary-color);
     font-weight: normal;
 }
 
 .description-details ul {
-    width: 70%;
+    width: 75%;
     list-style-type: disc;
     color: var(--primary-color);
-    font-size: 1.05em;
+    font-size: 1.15em;
     font-weight: normal;
     text-align: justify;
 }
 
 .description-details li {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .description-details-button {
@@ -83,7 +83,7 @@
 }
 
 .carousel-root {
-    width: 690px;
+    width: 800px;
 }
 
 .carousel .thumbs-wrapper {
@@ -182,9 +182,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-    .background {
-        width: 87%;
-    }
 
     .carousel-root {
         width: 500px;
@@ -196,9 +193,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    .background {
-        width: 89%;
-    }
+
 }
 
 @media (min-width: 1200px) {

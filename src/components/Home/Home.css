@@ -202,10 +202,10 @@
         width: fit-content;
     }
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
 
     .photo-container img {
-        height: 60vh;
+        height: 500px;
     }
 }
 @media (max-width: 576px) {

@@ -66,11 +66,13 @@ const Projects = () => {
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={climateChangeScreenshots}
-                    projectDescription="Technology Behind My Climate Change Platform:"
-                    projectTechnologies={['React: My platform is built on React, offering a dynamic, user-friendly interface tailored for easy navigation and deep exploration of climate data.',
-                        'CO2 Calculator API: A core feature is the integration of the Climatiq API. It allows users to not only understand but also calculate CO2 emissions, bringing actionable insights to the forefront.',
-                        'CSS Animations: The user experience is enriched with fluid CSS animations, ensuring smooth transitions and engaging visual feedback throughout the platform.',
-                        'External Libraries: For effective data representation, I\'ve integrated specialized external libraries, specifically for charting and tooltips. This ensures users receive clear, concise, and interactive data visualizations.']}
+                    projectDescription1="Tech Stack: CSS, HTML, TypeScript, React.js, WebStorm, NPM, GIT, Climatiq API, Adobe Photoshop."
+                    projectDescription2="External Libraries: react-helmet, react-tooltip, recharts."
+                    projectTechnologies={['React: The platform is built upon the foundation of React. This allows for a dynamic, user-friendly interface that is both responsive and efficient. The choice of React ensures that users can navigate the platform with ease, promoting an intuitive user journey.',
+                        'CO2 Calculator API: The platform integrates the Climatiq API, enabling users to gain insights on climate change and calculate personal CO2 emissions. This equips users with actionable data for informed decision-making.',
+                        'CSS Animations: Leveraging precise CSS animations, the platform provides fluid transitions and feedback, enhancing user engagement and ensuring a polished user journey.',
+                        'External Libraries: Specialized libraries are employed for optimized charting and tooltips, translating to clear, interactive visualizations. This approach simplifies the interpretation of intricate data sets, boosting user comprehension.',
+                    'SEO with React Helmet: Enhanced search engine optimization is achieved through React Helmet, which facilitates dynamic management of SEO essentials, such as metadata and page titles, bolstering the platform\'s online visibility.']}
                     websiteLink="https://climate-change-save-the-earth.vercel.app"
                     githubLink="https://github.com/DevMari999/climate-change"/>
             )}
@@ -78,11 +80,14 @@ const Projects = () => {
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={carsScreenshots}
-                    projectDescription="Hey there! Explore the tech behind my Car Sale project."
+                    projectDescription1="Tech Stack: CSS, HTML, TypeScript, Node.js, Express.js, WebStorm, NPM, GIT, EJS, JWT, PrivatBank currency API."
+                    projectDescription2="Database: MongoDB."
                     projectTechnologies={['Node.js: At the core of this project lies Node.js, an industry-leading runtime that ensures the application operates with performance in mind.',
-                        'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable. This lightweight framework has streamlined the creation of API endpoints, making data retrieval both swift and reliable.',
+                        'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable.',
                         'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
-                        'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities. This ensures that content can be tailored and presented based on specific requirements and conditions.']}
+                        'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities.',
+                    'Mongoose: Integral to the project, Mongoose streamlines MongoDB interactions with robust data modeling, enhancing database reliability and efficiency.',
+                    'Cron Daily Currency Update: Utilizing Cron, the project automatically updates currency values daily via integration with a bank API, ensuring real-time accuracy and relevance for users.']}
                     websiteLink="https://node-cars-platform-a50b2bbce808.herokuapp.com/"
                     githubLink="https://github.com/DevMari999/cars-platform"/>
             )}
@@ -90,10 +95,11 @@ const Projects = () => {
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={furnitureScreenshots}
-                    projectDescription="Explore the Tech Behind My Furniture Store E-Commerce Project!"
-                    projectTechnologies={['Responsive Design: I crafted beautiful and user-friendly designs with a mobile-first approach, ensuring that the website looks stunning and functions seamlessly on various devices and screen sizes.',
-                        ' CSS: Leveraging CSS, I styled the website\'s components to create visually appealing layouts, providing an enjoyable shopping experience for users.',
-                        'Context API: To manage global state and avoid prop drilling, I implemented the Context API, enabling seamless data sharing between components and enhancing the overall performance of the application.',
+                    projectDescription1="Tech Stack: CSS, HTML, TypeScript, React.js, WebStorm, NPM, GIT, Adobe Photoshop, Canva."
+                    projectDescription2="State Management: Context API."
+                    projectTechnologies={['Responsive Design: Beautiful and user-friendly design is crafted with a mobile-first approach, ensuring that the website presents impeccably and operates smoothly across diverse screen dimensions.',
+                        ' CSS: Through the adept use of CSS, the website\'s components are styled to yield visually captivating layouts, providing an enjoyable shopping experience for users.',
+                        'Context API: To streamline global state management and circumvent prop drilling, the Context API is employed. This facilitates efficient data exchange between components and boosts the application\'s overall performance.',
                         '  HTML: The foundation of the website is built on HTML, providing a semantic and structured layout for enhanced accessibility.']}
                     websiteLink="https://furniture-store-black.vercel.app/"
                     githubLink="https://github.com/DevMari999/e-commerce-furniture"/>
@@ -102,11 +108,12 @@ const Projects = () => {
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={moviesScreenshots}
-                    projectDescription="Explore the Tech Behind My Movie Search Project!"
-                    projectTechnologies={['React: I utilized the power of React, a leading JavaScript library, to create a smooth and interactive user interface. The website offers an immersive experience while exploring movies.',
-                        'TypeScript: Boosting code reliability, I integrated TypeScript for a more efficient and readable codebase.',
-                        'Redux Toolkit:Mastering complex states was a breeze with Redux Toolkit, ensuring a captivating user journey through seamless movie exploration.',
-                        'TMDb API Integration:I integrated the TMDb API, granting real-time access to a vast collection of movie data.']}
+                    projectDescription1="Tech Stack: CSS, HTML, TypeScript, React.js, WebStorm, NPM, GIT, TMBD API, Adobe Photoshop."
+                    projectDescription2="State Management: Redux Toolkit."
+                    projectTechnologies={['React: The platform harnesses the capabilities of React, one of the foremost JavaScript libraries, to sculpt an interactive and intuitive user interface. This ensures visitors are not only able to navigate with ease but are also fully immersed when exploring the diverse selection of movies.',
+                        'TypeScript: To fortify code dependability and ensure sustainable development practices, TypeScript has been seamlessly integrated. This statically typed superset of JavaScript adds a layer of robustness, ensuring that the codebase remains both efficient and easily interpretable.',
+                        'Redux Toolkit: Navigating through intricate application states is simplified using Redux Toolkit. This powerful state management tool ensures that users experience a cohesive and captivating journey, eliminating potential bottlenecks or inconsistencies in data flow while they delve deep into movie explorations.',
+                        'TMDb API Integration: The integration of the TMDb API serves as a gateway to an expansive treasure trove of movie data. With real-time access, users can retrieve the latest information, allowing for a comprehensive and enriched cinematic discovery experience.']}
                     websiteLink="https://movie-search-opal-two.vercel.app/"
                     githubLink="https://github.com/DevMari999/movie_search"/>
             )}

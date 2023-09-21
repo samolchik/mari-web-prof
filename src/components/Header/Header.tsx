@@ -91,8 +91,6 @@ const Header = () => {
                                      className="style-tooltip"
                                      arrowColor="transparent"
                                      data-place="right"
-                                     place="right"
-
                             />
                         </li>
                     </ul>
