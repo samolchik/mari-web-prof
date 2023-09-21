@@ -68,7 +68,7 @@ const Projects = () => {
                         'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable. This lightweight framework has streamlined the creation of API endpoints, making data retrieval both swift and reliable.',
                         'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
                         'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities. This ensures that content can be tailored and presented based on specific requirements and conditions.']}
-                    websiteLink="https://car-sale-platform-c3fa3b2c4642.herokuapp.com"
+                    websiteLink="https://node-cars-platform-a50b2bbce808.herokuapp.com/"
                     githubLink="https://github.com/DevMari999/backend_project"/>
             )}
             {selectedProject === 'e-commerce' && (
