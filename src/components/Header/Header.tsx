@@ -20,17 +20,17 @@ const Header = () => {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
-    // useEffect(() => {
-    //     if (isMobileMenuOpen) {
-    //         document.body.style.overflow = 'hidden';
-    //     } else {
-    //         document.body.style.overflow = 'auto';
-    //     }
-    //
-    //     return () => {
-    //         document.body.style.overflow = 'auto';
-    //     };
-    // }, [isMobileMenuOpen]);
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMobileMenuOpen]);
     return (
         <header className={`header`}>
             <div className="header-content">
