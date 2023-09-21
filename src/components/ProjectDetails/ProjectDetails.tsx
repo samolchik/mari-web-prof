@@ -38,7 +38,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                         >
                             {images.map((image, index) => (
                                 <div key={index}>
-                                    <img src={image} alt={`screenshot ${index + 1}`} />
+                                    <img loading="lazy" src={image} alt={`screenshot ${index + 1}`} />
                                 </div>
                             ))}
                         </Carousel>

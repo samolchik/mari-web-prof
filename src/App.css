@@ -48,7 +48,7 @@ html
 :root {
     --primary-color: rgb(245, 247, 248);
     --secondary-color: #090e0e;
-    --bg-color: rgba(2, 12, 20, 0.75);
+    --bg-color: rgba(0, 7, 18, 0.77);
     --options-bg-color: rgba(5, 12, 20, 0.15);
     --block-mobile-color: rgba(2, 14, 24, 0.85);
     --header-footer-color: rgba(1, 11, 21, 0.87);

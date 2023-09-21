@@ -8,21 +8,24 @@ import screen4 from '../../assets/screen-shots/screen4.jpeg';
 import screen5 from '../../assets/screen-shots/screen5.jpeg';
 import screen6 from '../../assets/screen-shots/screen6.jpeg';
 import movies from '../../assets/screen-shots/movieshome.jpeg';
-import screen7 from '../../assets/screen-shots/screenE1.jpeg';
-import screen8 from '../../assets/screen-shots/screenE2.jpeg';
-import screen9 from '../../assets/screen-shots/screenE3.jpeg';
-import screen10 from '../../assets/screen-shots/screenE4.jpeg';
-import screen11 from '../../assets/screen-shots/screenE5.jpeg';
-import screen12 from '../../assets/screen-shots/screenE6.jpeg';
-import screen13 from '../../assets/screen-shots/screenCar1.jpeg';
-import screen14 from '../../assets/screen-shots/screenCar2.jpeg';
-import screen15 from '../../assets/screen-shots/screenCar3.jpeg';
-import screen16 from '../../assets/screen-shots/screenCar4.jpeg';
-import screen17 from '../../assets/screen-shots/screenCar5.jpeg';
-import screen18 from '../../assets/screen-shots/screenCar6.jpeg';
-import furniture from '../../assets/screen-shots/furniturehome.jpeg';
-import cars from '../../assets/screen-shots/carshome.jpeg';
 
+import furniture from '../../assets/furniture-store-screenshots/furniture-screenshot-1.webp';
+import cars from '../../assets/car-platform-screenshots/cars-screenshot-1.jpeg';
+
+const furnitureScreenshotsContext = (require as any).context('../../assets/furniture-store-screenshots', false, /\.(webp|jpg|jpeg|png)$/);
+const furnitureScreenshotsKeys = furnitureScreenshotsContext.keys().sort((a: string, b: string) => {
+    const numA = parseInt(a.replace(/\D/g,''), 10);
+    const numB = parseInt(b.replace(/\D/g,''), 10);
+    return numA - numB;
+});
+const carsScreenshotsContext = (require as any).context('../../assets/car-platform-screenshots', false, /\.(webp|jpg|jpeg|png)$/);
+const carsScreenshotsKeys = carsScreenshotsContext.keys().sort((a: string, b: string) => {
+    const numA = parseInt(a.replace(/\D/g,''), 10);
+    const numB = parseInt(b.replace(/\D/g,''), 10);
+    return numA - numB;
+});
+const furnitureScreenshots = furnitureScreenshotsKeys.map(furnitureScreenshotsContext);
+const carsScreenshots = carsScreenshotsKeys.map(carsScreenshotsContext);
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
     const handleClickProject = (project: string) => {
@@ -59,7 +62,7 @@ const Projects = () => {
             {selectedProject === 'cars platform back end' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
-                    images={[screen13, screen14, screen15, screen16, screen17, screen18]}
+                    images={carsScreenshots}
                     projectDescription="Hey there! Explore the tech behind my Car Sale project."
                     projectTechnologies={['Node.js: At the core of this project lies Node.js, an industry-leading runtime that ensures the application operates with performance in mind.',
                         'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable. This lightweight framework has streamlined the creation of API endpoints, making data retrieval both swift and reliable.',
@@ -71,7 +74,7 @@ const Projects = () => {
             {selectedProject === 'e-commerce' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
-                    images={[screen7, screen10, screen9, screen8, screen11, screen12]}
+                    images={furnitureScreenshots}
                     projectDescription="Explore the Tech Behind My Furniture Store E-Commerce Project!"
                     projectTechnologies={['Responsive Design: I crafted beautiful and user-friendly designs with a mobile-first approach, ensuring that the website looks stunning and functions seamlessly on various devices and screen sizes.',
                         ' CSS: Leveraging CSS, I styled the website\'s components to create visually appealing layouts, providing an enjoyable shopping experience for users.',
