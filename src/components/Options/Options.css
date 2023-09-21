@@ -37,7 +37,7 @@
     background-color: transparent;
     border: none;
     color: var(--secondary-color);
-    -webkit-text-stroke: var(--secondary-color) 0.03em;
+    -webkit-text-stroke: var(--secondary-color) 0.04em;
     font-size: 1.3em;
     font-weight: normal;
     text-transform: uppercase;

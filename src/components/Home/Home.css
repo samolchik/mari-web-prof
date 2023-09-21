@@ -49,7 +49,7 @@
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    -webkit-text-stroke: var(--secondary-color) 0.04em;
+    -webkit-text-stroke: var(--secondary-color) 0.03em;
 }
 
 @keyframes slideInLeft {
@@ -75,7 +75,7 @@
 }
 
 .photo-container img {
-    height: 400px;
+    height: 387px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09);
     animation-name: slideInLeft;
     animation-duration: 1500ms;

@@ -109,7 +109,7 @@ label {
 
 .contact-button:hover {
     transform: scale(1.05);
-    background: linear-gradient(to right, rgba(5, 24, 36, 0.9), rgba(12, 48, 70, 0.9));
+    background: linear-gradient(to right, rgba(5, 24, 36, 0.9), rgba(26, 64, 87, 0.9));
 }
 
 .contact-section {

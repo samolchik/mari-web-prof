@@ -6,7 +6,9 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Welcome from "./components/Welcome/Welcome";
 import Options from "./components/Options/Options";
+import { inject } from '@vercel/analytics';
 
+inject();
 const App: React.FC = () => {
     const [showWelcome, setShowWelcome] = useState(true);
 
