@@ -8,7 +8,7 @@
     font-weight: bold;
     flex-direction: column;
     box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .welcome-container {
