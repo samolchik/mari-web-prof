@@ -62,9 +62,9 @@ html
 /*Media*/
 
 @media (max-width: 576px) {
-    .app-background-container {
-        height: 100vh;
-    }
+    /*.app-background-container {*/
+    /*    height: 100vh;*/
+    /*}*/
     body {
         padding: 0;
     }
@@ -72,9 +72,9 @@ html
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .app-background-container {
-        height: 100vh;
-    }
+    /*.app-background-container {*/
+    /*    height: 100vh;*/
+    /*}*/
     body {
         padding: 0;
     }

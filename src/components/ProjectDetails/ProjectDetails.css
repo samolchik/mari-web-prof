@@ -55,7 +55,7 @@
 }
 
 .description-details p {
-    font-size: 1.15em;
+    font-size: 1.1em;
     justify-content: flex-start;
     width: 70%;
     padding-bottom: 10px;
@@ -67,7 +67,7 @@
     width: 75%;
     list-style-type: disc;
     color: var(--primary-color);
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: normal;
     text-align: justify;
 }
