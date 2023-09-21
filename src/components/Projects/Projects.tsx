@@ -69,7 +69,7 @@ const Projects = () => {
                         'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
                         'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities. This ensures that content can be tailored and presented based on specific requirements and conditions.']}
                     websiteLink="https://node-cars-platform-a50b2bbce808.herokuapp.com/"
-                    githubLink="https://github.com/DevMari999/backend_project"/>
+                    githubLink="https://github.com/DevMari999/cars-platform"/>
             )}
             {selectedProject === 'e-commerce' && (
                 <ProjectDetails
