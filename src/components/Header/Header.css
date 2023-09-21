@@ -164,7 +164,7 @@ ul {
         transform: translateX(-100%);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        background-color: rgba(2, 12, 17, 0.87);
+        background-color: rgba(6, 9, 15, 0.87);
         box-shadow: 0 0 7px rgba(6, 13, 14, 0.85);
         display: flex;
         justify-content: center;

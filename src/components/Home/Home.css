@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 576px) {
     .home-section {
-        min-height: 100vh;
+        height: 100vh;
     }
     .home-container {
         margin: 10px 0;
@@ -160,7 +160,7 @@
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     .home-section {
-        min-height: 100vh;
+        height: 100vh;
     }
 
     .home-container {
