@@ -11,7 +11,7 @@ import {Tooltip} from 'react-tooltip';
 
 const Header = () => {
 
-    const [isHeaderHidden, setIsHeaderHidden] = useState(false);
+
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -32,12 +32,9 @@ const Header = () => {
         };
     }, [isMobileMenuOpen]);
     return (
-        <header className={`header ${isHeaderHidden ? 'hide' : ''}`}>
+        <header className={`header`}>
             <div className="header-content">
                 <div className="logo-header"
-                    // data-tooltip-id="ukraine"
-                    // data-tooltip-content="gratitute"
-                    // data-tooltip-delay-show={50}
                 >
                     <img src={Ukraine2} alt="Logo" className="Ukraine2"/>
                     <img src={Ukraine1} alt="Logo" className="Ukraine1"/>
