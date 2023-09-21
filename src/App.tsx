@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <div className="page-container">
             <div className="app-background-container"></div>
             <div className="app-overlay-container"></div>
-            {/*<Header />*/}
+            <Header />
             <section id="main" className="main">
                 {showWelcome ?
                     <Welcome />: <>
