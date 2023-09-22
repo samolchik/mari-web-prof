@@ -209,13 +209,13 @@
 
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
 
     .bullet-point {
         font-size: 22px;
     }
 
     .top-aboutme-container {
-        width: 45%;
+        width: 50%;
     }
 }
