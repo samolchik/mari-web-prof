@@ -77,7 +77,7 @@ const PrivacyNotice: React.FC<PrivacyNoticeProps> = ({ onClose }) => (
                     </p>
                 </div>
                 </div>
-            <button onClick={onClose}>Close</button>
+            <button className="privacy-close" onClick={onClose}>Close</button>
         </div>
     </div>
 );

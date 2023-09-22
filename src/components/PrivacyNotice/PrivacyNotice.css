@@ -29,7 +29,7 @@
     margin-bottom: 20px;
 }
 
-button {
+.privacy-close {
     background-color: #008CBA;
     border: none;
     color: white;
@@ -43,6 +43,6 @@ button {
     border-radius: 4px;
 }
 
-button:hover {
+.privacy-close:hover {
     background-color: #005f5f;
 }
