@@ -19,17 +19,17 @@ const Header = () => {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
-    // useEffect(() => {
-    //     if (isMobileMenuOpen) {
-    //         document.body.style.overflow = 'hidden';
-    //     } else {
-    //         document.body.style.overflow = 'auto';
-    //     }
-    //
-    //     return () => {
-    //         document.body.style.overflow = 'auto';
-    //     };
-    // }, [isMobileMenuOpen]);
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isMobileMenuOpen]);
     return (
         <header className={`header`}>
             <div className="header-content">
@@ -76,19 +76,19 @@ const Header = () => {
                                 Contact
                             </Link>
                         </li>
-                        {/*<li>*/}
-                        {/*    <img src={musician} className="musician"*/}
-                        {/*         data-tooltip-id="musician"*/}
-                        {/*         data-tooltip-content="Special thanks to Oleg Kirilkov, a talented Ukrainian musician, who has generously made this beautiful music available for free use in the public domain."*/}
-                        {/*         data-tooltip-delay-show={50}*/}
-                        {/*         data-place="right"/>*/}
+                        <li>
+                            <img src={musician} className="musician"
+                                 data-tooltip-id="musician"
+                                 data-tooltip-content="Special thanks to Oleg Kirilkov, a talented Ukrainian musician, who has generously made this beautiful music available for free use in the public domain."
+                                 data-tooltip-delay-show={50}
+                                 data-place="right"/>
 
-                        {/*    <Tooltip id="musician"*/}
-                        {/*             className="style-tooltip"*/}
-                        {/*             arrowColor="transparent"*/}
-                        {/*             data-place="right"*/}
-                        {/*    />*/}
-                        {/*</li>*/}
+                            <Tooltip id="musician"
+                                     className="style-tooltip"
+                                     arrowColor="transparent"
+                                     data-place="right"
+                            />
+                        </li>
                     </ul>
                 </nav>
             </div>
