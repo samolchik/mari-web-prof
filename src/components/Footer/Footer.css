@@ -26,5 +26,13 @@
     font-size: 0.8em;
     margin: 10px;
 }
+.data-collection {
+    background: none;
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+}
 
-
+.data-collection:hover {
+    background: none;
+}
