@@ -11,7 +11,6 @@ import {Tooltip} from 'react-tooltip';
 
 const Header = () => {
 
-
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {

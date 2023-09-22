@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
     useEffect(() => {
 
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
 
         const timer = setTimeout(() => {
             setShowWelcome(false);
