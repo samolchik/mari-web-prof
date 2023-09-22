@@ -31,7 +31,7 @@ const App: React.FC = () => {
             <section id="main" className="main">
                 {showWelcome ?
                     <Welcome />: <>
-                    {/*<Home />*/}
+                    <Home />
                     <Options />
                     <Contact />
                 </>}
