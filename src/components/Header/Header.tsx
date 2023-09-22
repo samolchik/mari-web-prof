@@ -21,9 +21,6 @@ const Header = () => {
     };
     useEffect(() => {
 
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-
         if (isMobileMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
