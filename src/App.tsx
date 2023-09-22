@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Welcome from "./components/Welcome/Welcome";
 import Options from "./components/Options/Options";
 import { inject } from '@vercel/analytics';
-
+import { ProjectDetailsProvider } from "./context/projectDetailsContext";
 inject();
 const App: React.FC = () => {
     const [showWelcome, setShowWelcome] = useState(true);
@@ -24,20 +24,24 @@ const App: React.FC = () => {
     }, []);
 
     return (
-        <div className="page-container">
-            <div className="app-background-container"></div>
-            <div className="app-overlay-container"></div>
-            <Header />
-            <section id="main" className="main">
-                {showWelcome ?
-                    <Welcome />: <>
-                    <Home />
-                    <Options />
-                    <Contact />
-                </>}
-            </section>
-            {!showWelcome && <Footer />}
-        </div>
+        <ProjectDetailsProvider>
+            <div className="page-container">
+                <div className="app-background-container"></div>
+                <div className="app-overlay-container"></div>
+                <Header />
+                <section id="main" className="main">
+                    {showWelcome ?
+                        <Welcome /> :
+                        <>
+                            <Home />
+                            <Options />
+                            <Contact />
+                        </>
+                    }
+                </section>
+                {!showWelcome && <Footer />}
+            </div>
+        </ProjectDetailsProvider>
     );
 };
 

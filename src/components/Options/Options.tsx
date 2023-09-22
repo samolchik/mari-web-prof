@@ -3,10 +3,10 @@ import Skills from "../Skills/Skills";
 import "./Options.css";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import {useProjectDetails} from "../../context/projectDetailsContext";
 
 const Options = () => {
     const [selectedOption, setSelectedOption] = useState('Projects');
-
 
     const renderSelectedOption = () => {
         switch (selectedOption) {

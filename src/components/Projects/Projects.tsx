@@ -5,6 +5,7 @@ import movies from '../../assets/movies-screenshots/movies-screenshot-1.jpeg';
 import furniture from '../../assets/furniture-store-screenshots/furniture-screenshot-1.jpeg';
 import cars from '../../assets/car-platform-screenshots/cars-screenshot-1.jpeg';
 import climateChange from '../../assets/climate-change-screenshots/climate-change-screenshot-1.jpeg';
+import {useProjectDetails} from '../../context/projectDetailsContext';
 
 function sortScreenshotKeys(a: string, b: string): number {
     const numA = parseInt(a.replace(/\D/g, ''), 10);
@@ -30,27 +31,30 @@ const climateChangeScreenshots = climateChangeScreenshotsKeys.map(climateChangeS
 
 
 const Projects = () => {
+    const {projectName, setProjectName, isProjectDetailsOpen, setProjectDetailsOpen, closeProjectDetails} = useProjectDetails();
+
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
     const handleClickProject = (project: string) => {
         setSelectedProject(project);
+        setProjectDetailsOpen(true);
     };
     const handleCloseProjectDetails = () => {
         setSelectedProject(null);
+        setProjectDetailsOpen(false);
     };
     useEffect(() => {
-        if (selectedProject) {
-
+        if (isProjectDetailsOpen && selectedProject) {
             document.body.style.overflow = 'hidden';
         } else {
-
             document.body.style.overflow = 'auto';
         }
-    }, [selectedProject]);
+    }, [isProjectDetailsOpen, selectedProject]);
+
     return (
         <section className="projects-section" id="projects">
             <div className="projects-container">
                 <div className="projects-block">
-                    {[ 'climate change', 'cars platform back end', 'e-commerce', 'movie search'].map((projectType, idx) => (
+                    {['climate change', 'cars platform back end', 'e-commerce', 'movie search'].map((projectType, idx) => (
                         <div key={idx} className="project1" onClick={() => handleClickProject(projectType)}>
                             <h1 className="projects-header">{projectType.toUpperCase()}</h1>
                             <img
@@ -62,7 +66,7 @@ const Projects = () => {
                     ))}
                 </div>
             </div>
-            {selectedProject === 'climate change' && (
+            {isProjectDetailsOpen && selectedProject === 'climate change' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={climateChangeScreenshots}
@@ -72,11 +76,11 @@ const Projects = () => {
                         'CO2 Calculator API: The platform integrates the Climatiq API, enabling users to gain insights on climate change and calculate personal CO2 emissions. This equips users with actionable data for informed decision-making.',
                         'CSS Animations: Leveraging precise CSS animations, the platform provides fluid transitions and feedback, enhancing user engagement and ensuring a polished user journey.',
                         'External Libraries: Specialized libraries are employed for optimized charting and tooltips, translating to clear, interactive visualizations. This approach simplifies the interpretation of intricate data sets, boosting user comprehension.',
-                    'SEO with React Helmet: Enhanced search engine optimization is achieved through React Helmet, which facilitates dynamic management of SEO essentials, such as metadata and page titles, bolstering the platform\'s online visibility.']}
+                        'SEO with React Helmet: Enhanced search engine optimization is achieved through React Helmet, which facilitates dynamic management of SEO essentials, such as metadata and page titles, bolstering the platform\'s online visibility.']}
                     websiteLink="https://climate-change-save-the-earth.vercel.app"
                     githubLink="https://github.com/DevMari999/climate-change"/>
             )}
-            {selectedProject === 'cars platform back end' && (
+            {isProjectDetailsOpen && selectedProject === 'cars platform back end' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={carsScreenshots}
@@ -86,12 +90,12 @@ const Projects = () => {
                         'Express: Leaning on the minimalism and flexibility of Express.js, the application is not only agile but also easily maintainable.',
                         'JWT (JSON Web Tokens): With security at the forefront, JWT has been integrated for top-notch authentication and authorization. This assures that data communications remain secure and trustworthy',
                         'EJS (Embedded JavaScript Templates): Utilizing EJS facilitates server-side templating, offering dynamic content rendering capabilities.',
-                    'Mongoose: Integral to the project, Mongoose streamlines MongoDB interactions with robust data modeling, enhancing database reliability and efficiency.',
-                    'Cron Daily Currency Update: Utilizing Cron, the project automatically updates currency values daily via integration with a bank API, ensuring real-time accuracy and relevance for users.']}
+                        'Mongoose: Integral to the project, Mongoose streamlines MongoDB interactions with robust data modeling, enhancing database reliability and efficiency.',
+                        'Cron Daily Currency Update: Utilizing Cron, the project automatically updates currency values daily via integration with a bank API, ensuring real-time accuracy and relevance for users.']}
                     websiteLink="https://node-cars-platform-a50b2bbce808.herokuapp.com/"
                     githubLink="https://github.com/DevMari999/cars-platform"/>
             )}
-            {selectedProject === 'e-commerce' && (
+            {isProjectDetailsOpen && selectedProject === 'e-commerce' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={furnitureScreenshots}
@@ -104,7 +108,7 @@ const Projects = () => {
                     websiteLink="https://furniture-store-black.vercel.app/"
                     githubLink="https://github.com/DevMari999/e-commerce-furniture"/>
             )}
-            {selectedProject === 'movie search' && (
+            {isProjectDetailsOpen && selectedProject === 'movie search' && (
                 <ProjectDetails
                     onClose={handleCloseProjectDetails}
                     images={moviesScreenshots}

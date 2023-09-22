@@ -8,10 +8,12 @@ import burgericon from '../../assets/logos/burgericon.jpeg';
 import {Link} from "react-scroll";
 import musician from "../../assets/musitian.png";
 import {Tooltip} from 'react-tooltip';
+import { useProjectDetails } from '../../context/projectDetailsContext';
 
 const Header = () => {
-
+    const { closeProjectDetails } = useProjectDetails();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { projectName, isProjectDetailsOpen } = useProjectDetails();
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -19,19 +21,23 @@ const Header = () => {
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
     };
-    useEffect(() => {
 
+    const handleNavLinkClick = () => {
+        closeMobileMenu();
+        closeProjectDetails();
+    };
+
+    useEffect(() => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'auto';
         }
-
         return () => {
             document.body.style.overflow = 'auto';
         };
-
     }, [isMobileMenuOpen]);
+
     return (
         <header className={`header`}>
             <div className="header-content">
@@ -51,30 +57,28 @@ const Header = () => {
                     <ul>
                         <div className="header-link-logo">
                             <li className="header-link-logo">
-                                <a href="https://github.com/DevMari999" target="_blank" rel="noopener noreferrer"
-                                   onClick={closeMobileMenu}>
-                                    <img className="link-logo" src={githubLogo} alt="gitHub"/>
+                                <a href="https://github.com/DevMari999" target="_blank" rel="noopener noreferrer" onClick={handleNavLinkClick}>
+                                    <img className="link-logo" src={githubLogo} alt="gitHub" />
                                 </a>
                             </li>
                             <li className="header-link-logo">
-                                <a href="https://www.linkedin.com/in/mari-dvlpr/" target="_blank"
-                                   rel="noopener noreferrer" onClick={closeMobileMenu}>
-                                    <img className="link-logo" src={linkedinLogo} alt="LinkedIn"/>
+                                <a href="https://www.linkedin.com/in/mari-dvlpr/" target="_blank" rel="noopener noreferrer" onClick={handleNavLinkClick}>
+                                    <img className="link-logo" src={linkedinLogo} alt="LinkedIn" />
                                 </a>
                             </li>
                         </div>
                         <li className="link-hover">
-                            <Link to="home" smooth={true} duration={50} onClick={closeMobileMenu}>
+                            <Link to="home" smooth={true} duration={50} onClick={handleNavLinkClick}>
                                 Home
                             </Link>
                         </li>
                         <li className="link-hover">
-                            <Link to="options" onClick={closeMobileMenu}>
+                            <Link to="options" onClick={handleNavLinkClick}>
                                 Projects
                             </Link>
                         </li>
                         <li className="link-hover">
-                            <Link to="contact" onClick={closeMobileMenu}>
+                            <Link to="contact" onClick={handleNavLinkClick}>
                                 Contact
                             </Link>
                         </li>
@@ -83,7 +87,7 @@ const Header = () => {
                                  data-tooltip-id="musician"
                                  data-tooltip-content="Special thanks to Oleg Kirilkov, a talented Ukrainian musician, who has generously made this beautiful music available for free use in the public domain."
                                  data-tooltip-delay-show={50}
-                                 data-place="right"/>
+                                 data-place="right" />
 
                             <Tooltip id="musician"
                                      className="style-tooltip"
