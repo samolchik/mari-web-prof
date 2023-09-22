@@ -20,6 +20,9 @@ const Header = () => {
         setIsMobileMenuOpen(false);
     };
     useEffect(() => {
+
+        window.scrollTo(0, 0);
+
         if (isMobileMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -29,6 +32,7 @@ const Header = () => {
         return () => {
             document.body.style.overflow = 'auto';
         };
+
     }, [isMobileMenuOpen]);
     return (
         <header className={`header`}>
