@@ -182,7 +182,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-
+    .background {
+        width: 87%;
+    }
     .carousel-root {
         width: 500px;
     }
@@ -193,7 +195,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .background {
+        width: 89%;
+    }
 }
 
 @media (min-width: 1200px) {
