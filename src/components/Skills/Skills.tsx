@@ -1,8 +1,8 @@
 import React, {useEffect, useRef} from 'react';
-import front from "../../assets/logos/4.png";
-import back from "../../assets/logos/5.png";
-import tools from "../../assets/logos/6.png";
-import design from "../../assets/logos/7.png";
+import front from "../../assets/logos/4.webp";
+import back from "../../assets/logos/5.webp";
+import tools from "../../assets/logos/6.webp";
+import design from "../../assets/logos/7.webp";
 import "./Skills.css";
 
 const Skills = () => {
