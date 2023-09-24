@@ -1,4 +1,4 @@
-import record from "../../assets/music-record.webp";
+import record from "../../assets/music-record.png";
 
 import React, {useEffect, useState} from 'react';
 import "./Music.css";

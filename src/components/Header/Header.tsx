@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import linkedinLogo from '../../assets/logos/linkedin.webp';
-import Ukraine1 from '../../assets/logos/Ukraine1.webp';
-import Ukraine2 from '../../assets/logos/Ukraine2.webp';
-import githubLogo from '../../assets/logos/github.webp';
-import burgericon from '../../assets/logos/burgericon.webp';
-import musician from "../../assets/musitian.webp";
+import linkedinLogo from '../../assets/logos/linkedin.png';
+import Ukraine1 from '../../assets/logos/Ukraine1.png';
+import Ukraine2 from '../../assets/logos/Ukraine2.png';
+import githubLogo from '../../assets/logos/github.png';
+import burgericon from '../../assets/logos/burgericon.png';
+import musician from "../../assets/musitian.png";
 import { Tooltip } from 'react-tooltip';
 import { useProjectDetails } from '../../context/projectDetailsContext';
 

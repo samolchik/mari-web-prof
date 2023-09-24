@@ -1,7 +1,7 @@
  import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
-import rocket from "../../assets/logos/rocket.webp"
+import rocket from "../../assets/logos/rocket.png"
 
 const Contact = () => {
     const [name, setName] = useState('');

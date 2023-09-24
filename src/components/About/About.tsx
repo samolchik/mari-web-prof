@@ -1,6 +1,6 @@
 import {useEffect, useRef} from "react";
 import './About.css';
-import linkedinLogo from "../../assets/logos/linkedin.webp";
+import linkedinLogo from "../../assets/logos/linkedin.png";
 
 const About = () => {
     const bulletPointsContainerRef = useRef(null);
