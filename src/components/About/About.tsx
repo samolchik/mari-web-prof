@@ -1,6 +1,7 @@
 import {useEffect, useRef} from "react";
 import './About.css';
 import linkedinLogo from "../../assets/logos/linkedin.png";
+
 const About = () => {
     const bulletPointsContainerRef = useRef(null);
 
@@ -32,13 +33,14 @@ const About = () => {
     return (
         <section id="about" className="aboutme-section">
             <div className={`top-aboutme-container`} ref={bulletPointsContainerRef}>
-                <div className={`aboutme-container`} >
+                <div className={`aboutme-container`}>
                     <div className="bullet-points-container">
                         <div className="bullet-point">
                             <h2>Hi, I'm glad to have you here!</h2>
                             <p>
                                 I'm a passionate Web Developer,
-                                constantly on a path of self improvement. I have graduated from an intense course in Full Stack Web Development at a
+                                constantly on a path of self improvement. I have graduated from an intense course in
+                                Full Stack Web Development at a
                                 leading IT school in Ukraine, complemented by an online course in Front End Development
                                 from META. Throughout this journey, I have worked on numerous projects, including the
                                 website you are currently exploring, and have gained experience in both Front End and

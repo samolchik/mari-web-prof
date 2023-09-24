@@ -2,6 +2,7 @@ import record from "../../assets/music-record.png";
 
 import React, {useEffect, useState} from 'react';
 import "./Music.css";
+
 let audio = new Audio('/audio/jazz-ballad-164939.mp3');
 
 const Music = () => {
@@ -44,12 +45,12 @@ const Music = () => {
 
     }, [isPlaying]);
     return (
-            <div
-                className={`music-record ${!isSlideInCompleted ? 'slideIn' : ''} ${isPlaying ? 'spinning' : ''}`}
-                onClick={togglePlay}
-            >
-                <img src={record} alt="music record jazz"/>
-            </div>
+        <div
+            className={`music-record ${!isSlideInCompleted ? 'slideIn' : ''} ${isPlaying ? 'spinning' : ''}`}
+            onClick={togglePlay}
+        >
+            <img src={record} alt="music record jazz"/>
+        </div>
     );
 };
 

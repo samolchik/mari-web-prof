@@ -9,6 +9,8 @@ import Options from "./components/Options/Options";
 import PrivacyNotice from "./components/PrivacyNotice/PrivacyNotice";
 import { inject } from '@vercel/analytics';
 import { ProjectDetailsProvider } from "./context/projectDetailsContext";
+import { Helmet } from 'react-helmet';
+
 inject();
 const App: React.FC = () => {
     const [showWelcome, setShowWelcome] = useState(true);
@@ -42,6 +44,11 @@ const App: React.FC = () => {
     return (
         <ProjectDetailsProvider>
             <div className="page-container">
+                <Helmet>
+                    <title>Marina - Portfolio Website</title>
+                    <meta name="description" content="Discover the portfolio of Marina, a full stack web developer specializing in modern, responsive, and user-friendly web applications. Explore projects, skills, and get in touch for collaboration." />
+                    <meta name="keywords" content="full stack developer, web development, JavaScript, React, Node.js, portfolio, web applications, front-end, back-end" />
+                </Helmet>
                 <div className="app-background-container"></div>
                 <div className="app-overlay-container"></div>
                 <Header />

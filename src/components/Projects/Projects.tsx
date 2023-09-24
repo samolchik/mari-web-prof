@@ -31,7 +31,7 @@ const climateChangeScreenshots = climateChangeScreenshotsKeys.map(climateChangeS
 
 
 const Projects = () => {
-    const {projectName, setProjectName, isProjectDetailsOpen, setProjectDetailsOpen, closeProjectDetails} = useProjectDetails();
+    const { isProjectDetailsOpen, setProjectDetailsOpen} = useProjectDetails();
 
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
     const handleClickProject = (project: string) => {

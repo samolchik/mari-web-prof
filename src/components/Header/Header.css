@@ -81,20 +81,29 @@ ul {
     transition: opacity 0.5s ease;
 }
 
+.logos-ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 80px;
+}
 .header-link-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 100%;
     padding-top: 15px;
+    width: fit-content !important;
+    margin-right: 12px;
 }
 
 .navigation ul {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+
 }
 
 .navigation li {
@@ -162,6 +171,7 @@ ul {
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        flex-direction: column;
     }
 
     .navigation.open {

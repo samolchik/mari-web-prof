@@ -10,7 +10,7 @@ const Home: React.FC = () => {
             <Music/>
                 <div className="home-container">
                     <div className="photo-container">
-                        <img src={photo} alt="My Photo" />
+                        <img src={photo} alt="portfolio owner" />
                     </div>
                     <div className="about-me">
                         <div className="about-me-header-container">

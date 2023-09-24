@@ -16,7 +16,7 @@ const Skills = () => {
             threshold: 0.3,
         };
         const animateOnScroll = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
-            entries.forEach((entry: IntersectionObserverEntry, index: number) => {
+            entries.forEach((entry: IntersectionObserverEntry) => {
                 if (entry.isIntersecting) {
                     const {target} = entry;
                     if (target === skill1Ref.current) {
